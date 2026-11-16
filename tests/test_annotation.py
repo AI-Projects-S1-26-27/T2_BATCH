@@ -39,6 +39,10 @@ def _fill(path, rng, complete=True):
     ws = wb["Annotate"]
     head = [c.value for c in ws[1]]
     col = {h: i + 1 for i, h in enumerate(head)}
+    editable = [h for h in head if h and h[:2] in ("D1", "D2", "D3", "D4")] + ["notes"]
+    for r in range(2, ws.max_row + 1):                    # start from blank copies
+        for h in editable:
+            ws.cell(row=r, column=col[h]).value = None
     for r in range(2, ws.max_row + 1):
         ha = ws.cell(row=r, column=col["headline_A"]).value
         for d in DIMS:

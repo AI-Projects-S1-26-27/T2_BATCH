@@ -187,6 +187,42 @@ python -m eval.evaluate --score-ratings        # after the sheet is filled
 python -m tests.test_evaluate
 ```
 
+## Web demo (Stage S6)
+
+```bash
+streamlit run app.py          # opens http://localhost:8501
+```
+
+Three tabs:
+1. **Prepared BASIL stories.** Results for the 20 annotated stories come from the cache, so they are instant and need no API key.
+   ★ marks the five demo stories (one per framing dimension, plus mixed cases). Other BASIL stories are extracted live.
+2. **Analyse a new headline.** Same-event retrieval (`src/retrieve.py`) finds the BASIL event, and your headline is
+   compared with each outlet's. If there is no same-event match, the demo says so and does not compare unrelated headlines.
+3. **Compare your own headlines.** Paste 2–3 headlines about one event (e.g. today's news), which are analysed live.
+
+For every pair, the evidence words are highlighted in their dimension's colour. Each difference shows its explanation,
+the rule that fired, the matched facts, the facts checked absent, and any article sentence. A second tab shows B1–B3 side by side,
+and an expander lists the extracted logical facts. Every failure (no key, API error, unusable extraction, no match)
+produces a readable message instead of a crash (`src/pipeline.py`).
+
+**Retrieval:** TF-IDF over each BASIL article's headline plus its first 4 sentences. A match needs score ≥ cutoff and
+at least 2 shared content words. The cutoff (0.11) was chosen on the dev + unused stories (`python -m src.retrieve --tune`):
+the correct story ranks first for 90.7% of headlines, and the cutoff accepts 74.8% of true same-event queries while rejecting 88.0% of no-match queries.
+
+```bash
+python -m src.retrieve --query "Senate overrides Obama veto of 9/11 bill"
+python -m tests.test_pipeline
+```
+
+### Deploying on Streamlit Community Cloud (free)
+1. Push the repo to GitHub (public), then sign in at share.streamlit.io with GitHub.
+2. Choose **Create app → Deploy a public app from GitHub**: repository `spiritual-drink27/AI_PROJECT`, branch `main`,
+   main file `app.py`. Under **Advanced settings**, pick Python 3.11 and paste into **Secrets**:
+   ```toml
+   LLM_API_KEY = "your-groq-key"
+   ```
+3. Click Deploy. The first build installs PyTorch (CPU) and takes several minutes. Without the secret, the prepared stories still work.
+
 ## Gold annotation (evaluation data)
 
 20 stories (60 headline pairs) are annotated by hand, as set out in proposal Section 5.1.

@@ -19,7 +19,7 @@ They never predict D2 or D4 (they cannot tell who acts or what kind of consequen
 import re
 from itertools import permutations
 
-from src.load import SOURCES
+from src.load import source_order
 
 STOPWORDS = set("""a an the and or but if of to in on at by for with from as into over after before
 about against between during under up down out off than then so not no nor is are was were be been
@@ -123,5 +123,5 @@ def record(system, a, b, text, start, end, explanation, score=None, dimension=No
 
 def directed_pairs(headlines):
     """All ordered pairs of available headlines, in the fixed source order."""
-    srcs = [s for s in SOURCES if headlines.get(s)]
+    srcs = [s for s in source_order(headlines) if headlines.get(s)]
     return list(permutations(srcs, 2))

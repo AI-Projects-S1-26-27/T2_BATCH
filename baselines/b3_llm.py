@@ -101,7 +101,8 @@ class B3:
     def compare(self, headlines, leads=None):
         """headlines/leads: {source: text / list of sentences}. One call per unordered pair."""
         leads = leads or {}
-        srcs = [s for s in ("fox", "nyt", "hpo") if headlines.get(s)]
+        from src.load import source_order
+        srcs = [s for s in source_order(headlines) if headlines.get(s)]
         out, errors = [], []
         for i, a in enumerate(srcs):
             for b in srcs[i + 1:]:

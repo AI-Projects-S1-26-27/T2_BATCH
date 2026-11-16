@@ -264,8 +264,10 @@ def derive_differences(kb, headlines=None, article_texts=None, ontology=None, em
         if rule == "R1_InfoOnlyIn":
             i = head[3]
             rec["item"] = lab_in(head[1], i)
-            sup = article_support(rec["item"], split_sentences(article_texts.get(head[2])), embedder)
-            rec["status"] = "headline_omission" if sup and sup["found"] else "not_found_in_article"
+            sents = split_sentences(article_texts.get(head[2]))
+            sup = article_support(rec["item"], sents, embedder)
+            rec["status"] = ("article_not_available" if not sents else
+                             "headline_omission" if sup and sup["found"] else "not_found_in_article")
             rec["article_evidence"] = ({"source": head[2], **sup} if sup and sup["found"] else None)
         elif rule == "R2_ActorShift":
             x, i = head[3], head[4]

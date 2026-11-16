@@ -1,0 +1,8 @@
+{
+ "cutoff": 0.11,
+ "headlines": 258,
+ "top1_accuracy": 0.907,
+ "same_event_above_cutoff": 0.748,
+ "no_match_below_cutoff": 0.88,
+ "tuned_on": "dev + unused stories (test excluded)"
+}

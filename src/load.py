@@ -137,6 +137,13 @@ def build_stories(raw_dir=RAW_DIR):
     return out
 
 
+def source_order(keys):
+    """Fixed order for any set of headline sources: fox, nyt, hpo first, then any others
+    (e.g. "you" or user-named outlets in the demo) alphabetically."""
+    keys = list(keys)
+    return [s for s in SOURCES if s in keys] + sorted(k for k in keys if k not in SOURCES)
+
+
 def headline_pairs(story):
     """The 3 headline pairs of a story in a fixed order:
     (fox, nyt), (fox, hpo), (nyt, hpo). Each rule/baseline compares these."""

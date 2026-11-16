@@ -36,7 +36,7 @@ from itertools import combinations
 
 import numpy as np
 
-from src.load import SOURCES
+from src.load import SOURCES, source_order
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 DEFAULT_THRESHOLDS = {"items": 0.70, "actors": 0.75, "outcomes": 0.70}
@@ -110,7 +110,7 @@ def similarity_table(mentions, kind, embedder):
     mentions: list of dicts with 'src' and 'label' (text that gets embedded)."""
     vecs = embedder.encode([m["label"] for m in mentions])
     rows = []
-    for sa, sb in combinations(SOURCES, 2):
+    for sa, sb in combinations(source_order({m["src"] for m in mentions}), 2):
         ia = [i for i, m in enumerate(mentions) if m["src"] == sa]
         ib = [i for i, m in enumerate(mentions) if m["src"] == sb]
         if not ia or not ib:
@@ -167,14 +167,12 @@ def align_story(story_extractions, embedder, thresholds=None):
              "matches": {kind: [...]}} where every mention carries its cluster "id"."""
     thresholds = {**DEFAULT_THRESHOLDS, **(thresholds or {})}
     usable = {s: r for s, r in story_extractions.items() if r and r.get("ok")}
-    out = {"ok": len(usable) >= 2, "missing": sorted(set(SOURCES) - set(usable)),
+    out = {"ok": len(usable) >= 2, "missing": sorted(set(story_extractions) - set(usable)),
            "mentions": {}, "clusters": {}, "matches": {}}
 
     for kind, (label_key, _) in KINDS.items():
         mentions = []
-        for src in SOURCES:
-            if src not in usable:
-                continue
+        for src in source_order(usable):
             for k, m in enumerate(usable[src]["fields"][kind]):
                 mentions.append({"src": src, "index": k, "label": m[label_key],
                                  "span": m.get("span"), "start": m.get("start"), "end": m.get("end"),

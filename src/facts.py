@@ -23,7 +23,7 @@ IDs (i1, a1, o1 ...) come from S3 alignment, so equivalent mentions in different
 headlines share one ID. IDs are local to one story.
 """
 
-from src.load import SOURCES
+from src.load import source_order
 
 # ------------------------------------------------------------------ ontology
 # Small, hand-written category hierarchy. Each pair (child, parent) becomes IsA(child, parent);
@@ -88,7 +88,7 @@ def build_facts(extractions, alignment):
                 "start": entry.get("start"), "end": entry.get("end"), "label": label}
 
     seen = set()
-    usable = [s for s in SOURCES if (extractions.get(s) or {}).get("ok")]
+    usable = [s for s in source_order(extractions) if (extractions.get(s) or {}).get("ok")]
     for h in usable:
         add(("Headline", h))
     for a in usable:

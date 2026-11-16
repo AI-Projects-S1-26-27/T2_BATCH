@@ -1,6 +1,9 @@
-# Stages S1-S2 (load, split, extract) need only the Python standard library.
-numpy                 # S3 alignment maths
-sentence-transformers # S3 alignment, baseline B2 (installs PyTorch)
-scikit-learn          # TF-IDF retrieval, baseline B1
-openpyxl              # annotation workbooks (eval/)
-streamlit             # web demo (S6)
+# CPU-only PyTorch (much smaller; also what Streamlit Cloud should install)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+numpy
+sentence-transformers   # S3 alignment, baseline B2, R1 article provenance
+scikit-learn            # TF-IDF retrieval
+openpyxl                # annotation workbooks (eval/)
+streamlit               # web demo (app.py)
+# Stages S1-S2 (load, split, extract) and the LLM client use only the standard library.
