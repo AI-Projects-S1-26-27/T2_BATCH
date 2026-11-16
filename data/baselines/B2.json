@@ -1,0 +1,4506 @@
+{
+ "38f7cbb7-5d6a-4c89-bcbd-8e164144172a": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Senate Race",
+     "start": 61,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Senate Race\" in FOX has no close match in NYT (closest: \"Race\", similarity 0.52 < 0.6).",
+   "score": 0.524
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Drop",
+     "start": 49,
+     "end": 53
+    }
+   ],
+   "explanation": "\"Drop\" in FOX has no close match in HPO (closest: \"Talk\", similarity 0.23 < 0.6).",
+   "score": 0.234
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Race",
+     "start": 59,
+     "end": 63
+    }
+   ],
+   "explanation": "\"Race\" in NYT has no close match in FOX (closest: \"Senate Race\", similarity 0.52 < 0.6).",
+   "score": 0.524
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Drop",
+     "start": 47,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Drop\" in NYT has no close match in HPO (closest: \"Talk\", similarity 0.23 < 0.6).",
+   "score": 0.234
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Race",
+     "start": 59,
+     "end": 63
+    }
+   ],
+   "explanation": "\"Race\" in NYT has no close match in HPO (closest: \"Senate Run\", similarity 0.32 < 0.6).",
+   "score": 0.317
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Talk",
+     "start": 34,
+     "end": 38
+    }
+   ],
+   "explanation": "\"Talk\" in HPO has no close match in FOX (closest: \"Drop\", similarity 0.23 < 0.6).",
+   "score": 0.234
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Talk",
+     "start": 34,
+     "end": 38
+    }
+   ],
+   "explanation": "\"Talk\" in HPO has no close match in NYT (closest: \"Race\", similarity 0.28 < 0.6).",
+   "score": 0.275
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Senate Run",
+     "start": 59,
+     "end": 69
+    }
+   ],
+   "explanation": "\"Senate Run\" in HPO has no close match in NYT (closest: \"Bill Clinton\", similarity 0.35 < 0.6).",
+   "score": 0.353
+  }
+ ],
+ "6f95dcb9-e960-45ac-8c0e-91b85724c909": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Glenn Beck",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Glenn Beck\" in FOX has no close match in NYT (closest: \"Beck Wows\", similarity 0.59 < 0.6).",
+   "score": 0.59
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29
+    }
+   ],
+   "explanation": "\"Rips Progressivism\" in FOX has no close match in NYT (closest: \"CPAC Crowd\", similarity 0.22 < 0.6).",
+   "score": 0.218
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29
+    }
+   ],
+   "explanation": "\"Rips Progressivism\" in FOX has no close match in HPO (closest: \"Glenn Beck CPAC\", similarity 0.23 < 0.6).",
+   "score": 0.231
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "CPAC",
+     "start": 33,
+     "end": 37
+    }
+   ],
+   "explanation": "\"CPAC\" in FOX has no close match in HPO (closest: \"Glenn Beck CPAC\", similarity 0.51 < 0.6).",
+   "score": 0.511
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Beck Wows",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Beck Wows\" in NYT has no close match in FOX (closest: \"Glenn Beck\", similarity 0.59 < 0.6).",
+   "score": 0.59
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Beck Wows",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Beck Wows\" in NYT has no close match in HPO (closest: \"Glenn Beck CPAC\", similarity 0.51 < 0.6).",
+   "score": 0.505
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "CPAC Crowd",
+     "start": 14,
+     "end": 24
+    }
+   ],
+   "explanation": "\"CPAC Crowd\" in NYT has no close match in HPO (closest: \"Glenn Beck CPAC\", similarity 0.43 < 0.6).",
+   "score": 0.429
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "2010 Speech VIDEO",
+     "start": 16,
+     "end": 33
+    }
+   ],
+   "explanation": "\"2010 Speech VIDEO\" in HPO has no close match in FOX (closest: \"Glenn Beck\", similarity 0.23 < 0.6).",
+   "score": 0.228
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans Don't Need",
+     "start": 35,
+     "end": 57
+    }
+   ],
+   "explanation": "\"Republicans Don't Need\" in HPO has no close match in FOX (closest: \"Rips Progressivism\", similarity 0.11 < 0.6).",
+   "score": 0.111
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Big Tent",
+     "start": 60,
+     "end": 68
+    }
+   ],
+   "explanation": "\"Big Tent\" in HPO has no close match in FOX (closest: \"Glenn Beck\", similarity 0.21 < 0.6).",
+   "score": 0.214
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Glenn Beck CPAC",
+     "start": 0,
+     "end": 15
+    }
+   ],
+   "explanation": "\"Glenn Beck CPAC\" in HPO has no close match in NYT (closest: \"Beck Wows\", similarity 0.51 < 0.6).",
+   "score": 0.505
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "2010 Speech VIDEO",
+     "start": 16,
+     "end": 33
+    }
+   ],
+   "explanation": "\"2010 Speech VIDEO\" in HPO has no close match in NYT (closest: \"Beck Wows\", similarity 0.17 < 0.6).",
+   "score": 0.173
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans Don't Need",
+     "start": 35,
+     "end": 57
+    }
+   ],
+   "explanation": "\"Republicans Don't Need\" in HPO has no close match in NYT (closest: \"CPAC Crowd\", similarity 0.05 < 0.6).",
+   "score": 0.052
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Big Tent",
+     "start": 60,
+     "end": 68
+    }
+   ],
+   "explanation": "\"Big Tent\" in HPO has no close match in NYT (closest: \"CPAC Crowd\", similarity 0.23 < 0.6).",
+   "score": 0.23
+  }
+ ],
+ "576116e5-2b18-4d35-be73-36f5863c9468": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim",
+     "start": 20,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Claim\" in FOX has no close match in NYT (closest: \"AARP Open\", similarity 0.14 < 0.6).",
+   "score": 0.136
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Lawmakers Push Reform",
+     "start": 63,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Lawmakers Push Reform\" in FOX has no close match in NYT (closest: \"Social Security Cuts\", similarity 0.25 < 0.6).",
+   "score": 0.248
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim",
+     "start": 20,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Claim\" in FOX has no close match in HPO (closest: \"Negotiate\", similarity 0.24 < 0.6).",
+   "score": 0.244
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Lawmakers Push Reform",
+     "start": 63,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Lawmakers Push Reform\" in FOX has no close match in HPO (closest: \"AARP Willing\", similarity 0.10 < 0.6).",
+   "score": 0.104
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate",
+     "start": 16,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Negotiate\" in HPO has no close match in FOX (closest: \"Social Security Concessions\", similarity 0.30 < 0.6).",
+   "score": 0.305
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Retirement Age\" in HPO has no close match in FOX (closest: \"Social Security Concessions\", similarity 0.33 < 0.6).",
+   "score": 0.335
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate",
+     "start": 16,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Negotiate\" in HPO has no close match in NYT (closest: \"AARP Open\", similarity 0.18 < 0.6).",
+   "score": 0.176
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Retirement Age\" in HPO has no close match in NYT (closest: \"Social Security Cuts\", similarity 0.33 < 0.6).",
+   "score": 0.328
+  }
+ ],
+ "a28a0329-0887-42dc-bd3d-3bb4f8926757": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Purpose Behind",
+     "start": 0,
+     "end": 14
+    }
+   ],
+   "explanation": "\"Purpose Behind\" in FOX has no close match in NYT (closest: \"Without Issues\", similarity 0.21 < 0.6).",
+   "score": 0.207
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congressional Reading",
+     "start": 15,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Congressional Reading\" in FOX has no close match in NYT (closest: \"House Reading\", similarity 0.57 < 0.6).",
+   "score": 0.57
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Omitted",
+     "start": 85,
+     "end": 92
+    }
+   ],
+   "explanation": "\"Omitted\" in FOX has no close match in NYT (closest: \"Without Issues\", similarity 0.27 < 0.6).",
+   "score": 0.268
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Purpose Behind",
+     "start": 0,
+     "end": 14
+    }
+   ],
+   "explanation": "\"Purpose Behind\" in FOX has no close match in HPO (closest: \"Power\", similarity 0.32 < 0.6).",
+   "score": 0.324
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Amendments",
+     "start": 70,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Amendments\" in FOX has no close match in HPO (closest: \"Read Constitution\", similarity 0.50 < 0.6).",
+   "score": 0.503
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Omitted",
+     "start": 85,
+     "end": 92
+    }
+   ],
+   "explanation": "\"Omitted\" in FOX has no close match in HPO (closest: \"Power\", similarity 0.30 < 0.6).",
+   "score": 0.303
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Reading",
+     "start": 0,
+     "end": 13
+    }
+   ],
+   "explanation": "\"House Reading\" in NYT has no close match in FOX (closest: \"Congressional Reading\", similarity 0.57 < 0.6).",
+   "score": 0.57
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Without Issues",
+     "start": 37,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Without Issues\" in NYT has no close match in FOX (closest: \"Omitted\", similarity 0.27 < 0.6).",
+   "score": 0.268
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Reading",
+     "start": 0,
+     "end": 13
+    }
+   ],
+   "explanation": "\"House Reading\" in NYT has no close match in HPO (closest: \"Read Constitution\", similarity 0.42 < 0.6).",
+   "score": 0.423
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Without Issues",
+     "start": 37,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Without Issues\" in NYT has no close match in HPO (closest: \"Power\", similarity 0.27 < 0.6).",
+   "score": 0.271
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Republicans\" in HPO has no close match in FOX (closest: \"Congressional Reading\", similarity 0.43 < 0.6).",
+   "score": 0.429
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day",
+     "start": 39,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Second Day\" in HPO has no close match in FOX (closest: \"Omitted\", similarity 0.22 < 0.6).",
+   "score": 0.221
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Power",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Power\" in HPO has no close match in FOX (closest: \"Amendments\", similarity 0.33 < 0.6).",
+   "score": 0.334
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Republicans\" in HPO has no close match in NYT (closest: \"Constitution\", similarity 0.36 < 0.6).",
+   "score": 0.361
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day",
+     "start": 39,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Second Day\" in HPO has no close match in NYT (closest: \"House Reading\", similarity 0.15 < 0.6).",
+   "score": 0.151
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Power",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Power\" in HPO has no close match in NYT (closest: \"Constitution\", similarity 0.35 < 0.6).",
+   "score": 0.346
+  }
+ ],
+ "8dc7ccfe-5cf0-482f-9101-a7c69881da4d": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "man",
+     "start": 47,
+     "end": 50
+    }
+   ],
+   "explanation": "\"man\" in FOX has no close match in NYT (closest: \"Marriage\", similarity 0.29 < 0.6).",
+   "score": 0.291
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "woman",
+     "start": 52,
+     "end": 57
+    }
+   ],
+   "explanation": "\"woman\" in FOX has no close match in NYT (closest: \"Marriage\", similarity 0.41 < 0.6).",
+   "score": 0.414
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Unions",
+     "start": 44,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Unions\" in NYT has no close match in FOX (closest: \"marriage\", similarity 0.35 < 0.6).",
+   "score": 0.351
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gay Couples",
+     "start": 56,
+     "end": 67
+    }
+   ],
+   "explanation": "\"Gay Couples\" in NYT has no close match in FOX (closest: \"marriage\", similarity 0.50 < 0.6).",
+   "score": 0.505
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Unions",
+     "start": 44,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Unions\" in NYT has no close match in HPO (closest: \"Marriage\", similarity 0.35 < 0.6).",
+   "score": 0.351
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gay Couples",
+     "start": 56,
+     "end": 67
+    }
+   ],
+   "explanation": "\"Gay Couples\" in NYT has no close match in HPO (closest: \"Marriage\", similarity 0.50 < 0.6).",
+   "score": 0.505
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Preference",
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Preference\" in HPO has no close match in FOX (closest: \"marriage\", similarity 0.30 < 0.6).",
+   "score": 0.305
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Preference",
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Preference\" in HPO has no close match in NYT (closest: \"Marriage\", similarity 0.30 < 0.6).",
+   "score": 0.305
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Man",
+     "start": 46,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Man\" in HPO has no close match in NYT (closest: \"Marriage\", similarity 0.29 < 0.6).",
+   "score": 0.291
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Woman",
+     "start": 56,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Woman\" in HPO has no close match in NYT (closest: \"Marriage\", similarity 0.41 < 0.6).",
+   "score": 0.414
+  }
+ ],
+ "b5eefefb-2a33-45de-abe1-f855c94165f4": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Sparks fly\" in FOX has no close match in NYT (closest: \"Gloves\", similarity 0.24 < 0.6).",
+   "score": 0.244
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Ryan face",
+     "start": 21,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Ryan face\" in FOX has no close match in NYT (closest: \"Biden Takes\", similarity 0.22 < 0.6).",
+   "score": 0.217
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty vice",
+     "start": 38,
+     "end": 49
+    }
+   ],
+   "explanation": "\"feisty vice\" in FOX has no close match in NYT (closest: \"Vice-Presidential Debate\", similarity 0.45 < 0.6).",
+   "score": 0.447
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Sparks fly\" in FOX has no close match in HPO (closest: \"Joe\", similarity 0.24 < 0.6).",
+   "score": 0.238
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Ryan face",
+     "start": 21,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Ryan face\" in FOX has no close match in HPO (closest: \"Biden-Ryan Debate\", similarity 0.50 < 0.6).",
+   "score": 0.497
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty vice",
+     "start": 38,
+     "end": 49
+    }
+   ],
+   "explanation": "\"feisty vice\" in FOX has no close match in HPO (closest: \"Biden-Ryan Debate\", similarity 0.19 < 0.6).",
+   "score": 0.186
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gloves",
+     "start": 16,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Gloves\" in NYT has no close match in FOX (closest: \"Biden\", similarity 0.28 < 0.6).",
+   "score": 0.276
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gloves",
+     "start": 16,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Gloves\" in NYT has no close match in HPO (closest: \"Joe\", similarity 0.23 < 0.6).",
+   "score": 0.234
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Joe",
+     "start": 29,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Joe\" in HPO has no close match in FOX (closest: \"Biden\", similarity 0.33 < 0.6).",
+   "score": 0.325
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Joe",
+     "start": 29,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Joe\" in HPO has no close match in NYT (closest: \"Gloves\", similarity 0.23 < 0.6).",
+   "score": 0.234
+  }
+ ],
+ "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Patrick picks former",
+     "start": 25,
+     "end": 45
+    }
+   ],
+   "explanation": "\"Patrick picks former\" in FOX has no close match in NYT (closest: \"Interim Senator\", similarity 0.27 < 0.6).",
+   "score": 0.27
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "staffer",
+     "start": 46,
+     "end": 53
+    }
+   ],
+   "explanation": "\"staffer\" in FOX has no close match in NYT (closest: \"Interim Senator\", similarity 0.31 < 0.6).",
+   "score": 0.309
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "fill Kerry's",
+     "start": 57,
+     "end": 69
+    }
+   ],
+   "explanation": "\"fill Kerry's\" in FOX has no close match in NYT (closest: \"Interim Senator\", similarity 0.34 < 0.6).",
+   "score": 0.338
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Massachusetts Gov. Deval",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Massachusetts Gov. Deval\" in FOX has no close match in HPO (closest: \"Deval Patrick Names\", similarity 0.48 < 0.6).",
+   "score": 0.479
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Patrick picks former",
+     "start": 25,
+     "end": 45
+    }
+   ],
+   "explanation": "\"Patrick picks former\" in FOX has no close match in HPO (closest: \"Deval Patrick Names\", similarity 0.56 < 0.6).",
+   "score": 0.558
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Senate seat",
+     "start": 70,
+     "end": 81
+    }
+   ],
+   "explanation": "\"Senate seat\" in FOX has no close match in HPO (closest: \"Mo Cowan Senate\", similarity 0.56 < 0.6).",
+   "score": 0.556
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "William Cowan Named",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"William Cowan Named\" in NYT has no close match in FOX (closest: \"staffer\", similarity 0.19 < 0.6).",
+   "score": 0.193
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "William Cowan Named",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"William Cowan Named\" in NYT has no close match in HPO (closest: \"Mo Cowan Senate\", similarity 0.59 < 0.6).",
+   "score": 0.593
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Interim Senator",
+     "start": 20,
+     "end": 35
+    }
+   ],
+   "explanation": "\"Interim Senator\" in NYT has no close match in HPO (closest: \"Mo Cowan Senate\", similarity 0.59 < 0.6).",
+   "score": 0.594
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Massachusetts",
+     "start": 39,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Massachusetts\" in NYT has no close match in HPO (closest: \"Former Chief\", similarity 0.25 < 0.6).",
+   "score": 0.253
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mo Cowan Senate",
+     "start": 0,
+     "end": 15
+    }
+   ],
+   "explanation": "\"Mo Cowan Senate\" in HPO has no close match in FOX (closest: \"Senate seat\", similarity 0.56 < 0.6).",
+   "score": 0.556
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Deval Patrick Names",
+     "start": 17,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Deval Patrick Names\" in HPO has no close match in FOX (closest: \"Patrick picks former\", similarity 0.56 < 0.6).",
+   "score": 0.558
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Chief",
+     "start": 37,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Former Chief\" in HPO has no close match in FOX (closest: \"staffer\", similarity 0.35 < 0.6).",
+   "score": 0.347
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mo Cowan Senate",
+     "start": 0,
+     "end": 15
+    }
+   ],
+   "explanation": "\"Mo Cowan Senate\" in HPO has no close match in NYT (closest: \"Interim Senator\", similarity 0.59 < 0.6).",
+   "score": 0.594
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Deval Patrick Names",
+     "start": 17,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Deval Patrick Names\" in HPO has no close match in NYT (closest: \"William Cowan Named\", similarity 0.31 < 0.6).",
+   "score": 0.306
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Chief",
+     "start": 37,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Former Chief\" in HPO has no close match in NYT (closest: \"Interim Senator\", similarity 0.45 < 0.6).",
+   "score": 0.446
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Staff",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Staff\" in HPO has no close match in NYT (closest: \"Interim Senator\", similarity 0.29 < 0.6).",
+   "score": 0.291
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Replace John Kerry",
+     "start": 62,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Replace John Kerry\" in HPO has no close match in NYT (closest: \"Interim Senator\", similarity 0.44 < 0.6).",
+   "score": 0.436
+  }
+ ],
+ "f506aafc-8b43-427a-936e-bbd1ef33e076": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign",
+     "start": 27,
+     "end": 43
+    }
+   ],
+   "explanation": "\"illegal campaign\" in FOX has no close match in NYT (closest: \"Campaign Money Case\", similarity 0.58 < 0.6).",
+   "score": 0.581
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spending spree",
+     "start": 44,
+     "end": 58
+    }
+   ],
+   "explanation": "\"spending spree\" in FOX has no close match in NYT (closest: \"Campaign Money Case\", similarity 0.39 < 0.6).",
+   "score": 0.387
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign",
+     "start": 27,
+     "end": 43
+    }
+   ],
+   "explanation": "\"illegal campaign\" in FOX has no close match in HPO (closest: \"Pleads Guilty\", similarity 0.32 < 0.6).",
+   "score": 0.318
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spending spree",
+     "start": 44,
+     "end": 58
+    }
+   ],
+   "explanation": "\"spending spree\" in FOX has no close match in HPO (closest: \"Pleads Guilty\", similarity 0.22 < 0.6).",
+   "score": 0.222
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Jesse Jackson Jr",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Jesse Jackson Jr\" in NYT has no close match in FOX (closest: \"Jackson pleads guilty\", similarity 0.34 < 0.6).",
+   "score": 0.343
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign Money Case",
+     "start": 35,
+     "end": 54
+    }
+   ],
+   "explanation": "\"Campaign Money Case\" in NYT has no close match in FOX (closest: \"illegal campaign\", similarity 0.58 < 0.6).",
+   "score": 0.581
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign Money Case",
+     "start": 35,
+     "end": 54
+    }
+   ],
+   "explanation": "\"Campaign Money Case\" in NYT has no close match in HPO (closest: \"Pleads Guilty\", similarity 0.25 < 0.6).",
+   "score": 0.249
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Jackson Jr",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Jackson Jr\" in HPO has no close match in FOX (closest: \"Jackson pleads guilty\", similarity 0.53 < 0.6).",
+   "score": 0.534
+  }
+ ],
+ "33521e65-12da-4521-b132-7b606243b0e4": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Federal prosecutors plan",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Federal prosecutors plan\" in FOX has no close match in NYT (closest: \"Indictment Expected\", similarity 0.49 < 0.6).",
+   "score": 0.489
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "file charges",
+     "start": 28,
+     "end": 40
+    }
+   ],
+   "explanation": "\"file charges\" in FOX has no close match in NYT (closest: \"Indictment Expected\", similarity 0.24 < 0.6).",
+   "score": 0.239
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "attorney",
+     "start": 61,
+     "end": 69
+    }
+   ],
+   "explanation": "\"attorney\" in FOX has no close match in NYT (closest: \"Staten Island Congressman\", similarity 0.39 < 0.6).",
+   "score": 0.393
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Federal prosecutors plan",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Federal prosecutors plan\" in FOX has no close match in HPO (closest: \"Indicted\", similarity 0.47 < 0.6).",
+   "score": 0.47
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "file charges",
+     "start": 28,
+     "end": 40
+    }
+   ],
+   "explanation": "\"file charges\" in FOX has no close match in HPO (closest: \"Indicted\", similarity 0.30 < 0.6).",
+   "score": 0.296
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rep. Grimm",
+     "start": 49,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Rep. Grimm\" in FOX has no close match in HPO (closest: \"Indicted\", similarity 0.30 < 0.6).",
+   "score": 0.297
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "attorney",
+     "start": 61,
+     "end": 69
+    }
+   ],
+   "explanation": "\"attorney\" in FOX has no close match in HPO (closest: \"Indicted\", similarity 0.45 < 0.6).",
+   "score": 0.447
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictment Expected",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Indictment Expected\" in NYT has no close match in FOX (closest: \"Federal prosecutors plan\", similarity 0.49 < 0.6).",
+   "score": 0.489
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Staten Island Congressman",
+     "start": 31,
+     "end": 56
+    }
+   ],
+   "explanation": "\"Staten Island Congressman\" in NYT has no close match in FOX (closest: \"Rep. Grimm\", similarity 0.43 < 0.6).",
+   "score": 0.426
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Grimm",
+     "start": 24,
+     "end": 29
+    }
+   ],
+   "explanation": "\"Grimm\" in NYT has no close match in HPO (closest: \"Indicted\", similarity 0.19 < 0.6).",
+   "score": 0.194
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Staten Island Congressman",
+     "start": 31,
+     "end": 56
+    }
+   ],
+   "explanation": "\"Staten Island Congressman\" in NYT has no close match in HPO (closest: \"GOP Congressman Expected\", similarity 0.41 < 0.6).",
+   "score": 0.41
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP Congressman Expected",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"GOP Congressman Expected\" in HPO has no close match in FOX (closest: \"Federal prosecutors plan\", similarity 0.24 < 0.6).",
+   "score": 0.239
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 31,
+     "end": 39
+    }
+   ],
+   "explanation": "\"Indicted\" in HPO has no close match in FOX (closest: \"Federal prosecutors plan\", similarity 0.47 < 0.6).",
+   "score": 0.47
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP Congressman Expected",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"GOP Congressman Expected\" in HPO has no close match in NYT (closest: \"Indictment Expected\", similarity 0.44 < 0.6).",
+   "score": 0.44
+  }
+ ],
+ "ccf19ab6-7878-4378-b99c-2b08cc21371f": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking Republican",
+     "start": 0,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Third-Highest Ranking Republican\" in FOX has no close match in NYT (closest: \"House Republicans\", similarity 0.53 < 0.6).",
+   "score": 0.532
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "U.S. House Calls",
+     "start": 36,
+     "end": 52
+    }
+   ],
+   "explanation": "\"U.S. House Calls\" in FOX has no close match in NYT (closest: \"House Republicans\", similarity 0.33 < 0.6).",
+   "score": 0.333
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "\"Legalizing Undocumented Immigrants\" in FOX has no close match in NYT (closest: \"Immigration Plan\", similarity 0.52 < 0.6).",
+   "score": 0.521
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking Republican",
+     "start": 0,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Third-Highest Ranking Republican\" in FOX has no close match in HPO (closest: \"Republican Hints\", similarity 0.43 < 0.6).",
+   "score": 0.425
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "U.S. House Calls",
+     "start": 36,
+     "end": 52
+    }
+   ],
+   "explanation": "\"U.S. House Calls\" in FOX has no close match in HPO (closest: \"Top House\", similarity 0.34 < 0.6).",
+   "score": 0.337
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "\"Legalizing Undocumented Immigrants\" in FOX has no close match in HPO (closest: \"Immigration Principles\", similarity 0.50 < 0.6).",
+   "score": 0.503
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Republicans\" in NYT has no close match in FOX (closest: \"Third-Highest Ranking Republican\", similarity 0.53 < 0.6).",
+   "score": 0.532
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad",
+     "start": 21,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Offer Broad\" in NYT has no close match in FOX (closest: \"Third-Highest Ranking Republican\", similarity 0.06 < 0.6).",
+   "score": 0.058
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Immigration Plan",
+     "start": 33,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Immigration Plan\" in NYT has no close match in FOX (closest: \"Legalizing Undocumented Immigrants\", similarity 0.52 < 0.6).",
+   "score": 0.521
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Republicans\" in NYT has no close match in HPO (closest: \"Republican Hints\", similarity 0.60 < 0.6).",
+   "score": 0.6
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad",
+     "start": 21,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Offer Broad\" in NYT has no close match in HPO (closest: \"Republican Hints\", similarity 0.18 < 0.6).",
+   "score": 0.178
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top House",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Top House\" in HPO has no close match in FOX (closest: \"U.S. House Calls\", similarity 0.34 < 0.6).",
+   "score": 0.337
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republican Hints",
+     "start": 10,
+     "end": 26
+    }
+   ],
+   "explanation": "\"Republican Hints\" in HPO has no close match in FOX (closest: \"Third-Highest Ranking Republican\", similarity 0.43 < 0.6).",
+   "score": 0.425
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Immigration Principles",
+     "start": 30,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Immigration Principles\" in HPO has no close match in FOX (closest: \"Legalizing Undocumented Immigrants\", similarity 0.50 < 0.6).",
+   "score": 0.503
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top House",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Top House\" in HPO has no close match in NYT (closest: \"House Republicans\", similarity 0.35 < 0.6).",
+   "score": 0.349
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republican Hints",
+     "start": 10,
+     "end": 26
+    }
+   ],
+   "explanation": "\"Republican Hints\" in HPO has no close match in NYT (closest: \"House Republicans\", similarity 0.60 < 0.6).",
+   "score": 0.6
+  }
+ ],
+ "8dac6c12-b5ca-468c-a249-7e0ab42f6b52": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers",
+     "start": 9,
+     "end": 17
+    }
+   ],
+   "explanation": "\"advisers\" in FOX has no close match in NYT (closest: \"Hillary Clinton\", similarity 0.27 < 0.6).",
+   "score": 0.273
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "lots",
+     "start": 23,
+     "end": 27
+    }
+   ],
+   "explanation": "\"lots\" in FOX has no close match in NYT (closest: \"Listen\", similarity 0.31 < 0.6).",
+   "score": 0.311
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "key trade legislation",
+     "start": 38,
+     "end": 59
+    }
+   ],
+   "explanation": "\"key trade legislation\" in FOX has no close match in NYT (closest: \"Trade Deal\", similarity 0.49 < 0.6).",
+   "score": 0.49
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "except",
+     "start": 61,
+     "end": 67
+    }
+   ],
+   "explanation": "\"except\" in FOX has no close match in NYT (closest: \"Listen\", similarity 0.23 < 0.6).",
+   "score": 0.226
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "candidate stands",
+     "start": 74,
+     "end": 90
+    }
+   ],
+   "explanation": "\"candidate stands\" in FOX has no close match in NYT (closest: \"Hillary Clinton\", similarity 0.38 < 0.6).",
+   "score": 0.384
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers",
+     "start": 9,
+     "end": 17
+    }
+   ],
+   "explanation": "\"advisers\" in FOX has no close match in HPO (closest: \"Obama\", similarity 0.28 < 0.6).",
+   "score": 0.283
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "lots",
+     "start": 23,
+     "end": 27
+    }
+   ],
+   "explanation": "\"lots\" in FOX has no close match in HPO (closest: \"Listen\", similarity 0.31 < 0.6).",
+   "score": 0.311
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "key trade legislation",
+     "start": 38,
+     "end": 59
+    }
+   ],
+   "explanation": "\"key trade legislation\" in FOX has no close match in HPO (closest: \"Trade\", similarity 0.39 < 0.6).",
+   "score": 0.39
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "except",
+     "start": 61,
+     "end": 67
+    }
+   ],
+   "explanation": "\"except\" in FOX has no close match in HPO (closest: \"Listen\", similarity 0.23 < 0.6).",
+   "score": 0.226
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "candidate stands",
+     "start": 74,
+     "end": 90
+    }
+   ],
+   "explanation": "\"candidate stands\" in FOX has no close match in HPO (closest: \"Hillary Clinton\", similarity 0.38 < 0.6).",
+   "score": 0.384
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges Obama",
+     "start": 16,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Urges Obama\" in NYT has no close match in FOX (closest: \"advisers\", similarity 0.26 < 0.6).",
+   "score": 0.259
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Listen",
+     "start": 31,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Listen\" in NYT has no close match in FOX (closest: \"lots\", similarity 0.31 < 0.6).",
+   "score": 0.311
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 41,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in FOX (closest: \"Clinton\", similarity 0.54 < 0.6).",
+   "score": 0.544
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trade Deal",
+     "start": 54,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Trade Deal\" in NYT has no close match in FOX (closest: \"key trade legislation\", similarity 0.49 < 0.6).",
+   "score": 0.49
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges Obama",
+     "start": 16,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Urges Obama\" in NYT has no close match in HPO (closest: \"Obama\", similarity 0.56 < 0.6).",
+   "score": 0.559
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 41,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in HPO (closest: \"Obama\", similarity 0.58 < 0.6).",
+   "score": 0.58
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Listen",
+     "start": 30,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Listen\" in HPO has no close match in FOX (closest: \"lots\", similarity 0.31 < 0.6).",
+   "score": 0.311
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Nancy Pelosi",
+     "start": 40,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Nancy Pelosi\" in HPO has no close match in FOX (closest: \"Clinton\", similarity 0.57 < 0.6).",
+   "score": 0.572
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trade",
+     "start": 56,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Trade\" in HPO has no close match in FOX (closest: \"key trade legislation\", similarity 0.39 < 0.6).",
+   "score": 0.39
+  }
+ ],
+ "c5534b7e-a373-4962-8345-3847bc41a636": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Benghazi committee seeks",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Benghazi committee seeks\" in FOX has no close match in NYT (closest: \"House Panel Seeks\", similarity 0.24 < 0.6).",
+   "score": 0.243
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "transcribed' interview",
+     "start": 26,
+     "end": 48
+    }
+   ],
+   "explanation": "\"transcribed' interview\" in FOX has no close match in NYT (closest: \"Private Talk\", similarity 0.21 < 0.6).",
+   "score": 0.209
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "deleted records",
+     "start": 67,
+     "end": 82
+    }
+   ],
+   "explanation": "\"deleted records\" in FOX has no close match in NYT (closest: \"Email\", similarity 0.26 < 0.6).",
+   "score": 0.256
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "transcribed' interview",
+     "start": 26,
+     "end": 48
+    }
+   ],
+   "explanation": "\"transcribed' interview\" in FOX has no close match in HPO (closest: \"Interview Clinton\", similarity 0.53 < 0.6).",
+   "score": 0.532
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "deleted records",
+     "start": 67,
+     "end": 82
+    }
+   ],
+   "explanation": "\"deleted records\" in FOX has no close match in HPO (closest: \"Emails\", similarity 0.26 < 0.6).",
+   "score": 0.259
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Panel Seeks",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Panel Seeks\" in NYT has no close match in FOX (closest: \"Benghazi committee seeks\", similarity 0.24 < 0.6).",
+   "score": 0.243
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Private Talk",
+     "start": 18,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Private Talk\" in NYT has no close match in FOX (closest: \"Clinton\", similarity 0.24 < 0.6).",
+   "score": 0.236
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Email",
+     "start": 58,
+     "end": 63
+    }
+   ],
+   "explanation": "\"Email\" in NYT has no close match in FOX (closest: \"Clinton\", similarity 0.28 < 0.6).",
+   "score": 0.284
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Panel Seeks",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Panel Seeks\" in NYT has no close match in HPO (closest: \"Benghazi Panel Wants\", similarity 0.45 < 0.6).",
+   "score": 0.453
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Private Talk",
+     "start": 18,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Private Talk\" in NYT has no close match in HPO (closest: \"Interview Clinton\", similarity 0.27 < 0.6).",
+   "score": 0.272
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Hillary Clinton",
+     "start": 36,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Hillary Clinton\" in NYT has no close match in HPO (closest: \"Interview Clinton\", similarity 0.47 < 0.6).",
+   "score": 0.473
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Emails",
+     "start": 48,
+     "end": 54
+    }
+   ],
+   "explanation": "\"Emails\" in HPO has no close match in FOX (closest: \"Clinton\", similarity 0.27 < 0.6).",
+   "score": 0.271
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Benghazi Panel Wants",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "\"Benghazi Panel Wants\" in HPO has no close match in NYT (closest: \"House Panel Seeks\", similarity 0.45 < 0.6).",
+   "score": 0.453
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Interview Clinton",
+     "start": 24,
+     "end": 41
+    }
+   ],
+   "explanation": "\"Interview Clinton\" in HPO has no close match in NYT (closest: \"Hillary Clinton\", similarity 0.47 < 0.6).",
+   "score": 0.473
+  }
+ ],
+ "1b96a5db-8974-46d3-82d7-5dfef02f650e": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congress rejects",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Congress rejects\" in FOX has no close match in NYT (closest: \"Override Veto\", similarity 0.46 < 0.6).",
+   "score": 0.457
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "presidency",
+     "start": 63,
+     "end": 73
+    }
+   ],
+   "explanation": "\"presidency\" in FOX has no close match in NYT (closest: \"Override Veto\", similarity 0.32 < 0.6).",
+   "score": 0.322
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congress rejects",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Congress rejects\" in FOX has no close match in HPO (closest: \"Obama's Veto\", similarity 0.48 < 0.6).",
+   "score": 0.477
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "\"first override\" in FOX has no close match in HPO (closest: \"Senate Overrides\", similarity 0.51 < 0.6).",
+   "score": 0.506
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "presidency",
+     "start": 63,
+     "end": 73
+    }
+   ],
+   "explanation": "\"presidency\" in FOX has no close match in HPO (closest: \"Obama's Veto\", similarity 0.39 < 0.6).",
+   "score": 0.387
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Senate Set",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Senate Set\" in NYT has no close match in FOX (closest: \"Congress rejects\", similarity 0.32 < 0.6).",
+   "score": 0.325
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "11 Suits",
+     "start": 47,
+     "end": 55
+    }
+   ],
+   "explanation": "\"11 Suits\" in NYT has no close match in FOX (closest: \"9/11 bill\", similarity 0.24 < 0.6).",
+   "score": 0.243
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Saudi Arabia",
+     "start": 64,
+     "end": 76
+    }
+   ],
+   "explanation": "\"Saudi Arabia\" in NYT has no close match in FOX (closest: \"presidency\", similarity 0.21 < 0.6).",
+   "score": 0.211
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Bill Allowing 9",
+     "start": 31,
+     "end": 46
+    }
+   ],
+   "explanation": "\"Bill Allowing 9\" in NYT has no close match in HPO (closest: \"Victims Bill\", similarity 0.46 < 0.6).",
+   "score": 0.463
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "11 Suits",
+     "start": 47,
+     "end": 55
+    }
+   ],
+   "explanation": "\"11 Suits\" in NYT has no close match in HPO (closest: \"9/11\", similarity 0.23 < 0.6).",
+   "score": 0.23
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Saudi Arabia",
+     "start": 64,
+     "end": 76
+    }
+   ],
+   "explanation": "\"Saudi Arabia\" in NYT has no close match in HPO (closest: \"9/11\", similarity 0.26 < 0.6).",
+   "score": 0.265
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Senate Overrides",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Senate Overrides\" in HPO has no close match in FOX (closest: \"first override\", similarity 0.51 < 0.6).",
+   "score": 0.506
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Victims Bill",
+     "start": 38,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Victims Bill\" in HPO has no close match in FOX (closest: \"9/11 bill\", similarity 0.56 < 0.6).",
+   "score": 0.562
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "9/11",
+     "start": 33,
+     "end": 37
+    }
+   ],
+   "explanation": "\"9/11\" in HPO has no close match in NYT (closest: \"Bill Allowing 9\", similarity 0.39 < 0.6).",
+   "score": 0.389
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Victims Bill",
+     "start": 38,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Victims Bill\" in HPO has no close match in NYT (closest: \"Bill Allowing 9\", similarity 0.46 < 0.6).",
+   "score": 0.463
+  }
+ ],
+ "d4a4bc34-e48b-4485-86b2-f1daf4d464dd": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Former Mexican",
+     "start": 0,
+     "end": 14
+    }
+   ],
+   "explanation": "\"Former Mexican\" in FOX has no close match in NYT (closest: \"Felipe Calderón\", similarity 0.57 < 0.6).",
+   "score": 0.571
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Trump",
+     "start": 32,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Trump\" in FOX has no close match in NYT (closest: \"Donald Trump's Wall\", similarity 0.53 < 0.6).",
+   "score": 0.533
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "President Fox",
+     "start": 15,
+     "end": 28
+    }
+   ],
+   "explanation": "\"President Fox\" in FOX has no close match in HPO (closest: \"Former Mexican President\", similarity 0.47 < 0.6).",
+   "score": 0.466
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Trump",
+     "start": 32,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Trump\" in FOX has no close match in HPO (closest: \"Former Mexican President\", similarity 0.36 < 0.6).",
+   "score": 0.361
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Felipe Calderón",
+     "start": 16,
+     "end": 31
+    }
+   ],
+   "explanation": "\"Felipe Calderón\" in NYT has no close match in FOX (closest: \"Former Mexican\", similarity 0.57 < 0.6).",
+   "score": 0.571
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "2 Ex-Presidents",
+     "start": 33,
+     "end": 48
+    }
+   ],
+   "explanation": "\"2 Ex-Presidents\" in NYT has no close match in FOX (closest: \"Trump\", similarity 0.35 < 0.6).",
+   "score": 0.345
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mexico",
+     "start": 52,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Mexico\" in NYT has no close match in FOX (closest: \"Former Mexican\", similarity 0.56 < 0.6).",
+   "score": 0.558
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Way Country",
+     "start": 67,
+     "end": 78
+    }
+   ],
+   "explanation": "\"Way Country\" in NYT has no close match in FOX (closest: \"Trump\", similarity 0.23 < 0.6).",
+   "score": 0.23
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "\"Vicente Fox\" in NYT has no close match in HPO (closest: \"Former Mexican President\", similarity 0.60 < 0.6).",
+   "score": 0.598
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "2 Ex-Presidents",
+     "start": 33,
+     "end": 48
+    }
+   ],
+   "explanation": "\"2 Ex-Presidents\" in NYT has no close match in HPO (closest: \"Former Mexican President\", similarity 0.42 < 0.6).",
+   "score": 0.421
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mexico",
+     "start": 52,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Mexico\" in NYT has no close match in HPO (closest: \"Former Mexican President\", similarity 0.52 < 0.6).",
+   "score": 0.523
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Way Country",
+     "start": 67,
+     "end": 78
+    }
+   ],
+   "explanation": "\"Way Country\" in NYT has no close match in HPO (closest: \"Going\", similarity 0.30 < 0.6).",
+   "score": 0.3
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Donald Trump's Wall",
+     "start": 93,
+     "end": 112
+    }
+   ],
+   "explanation": "\"Donald Trump's Wall\" in NYT has no close match in HPO (closest: \"F**king Wall\", similarity 0.58 < 0.6).",
+   "score": 0.579
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "I'm",
+     "start": 27,
+     "end": 30
+    }
+   ],
+   "explanation": "\"I'm\" in HPO has no close match in FOX (closest: \"won't pay\", similarity 0.31 < 0.6).",
+   "score": 0.306
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Going",
+     "start": 35,
+     "end": 40
+    }
+   ],
+   "explanation": "\"Going\" in HPO has no close match in FOX (closest: \"Trump\", similarity 0.26 < 0.6).",
+   "score": 0.259
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "I'm",
+     "start": 27,
+     "end": 30
+    }
+   ],
+   "explanation": "\"I'm\" in HPO has no close match in NYT (closest: \"Paying\", similarity 0.31 < 0.6).",
+   "score": 0.312
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Going",
+     "start": 35,
+     "end": 40
+    }
+   ],
+   "explanation": "\"Going\" in HPO has no close match in NYT (closest: \"Paying\", similarity 0.38 < 0.6).",
+   "score": 0.378
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "F**king Wall",
+     "start": 57,
+     "end": 69
+    }
+   ],
+   "explanation": "\"F**king Wall\" in HPO has no close match in NYT (closest: \"Donald Trump's Wall\", similarity 0.58 < 0.6).",
+   "score": 0.579
+  }
+ ],
+ "47a209b0-fc26-4a0a-a1fe-e4310d1d2419": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Republicans prepare",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Republicans prepare\" in FOX has no close match in NYT (closest: \"Democrats Plan\", similarity 0.60 < 0.6).",
+   "score": 0.598
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "go nuclear",
+     "start": 23,
+     "end": 33
+    }
+   ],
+   "explanation": "\"go nuclear\" in FOX has no close match in NYT (closest: \"Democrats Plan\", similarity 0.28 < 0.6).",
+   "score": 0.282
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "delay",
+     "start": 69,
+     "end": 74
+    }
+   ],
+   "explanation": "\"delay\" in FOX has no close match in NYT (closest: \"Filibuster\", similarity 0.28 < 0.6).",
+   "score": 0.284
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Republicans prepare",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Republicans prepare\" in FOX has no close match in HPO (closest: \"Democrats Concerned\", similarity 0.59 < 0.6).",
+   "score": 0.594
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "go nuclear",
+     "start": 23,
+     "end": 33
+    }
+   ],
+   "explanation": "\"go nuclear\" in FOX has no close match in HPO (closest: \"Democrats Concerned\", similarity 0.22 < 0.6).",
+   "score": 0.223
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Gorsuch vote",
+     "start": 39,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Gorsuch vote\" in FOX has no close match in HPO (closest: \"Republicans\", similarity 0.30 < 0.6).",
+   "score": 0.3
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Dems seek",
+     "start": 55,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Dems seek\" in FOX has no close match in HPO (closest: \"Democrats Concerned\", similarity 0.56 < 0.6).",
+   "score": 0.561
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "delay",
+     "start": 69,
+     "end": 74
+    }
+   ],
+   "explanation": "\"delay\" in FOX has no close match in HPO (closest: \"Supreme Court\", similarity 0.21 < 0.6).",
+   "score": 0.208
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Filibuster",
+     "start": 18,
+     "end": 28
+    }
+   ],
+   "explanation": "\"Filibuster\" in NYT has no close match in FOX (closest: \"Gorsuch vote\", similarity 0.33 < 0.6).",
+   "score": 0.33
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Filibuster",
+     "start": 18,
+     "end": 28
+    }
+   ],
+   "explanation": "\"Filibuster\" in NYT has no close match in HPO (closest: \"Supreme Court\", similarity 0.38 < 0.6).",
+   "score": 0.38
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Thwart Gorsuch Nomination",
+     "start": 32,
+     "end": 57
+    }
+   ],
+   "explanation": "\"Thwart Gorsuch Nomination\" in NYT has no close match in HPO (closest: \"Supreme Court\", similarity 0.27 < 0.6).",
+   "score": 0.273
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Democrats Concerned",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Democrats Concerned\" in HPO has no close match in FOX (closest: \"Republicans prepare\", similarity 0.59 < 0.6).",
+   "score": 0.594
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Supreme Court",
+     "start": 29,
+     "end": 42
+    }
+   ],
+   "explanation": "\"Supreme Court\" in HPO has no close match in FOX (closest: \"Dems seek\", similarity 0.22 < 0.6).",
+   "score": 0.223
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged",
+     "start": 50,
+     "end": 56
+    }
+   ],
+   "explanation": "\"Rigged\" in HPO has no close match in FOX (closest: \"Dems seek\", similarity 0.28 < 0.6).",
+   "score": 0.278
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rich",
+     "start": 65,
+     "end": 69
+    }
+   ],
+   "explanation": "\"Rich\" in HPO has no close match in FOX (closest: \"go nuclear\", similarity 0.20 < 0.6).",
+   "score": 0.199
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans",
+     "start": 74,
+     "end": 85
+    }
+   ],
+   "explanation": "\"Republicans\" in HPO has no close match in FOX (closest: \"Republicans prepare\", similarity 0.57 < 0.6).",
+   "score": 0.573
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Supreme Court",
+     "start": 29,
+     "end": 42
+    }
+   ],
+   "explanation": "\"Supreme Court\" in HPO has no close match in NYT (closest: \"Filibuster\", similarity 0.38 < 0.6).",
+   "score": 0.38
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged",
+     "start": 50,
+     "end": 56
+    }
+   ],
+   "explanation": "\"Rigged\" in HPO has no close match in NYT (closest: \"Filibuster\", similarity 0.28 < 0.6).",
+   "score": 0.281
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rich",
+     "start": 65,
+     "end": 69
+    }
+   ],
+   "explanation": "\"Rich\" in HPO has no close match in NYT (closest: \"Democrats Plan\", similarity 0.17 < 0.6).",
+   "score": 0.17
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans",
+     "start": 74,
+     "end": 85
+    }
+   ],
+   "explanation": "\"Republicans\" in HPO has no close match in NYT (closest: \"Democrats Plan\", similarity 0.49 < 0.6).",
+   "score": 0.492
+  }
+ ],
+ "d16050b3-979f-4834-90db-b8823691b87e": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot",
+     "start": 29,
+     "end": 40
+    }
+   ],
+   "explanation": "\"photo shoot\" in FOX has no close match in NYT (closest: \"Kathy Griffin\", similarity 0.33 < 0.6).",
+   "score": 0.327
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "bloodied Trump mask",
+     "start": 46,
+     "end": 65
+    }
+   ],
+   "explanation": "\"bloodied Trump mask\" in FOX has no close match in NYT (closest: \"Trump Lashes\", similarity 0.41 < 0.6).",
+   "score": 0.413
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went",
+     "start": 77,
+     "end": 81
+    }
+   ],
+   "explanation": "\"went\" in FOX has no close match in NYT (closest: \"Democrats\", similarity 0.16 < 0.6).",
+   "score": 0.163
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "far",
+     "start": 86,
+     "end": 89
+    }
+   ],
+   "explanation": "\"far\" in FOX has no close match in NYT (closest: \"Democrats\", similarity 0.19 < 0.6).",
+   "score": 0.193
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot",
+     "start": 29,
+     "end": 40
+    }
+   ],
+   "explanation": "\"photo shoot\" in FOX has no close match in HPO (closest: \"Controversial Images\", similarity 0.38 < 0.6).",
+   "score": 0.379
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went",
+     "start": 77,
+     "end": 81
+    }
+   ],
+   "explanation": "\"went\" in FOX has no close match in HPO (closest: \"Bloodied Trump Head\", similarity 0.18 < 0.6).",
+   "score": 0.183
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "far",
+     "start": 86,
+     "end": 89
+    }
+   ],
+   "explanation": "\"far\" in FOX has no close match in HPO (closest: \"Controversial Images\", similarity 0.19 < 0.6).",
+   "score": 0.195
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Lashes",
+     "start": 0,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Trump Lashes\" in NYT has no close match in FOX (closest: \"bloodied Trump mask\", similarity 0.41 < 0.6).",
+   "score": 0.413
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 38,
+     "end": 47
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in FOX (closest: \"bloodied Trump mask\", similarity 0.22 < 0.6).",
+   "score": 0.224
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Lashes",
+     "start": 0,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Trump Lashes\" in NYT has no close match in HPO (closest: \"Bloodied Trump Head\", similarity 0.42 < 0.6).",
+   "score": 0.42
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 38,
+     "end": 47
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in HPO (closest: \"Bloodied Trump Head\", similarity 0.25 < 0.6).",
+   "score": 0.255
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Controversial Images",
+     "start": 29,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Controversial Images\" in HPO has no close match in FOX (closest: \"photo shoot\", similarity 0.38 < 0.6).",
+   "score": 0.379
+  },
+  {
+   "system": "B2",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Controversial Images",
+     "start": 29,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Controversial Images\" in HPO has no close match in NYT (closest: \"Kathy Griffin\", similarity 0.30 < 0.6).",
+   "score": 0.303
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Bloodied Trump Head",
+     "start": 53,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Bloodied Trump Head\" in HPO has no close match in NYT (closest: \"Trump Lashes\", similarity 0.42 < 0.6).",
+   "score": 0.42
+  }
+ ],
+ "1f99798f-2b60-4ecb-b5f4-4aa7991e8ace": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "connection",
+     "start": 31,
+     "end": 41
+    }
+   ],
+   "explanation": "\"connection\" in FOX has no close match in NYT (closest: \"Pipe Bomb\", similarity 0.21 < 0.6).",
+   "score": 0.209
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "suspicious packages sent",
+     "start": 47,
+     "end": 71
+    }
+   ],
+   "explanation": "\"suspicious packages sent\" in FOX has no close match in NYT (closest: \"Suspect Arrested\", similarity 0.17 < 0.6).",
+   "score": 0.175
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Democrats",
+     "start": 75,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Democrats\" in FOX has no close match in NYT (closest: \"Southern Florida\", similarity 0.27 < 0.6).",
+   "score": 0.272
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Suspect arrested",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Suspect arrested\" in FOX has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.34 < 0.6).",
+   "score": 0.338
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Florida",
+     "start": 20,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Florida\" in FOX has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.13 < 0.6).",
+   "score": 0.133
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "connection",
+     "start": 31,
+     "end": 41
+    }
+   ],
+   "explanation": "\"connection\" in FOX has no close match in HPO (closest: \"Cesar Sayoc Identified\", similarity 0.14 < 0.6).",
+   "score": 0.136
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "suspicious packages sent",
+     "start": 47,
+     "end": 71
+    }
+   ],
+   "explanation": "\"suspicious packages sent\" in FOX has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.43 < 0.6).",
+   "score": 0.431
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Democrats",
+     "start": 75,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Democrats\" in FOX has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.13 < 0.6).",
+   "score": 0.133
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Pipe Bomb",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Pipe Bomb\" in NYT has no close match in FOX (closest: \"connection\", similarity 0.21 < 0.6).",
+   "score": 0.209
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Pipe Bomb",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Pipe Bomb\" in NYT has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.42 < 0.6).",
+   "score": 0.419
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Suspect Arrested",
+     "start": 10,
+     "end": 26
+    }
+   ],
+   "explanation": "\"Suspect Arrested\" in NYT has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.34 < 0.6).",
+   "score": 0.338
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Southern Florida",
+     "start": 30,
+     "end": 46
+    }
+   ],
+   "explanation": "\"Southern Florida\" in NYT has no close match in HPO (closest: \"Mail Bomb Suspect\", similarity 0.12 < 0.6).",
+   "score": 0.125
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Cesar Sayoc Identified",
+     "start": 0,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Cesar Sayoc Identified\" in HPO has no close match in FOX (closest: \"Suspect arrested\", similarity 0.18 < 0.6).",
+   "score": 0.176
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mail Bomb Suspect",
+     "start": 26,
+     "end": 43
+    }
+   ],
+   "explanation": "\"Mail Bomb Suspect\" in HPO has no close match in FOX (closest: \"suspicious packages sent\", similarity 0.43 < 0.6).",
+   "score": 0.431
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Cesar Sayoc Identified",
+     "start": 0,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Cesar Sayoc Identified\" in HPO has no close match in NYT (closest: \"Suspect Arrested\", similarity 0.18 < 0.6).",
+   "score": 0.176
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mail Bomb Suspect",
+     "start": 26,
+     "end": 43
+    }
+   ],
+   "explanation": "\"Mail Bomb Suspect\" in HPO has no close match in NYT (closest: \"Pipe Bomb\", similarity 0.42 < 0.6).",
+   "score": 0.419
+  }
+ ],
+ "c6a0e65c-4f8b-41de-8200-cd700f683c64": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Democrats urge Trump",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "\"Democrats urge Trump\" in FOX has no close match in NYT (closest: \"Democrats\", similarity 0.55 < 0.6).",
+   "score": 0.548
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Russian intel officers",
+     "start": 65,
+     "end": 87
+    }
+   ],
+   "explanation": "\"Russian intel officers\" in FOX has no close match in NYT (closest: \"Cancel Putin Meeting\", similarity 0.32 < 0.6).",
+   "score": 0.319
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Democrats urge Trump",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "\"Democrats urge Trump\" in FOX has no close match in HPO (closest: \"Top Democrats Call\", similarity 0.49 < 0.6).",
+   "score": 0.486
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "indictment",
+     "start": 51,
+     "end": 61
+    }
+   ],
+   "explanation": "\"indictment\" in FOX has no close match in HPO (closest: \"Trump\", similarity 0.42 < 0.6).",
+   "score": 0.416
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Russian intel officers",
+     "start": 65,
+     "end": 87
+    }
+   ],
+   "explanation": "\"Russian intel officers\" in FOX has no close match in HPO (closest: \"Cancel Putin Meeting\", similarity 0.32 < 0.6).",
+   "score": 0.319
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in FOX (closest: \"Democrats urge Trump\", similarity 0.55 < 0.6).",
+   "score": 0.548
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump",
+     "start": 14,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Trump\" in NYT has no close match in FOX (closest: \"Democrats urge Trump\", similarity 0.45 < 0.6).",
+   "score": 0.45
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Democrats\" in NYT has no close match in HPO (closest: \"Top Democrats Call\", similarity 0.58 < 0.6).",
+   "score": 0.576
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictments",
+     "start": 54,
+     "end": 65
+    }
+   ],
+   "explanation": "\"Indictments\" in NYT has no close match in HPO (closest: \"Trump\", similarity 0.38 < 0.6).",
+   "score": 0.384
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "\"John McCain\" in HPO has no close match in FOX (closest: \"Democrats urge Trump\", similarity 0.28 < 0.6).",
+   "score": 0.28
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top Democrats Call",
+     "start": 13,
+     "end": 31
+    }
+   ],
+   "explanation": "\"Top Democrats Call\" in HPO has no close match in FOX (closest: \"Democrats urge Trump\", similarity 0.49 < 0.6).",
+   "score": 0.486
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trump",
+     "start": 35,
+     "end": 40
+    }
+   ],
+   "explanation": "\"Trump\" in HPO has no close match in FOX (closest: \"Democrats urge Trump\", similarity 0.45 < 0.6).",
+   "score": 0.45
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "\"John McCain\" in HPO has no close match in NYT (closest: \"Democrats\", similarity 0.47 < 0.6).",
+   "score": 0.474
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top Democrats Call",
+     "start": 13,
+     "end": 31
+    }
+   ],
+   "explanation": "\"Top Democrats Call\" in HPO has no close match in NYT (closest: \"Democrats\", similarity 0.58 < 0.6).",
+   "score": 0.576
+  }
+ ],
+ "3ae35b16-7f7f-4a5e-9f24-5ce724106a73": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "border",
+     "start": 28,
+     "end": 34
+    }
+   ],
+   "explanation": "\"border\" in FOX has no close match in NYT (closest: \"National Emergency\", similarity 0.29 < 0.6).",
+   "score": 0.288
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B",
+     "start": 36,
+     "end": 44
+    }
+   ],
+   "explanation": "\"eyes $8B\" in FOX has no close match in NYT (closest: \"National Emergency\", similarity 0.08 < 0.6).",
+   "score": 0.085
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "wall",
+     "start": 49,
+     "end": 53
+    }
+   ],
+   "explanation": "\"wall\" in FOX has no close match in NYT (closest: \"Provokes\", similarity 0.28 < 0.6).",
+   "score": 0.285
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82
+    }
+   ],
+   "explanation": "\"signs spending package\" in FOX has no close match in NYT (closest: \"Trump Declares\", similarity 0.18 < 0.6).",
+   "score": 0.183
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B",
+     "start": 36,
+     "end": 44
+    }
+   ],
+   "explanation": "\"eyes $8B\" in FOX has no close match in HPO (closest: \"Border Wall\", similarity 0.19 < 0.6).",
+   "score": 0.189
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82
+    }
+   ],
+   "explanation": "\"signs spending package\" in FOX has no close match in HPO (closest: \"Fund U.S.-Mexico\", similarity 0.20 < 0.6).",
+   "score": 0.197
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Provokes\" in NYT has no close match in FOX (closest: \"wall\", similarity 0.28 < 0.6).",
+   "score": 0.285
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Constitutional Clash\" in NYT has no close match in FOX (closest: \"border\", similarity 0.27 < 0.6).",
+   "score": 0.273
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Provokes\" in NYT has no close match in HPO (closest: \"National Emergency\", similarity 0.23 < 0.6).",
+   "score": 0.226
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Constitutional Clash\" in NYT has no close match in HPO (closest: \"Border Wall\", similarity 0.26 < 0.6).",
+   "score": 0.258
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico",
+     "start": 37,
+     "end": 53
+    }
+   ],
+   "explanation": "\"Fund U.S.-Mexico\" in HPO has no close match in FOX (closest: \"border\", similarity 0.28 < 0.6).",
+   "score": 0.275
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico",
+     "start": 37,
+     "end": 53
+    }
+   ],
+   "explanation": "\"Fund U.S.-Mexico\" in HPO has no close match in NYT (closest: \"Trump Declares\", similarity 0.26 < 0.6).",
+   "score": 0.263
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Border Wall",
+     "start": 54,
+     "end": 65
+    }
+   ],
+   "explanation": "\"Border Wall\" in HPO has no close match in NYT (closest: \"Constitutional Clash\", similarity 0.26 < 0.6).",
+   "score": 0.258
+  }
+ ],
+ "aab91277-8d56-4844-a581-45630f873f49": [
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's show",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"FBI's show\" in FOX has no close match in NYT (closest: \"Mueller Shows Link\", similarity 0.37 < 0.6).",
+   "score": 0.366
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "force",
+     "start": 14,
+     "end": 19
+    }
+   ],
+   "explanation": "\"force\" in FOX has no close match in NYT (closest: \"Trump Campaign\", similarity 0.33 < 0.6).",
+   "score": 0.334
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism",
+     "start": 42,
+     "end": 57
+    }
+   ],
+   "explanation": "\"spurs criticism\" in FOX has no close match in NYT (closest: \"Indicting Roger Stone\", similarity 0.19 < 0.6).",
+   "score": 0.194
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's show",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"FBI's show\" in FOX has no close match in HPO (closest: \"Mueller Investigation\", similarity 0.44 < 0.6).",
+   "score": 0.439
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "force",
+     "start": 14,
+     "end": 19
+    }
+   ],
+   "explanation": "\"force\" in FOX has no close match in HPO (closest: \"Mueller Investigation\", similarity 0.22 < 0.6).",
+   "score": 0.216
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism",
+     "start": 42,
+     "end": 57
+    }
+   ],
+   "explanation": "\"spurs criticism\" in FOX has no close match in HPO (closest: \"Mueller Investigation\", similarity 0.13 < 0.6).",
+   "score": 0.134
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Campaign",
+     "start": 50,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Trump Campaign\" in NYT has no close match in FOX (closest: \"Mueller tactics\", similarity 0.51 < 0.6).",
+   "score": 0.509
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "WikiLeaks",
+     "start": 69,
+     "end": 78
+    }
+   ],
+   "explanation": "\"WikiLeaks\" in NYT has no close match in FOX (closest: \"Mueller tactics\", similarity 0.30 < 0.6).",
+   "score": 0.302
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indicting Roger Stone",
+     "start": 0,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Indicting Roger Stone\" in NYT has no close match in HPO (closest: \"Stone Indicted\", similarity 0.52 < 0.6).",
+   "score": 0.524
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Campaign",
+     "start": 50,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Trump Campaign\" in NYT has no close match in HPO (closest: \"Mueller Investigation\", similarity 0.47 < 0.6).",
+   "score": 0.471
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "WikiLeaks",
+     "start": 69,
+     "end": 78
+    }
+   ],
+   "explanation": "\"WikiLeaks\" in NYT has no close match in HPO (closest: \"Mueller Investigation\", similarity 0.32 < 0.6).",
+   "score": 0.32
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trump Associate Roger",
+     "start": 0,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Trump Associate Roger\" in HPO has no close match in FOX (closest: \"Roger Stone arrest\", similarity 0.36 < 0.6).",
+   "score": 0.357
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trump Associate Roger",
+     "start": 0,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Trump Associate Roger\" in HPO has no close match in NYT (closest: \"Trump Campaign\", similarity 0.45 < 0.6).",
+   "score": 0.45
+  },
+  {
+   "system": "B2",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Stone Indicted",
+     "start": 22,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Stone Indicted\" in HPO has no close match in NYT (closest: \"Indicting Roger Stone\", similarity 0.52 < 0.6).",
+   "score": 0.524
+  }
+ ]
+}

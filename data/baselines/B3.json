@@ -1,0 +1,3408 @@
+{
+ "38f7cbb7-5d6a-4c89-bcbd-8e164144172a": [
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used Bill Clinton to Ask Sestak",
+     "start": 12,
+     "end": 43
+    }
+   ],
+   "explanation": "Frames Clinton as a tool rather than the one being asked by the White House.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used",
+     "start": 12,
+     "end": 16
+    }
+   ],
+   "explanation": "The verb \"used\" carries a negative connotation not present in \"asked\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Drop Out of Senate Race",
+     "start": 49,
+     "end": 72
+    }
+   ],
+   "explanation": "Headline A mentions Sestak being urged to drop out, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Urge",
+     "start": 34,
+     "end": 38
+    }
+   ],
+   "explanation": "The verb \"Urge\" conveys pressure, whereas B uses neutral \"Talk\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Drop Out of Senate Race",
+     "start": 49,
+     "end": 72
+    }
+   ],
+   "explanation": "A highlights the consequence of exiting the race, while B only references a discussion about the run.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Drop Out of Race",
+     "start": 47,
+     "end": 63
+    }
+   ],
+   "explanation": "Headline A says the goal was to make Sestak drop out, which B does not state.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used Bill Clinton",
+     "start": 12,
+     "end": 29
+    }
+   ],
+   "explanation": "A frames Clinton as a tool used by the White House, while B frames him as the person being asked.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used",
+     "start": 12,
+     "end": 16
+    }
+   ],
+   "explanation": "The verb \"used\" carries a negative connotation absent in B's neutral \"Asked\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Drop Out of Race",
+     "start": 47,
+     "end": 63
+    }
+   ],
+   "explanation": "A emphasizes the consequence of withdrawing from the race, whereas B only mentions a discussion about the Senate run.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "6f95dcb9-e960-45ac-8c0e-91b85724c909": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows the CPAC Crowd",
+     "start": 5,
+     "end": 24
+    }
+   ],
+   "explanation": "B mentions the crowd's reaction, which A does not.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29
+    }
+   ],
+   "explanation": "A specifies the target of Beck's criticism, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Beck",
+     "start": 0,
+     "end": 4
+    }
+   ],
+   "explanation": "B uses only the surname, omitting the first name used in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "B uses a positive, laudatory verb, whereas A uses the negative verb \"Rips\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "the CPAC Crowd",
+     "start": 10,
+     "end": 24
+    }
+   ],
+   "explanation": "B highlights the audience's emotional response as a consequence, while A focuses on the act of criticizing progressivism.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "VIDEO: Republicans Don't Need A Big Tent",
+     "start": 28,
+     "end": 68
+    }
+   ],
+   "explanation": "B adds a video label and a claim about Republicans needing no big tent, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans Don't Need A Big Tent",
+     "start": 35,
+     "end": 68
+    }
+   ],
+   "explanation": "B shifts the focus to Republicans as the subject, whereas A attributes the action directly to Beck.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips",
+     "start": 11,
+     "end": 15
+    }
+   ],
+   "explanation": "A uses the loaded verb \"Rips\" to criticize progressivism, a judgment not present in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Don't Need A Big Tent",
+     "start": 47,
+     "end": 68
+    }
+   ],
+   "explanation": "B emphasizes a political consequence (the need for a party structure), which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "2010",
+     "start": 16,
+     "end": 20
+    }
+   ],
+   "explanation": "Headline B specifies the year of the speech, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "VIDEO",
+     "start": 28,
+     "end": 33
+    }
+   ],
+   "explanation": "Headline B notes that a video of the speech is available, not mentioned in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans Don't Need A Big Tent",
+     "start": 35,
+     "end": 68
+    }
+   ],
+   "explanation": "Headline B adds a claim about Republicans' needs, absent from A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans",
+     "start": 35,
+     "end": 46
+    }
+   ],
+   "explanation": "Headline B assigns the need for a ‘big tent’ to Republicans, while A hides any actor beyond Beck.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "Headline A uses the positive, loaded term “Wows,” which B does not use.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Don't Need A Big Tent",
+     "start": 47,
+     "end": 68
+    }
+   ],
+   "explanation": "Headline B emphasizes a political consequence (the size of the Republican coalition), which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "576116e5-2b18-4d35-be73-36f5863c9468": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "as Lawmakers Push Reform",
+     "start": 60,
+     "end": 84
+    }
+   ],
+   "explanation": "Headline A adds the detail that lawmakers are pushing reform, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Social Security Cuts",
+     "start": 13,
+     "end": 33
+    }
+   ],
+   "explanation": "Headline B emphasizes cuts as the outcome, while A frames the issue as \"concessions\" without specifying cuts.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Pushes Back on Claim",
+     "start": 5,
+     "end": 25
+    }
+   ],
+   "explanation": "The phrase \"pushes back\" carries a confrontational tone absent from the neutral wording \"Open to\" in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "Headline B specifies the retirement age, which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Lawmakers Push Reform",
+     "start": 63,
+     "end": 84
+    }
+   ],
+   "explanation": "Headline A attributes action to lawmakers, while B omits any other actor.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Willing To Negotiate",
+     "start": 5,
+     "end": 25
+    }
+   ],
+   "explanation": "The phrase \"Willing To Negotiate\" frames AARP positively, unlike the neutral \"Pushes Back\" in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "Headline B adds the specific issue of the retirement age, which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Social Security Cuts",
+     "start": 13,
+     "end": 33
+    }
+   ],
+   "explanation": "Headline A emphasizes benefit cuts as the consequence, while B stresses negotiating the retirement age.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "a28a0329-0887-42dc-bd3d-3bb4f8926757": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "After Amendments Are Omitted",
+     "start": 64,
+     "end": 92
+    }
+   ],
+   "explanation": "Headline A specifies that amendments were omitted, which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Reading of Constitution",
+     "start": 0,
+     "end": 29
+    }
+   ],
+   "explanation": "Headline B attributes the event to the House, while A uses the broader term \"Congressional.\"",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Not Without Issues",
+     "start": 33,
+     "end": 51
+    }
+   ],
+   "explanation": "The phrase frames the reading negatively, whereas A uses a more neutral \"Questioned.\"",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Purpose Behind Congressional Reading ... Questioned",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "A emphasizes a challenge to the purpose of the reading, while B only notes that there are issues without specifying the nature of the consequence.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Omitted",
+     "start": 85,
+     "end": 92
+    }
+   ],
+   "explanation": "Headline A notes that parts of the Constitution were omitted, which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "requirement that all new bills put forth ... include a statement ... citing the constitutional authority",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "Headline B adds a future legislative requirement not referenced in A.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Republicans decided",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "A attributes the decision to skip sections to Republicans, while B simply reports the House reading without naming the decision‑maker.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "obsolete parts",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "A uses the loaded term \"obsolete\" to judge the omitted sections, which B avoids.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "requirement that all new bills ... include a statement ... citing the constitutional authority",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "B emphasizes a legal consequence (new bill‑citing rule) that A does not mention.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day In Power",
+     "start": 39,
+     "end": 58
+    }
+   ],
+   "explanation": "Specifies the timing of the reading as the second day of Republican control, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Not Without Issues",
+     "start": 33,
+     "end": 51
+    }
+   ],
+   "explanation": "Highlights problems with the reading, a detail absent from B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "Attributes the action to Republicans, whereas A uses the generic \"House\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Not Without Issues",
+     "start": 33,
+     "end": 51
+    }
+   ],
+   "explanation": "Uses a negative evaluative phrase implying problems, which B does not contain.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "8dc7ccfe-5cf0-482f-9101-a7c69881da4d": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "or Unions, for Gay Couples",
+     "start": 41,
+     "end": 67
+    }
+   ],
+   "explanation": "Headline B specifies that the opposition includes civil unions and targets gay couples, which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Opposition",
+     "start": 17,
+     "end": 27
+    }
+   ],
+   "explanation": "The word \"Opposition\" frames Romney's stance negatively, whereas A uses neutral \"belief\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "'Preference'",
+     "start": 11,
+     "end": 23
+    }
+   ],
+   "explanation": "Headline B adds the word Preference, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "'Preference'",
+     "start": 11,
+     "end": 23
+    }
+   ],
+   "explanation": "The quoted word Preference frames the view as a personal bias, a loaded term not present in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "My 'Preference' Is Marriage Between A Man And A Woman",
+     "start": 8,
+     "end": 61
+    }
+   ],
+   "explanation": "Headline B adds that Romney frames his stance as a personal preference, which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "My 'Preference'",
+     "start": 8,
+     "end": 23
+    }
+   ],
+   "explanation": "The word \"preference\" frames the view as a subjective choice, whereas A uses the neutral term \"opposition\".",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "b5eefefb-2a33-45de-abe1-f855c94165f4": [
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Biden, Ryan",
+     "start": 14,
+     "end": 25
+    }
+   ],
+   "explanation": "Headline A names both participants, while B only mentions Biden",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Takes Off Gloves",
+     "start": 6,
+     "end": 22
+    }
+   ],
+   "explanation": "B uses the metaphor of removing gloves, a detail absent from A",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty",
+     "start": 38,
+     "end": 44
+    }
+   ],
+   "explanation": "A describes the debate as \"feisty,\" a judgment not present in B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "A uses vivid, loaded language \"Sparks fly\" that B does not employ",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "All About Joe",
+     "start": 19,
+     "end": 32
+    }
+   ],
+   "explanation": "Headline B adds the phrase \"All About Joe\" indicating a focus on Biden that Headline A does not mention",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "Headline A uses the vivid, judgmental phrase \"Sparks fly\" to characterize the debate, which is absent in Headline B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty",
+     "start": 38,
+     "end": 44
+    }
+   ],
+   "explanation": "Headline A describes the debate as \"feisty,\" a loaded adjective not used in Headline B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Ryan",
+     "start": 6,
+     "end": 10
+    }
+   ],
+   "explanation": "Headline B mentions Ryan by name, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Biden Takes Off Gloves",
+     "start": 0,
+     "end": 22
+    }
+   ],
+   "explanation": "A attributes the action of ‘taking off gloves’ to Biden, while B provides no verb and thus hides the actor of any action.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Takes Off Gloves",
+     "start": 6,
+     "end": 22
+    }
+   ],
+   "explanation": "The phrase is a loaded metaphor suggesting aggression, absent from B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "All About Joe",
+     "start": 19,
+     "end": 32
+    }
+   ],
+   "explanation": "The wording frames the debate as self‑centered on Biden, a judgmental spin not present in A.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "William Cowan Named Interim Senator",
+     "start": 0,
+     "end": 35
+    }
+   ],
+   "explanation": "Headline B provides the appointee's name and the title 'Interim Senator' which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "former staffer",
+     "start": 39,
+     "end": 53
+    }
+   ],
+   "explanation": "Headline A mentions the appointee is a 'former staffer', a detail absent from B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Massachusetts Gov. Deval Patrick picks",
+     "start": 0,
+     "end": 38
+    }
+   ],
+   "explanation": "Headline A identifies the governor as the actor making the appointment, which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mo Cowan Senate: ... Names Former Chief Of Staff To Replace John Kerry",
+     "start": null,
+     "end": null
+    }
+   ],
+   "explanation": "Headline B adds the appointee’s name and specifies his former role, which A omits.",
+   "score": null,
+   "evidence_found": false
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Chief Of Staff",
+     "start": 37,
+     "end": 58
+    }
+   ],
+   "explanation": "Headline B adds Cowan's former role that A omits",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Replace John Kerry",
+     "start": 62,
+     "end": 80
+    }
+   ],
+   "explanation": "Headline B specifies the seat being filled, which A leaves out",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Deval Patrick Names",
+     "start": 17,
+     "end": 36
+    }
+   ],
+   "explanation": "Headline B names the governor as the actor making the appointment, while A does not mention any actor",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "f506aafc-8b43-427a-936e-bbd1ef33e076": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Jesse Jackson Jr.",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "Headline B provides the full name, while A uses only the surname.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign spending spree",
+     "start": 27,
+     "end": 58
+    }
+   ],
+   "explanation": "Headline A uses loaded terms \"illegal\" and \"spree\" that are absent from B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign spending spree",
+     "start": 27,
+     "end": 58
+    }
+   ],
+   "explanation": "Headline A mentions the illegal spending spree, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Jr.",
+     "start": 8,
+     "end": 11
+    }
+   ],
+   "explanation": "Headline B specifies \"Jackson Jr.\", identifying the actor more precisely than A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal",
+     "start": 27,
+     "end": 34
+    }
+   ],
+   "explanation": "Headline A uses the loaded term \"illegal\" to judge the spending, which B does not.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign Money Case",
+     "start": 35,
+     "end": 54
+    }
+   ],
+   "explanation": "Headline A specifies the case involves campaign money, which Headline B omits.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "33521e65-12da-4521-b132-7b606243b0e4": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Staten Island Congressman",
+     "start": 31,
+     "end": 56
+    }
+   ],
+   "explanation": "Headline B adds the geographic identifier that A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictment Expected",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "Headline B does not name the actors (prosecutors), whereas A specifies \"Federal prosecutors\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "explanation": "Headline B adds the party affiliation that A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Federal prosecutors",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "A names the prosecutors, while B does not mention any actor.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 31,
+     "end": 39
+    }
+   ],
+   "explanation": "B emphasizes the legal consequence of indictment, whereas A mentions only the plan to file charges.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Staten Island Congressman",
+     "start": 31,
+     "end": 56
+    }
+   ],
+   "explanation": "Headline A adds the specific district, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "explanation": "Headline B adds the party affiliation, which A leaves out.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "ccf19ab6-7878-4378-b99c-2b08cc21371f": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking Republican",
+     "start": 0,
+     "end": 32
+    }
+   ],
+   "explanation": "Specifies the rank of the Republican, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "Mentions legalization of undocumented immigrants, while B only says \"Broad Immigration Plan\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking Republican",
+     "start": 0,
+     "end": 32
+    }
+   ],
+   "explanation": "Attributes the call to a single identified lawmaker, whereas B attributes it to \"House Republicans\" as a group.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "Headline A specifies the policy of legalizing undocumented immigrants, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top House Republican",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "Headline B labels the speaker as the top House Republican, while A identifies him as the third‑highest ranking Republican.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Calls For",
+     "start": 47,
+     "end": 56
+    }
+   ],
+   "explanation": "Headline A uses the stronger, action‑oriented phrase \"Calls For\" compared to B's softer \"Hints At\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top House Republican",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "Specifies an individual rather than the whole party",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top House Republican",
+     "start": 0,
+     "end": 20
+    }
+   ],
+   "explanation": "Attributes the action to a single Republican instead of the collective House Republicans",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hints",
+     "start": 21,
+     "end": 26
+    }
+   ],
+   "explanation": "Uses a tentative verb implying uncertainty, whereas A uses the definitive \"to Offer\"",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "8dac6c12-b5ca-468c-a249-7e0ab42f6b52": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers have lots to say on key trade legislation, except where candidate stands",
+     "start": 9,
+     "end": 90
+    }
+   ],
+   "explanation": "Headline A notes advisers speaking and that Clinton's position is omitted, which B does not mention",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges Obama to Listen to Democrats",
+     "start": 16,
+     "end": 50
+    }
+   ],
+   "explanation": "Headline B attributes the action to Clinton urging Obama, while A focuses on Clinton and advisers speaking",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "lots to say",
+     "start": 23,
+     "end": 34
+    }
+   ],
+   "explanation": "The phrase \"lots to say\" carries a judgmental tone about the volume of commentary, absent in B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers have lots to say on key trade legislation",
+     "start": 9,
+     "end": 59
+    }
+   ],
+   "explanation": "A notes advisers' commentary, which B omits",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Obama Should Listen To Nancy Pelosi",
+     "start": 17,
+     "end": 52
+    }
+   ],
+   "explanation": "B frames Clinton as urging Obama, shifting the actor from Clinton/advisers in A",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Should Listen",
+     "start": 23,
+     "end": 36
+    }
+   ],
+   "explanation": "B uses the prescriptive \"should\" implying judgment, absent in A",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Nancy Pelosi",
+     "start": 40,
+     "end": 52
+    }
+   ],
+   "explanation": "B names a specific Democrat, while A only says \"Democrats\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Nancy Pelosi",
+     "start": 40,
+     "end": 52
+    }
+   ],
+   "explanation": "B attributes the advice to a single actor (Pelosi) whereas A attributes it to the broader group of Democrats.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "c5534b7e-a373-4962-8345-3847bc41a636": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "'transcribed' interview",
+     "start": 25,
+     "end": 48
+    }
+   ],
+   "explanation": "Headline A specifies the interview will be transcribed, which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "deleted records",
+     "start": 67,
+     "end": 82
+    }
+   ],
+   "explanation": "A highlights that the interview is over deleted records, while B only mentions email.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Panel",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "B refers to the body as a \"House Panel,\" whereas A calls it the \"Benghazi committee.\"",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "over deleted records",
+     "start": 62,
+     "end": 82
+    }
+   ],
+   "explanation": "Specifies the interview is about deleted records, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "About Emails",
+     "start": 42,
+     "end": 54
+    }
+   ],
+   "explanation": "Frames the interview focus as emails, which A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "'transcribed' interview",
+     "start": 25,
+     "end": 48
+    }
+   ],
+   "explanation": "Quotes around transcribed imply skepticism about the interview format.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Private Talk",
+     "start": 18,
+     "end": 30
+    }
+   ],
+   "explanation": "A mentions a \"Private Talk\" which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Benghazi Panel",
+     "start": 0,
+     "end": 14
+    }
+   ],
+   "explanation": "B specifies the panel is the \"Benghazi\" panel, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Panel",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "A attributes the action to a generic \"House Panel\" while B labels it as the \"Benghazi Panel\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Emails",
+     "start": 48,
+     "end": 54
+    }
+   ],
+   "explanation": "B uses the plural \"Emails\" whereas A uses the singular \"Email\".",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "1b96a5db-8974-46d3-82d7-5dfef02f650e": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Allowing 9/11 Suits Against Saudi Arabia",
+     "start": 36,
+     "end": 76
+    }
+   ],
+   "explanation": "B specifies the bill permits lawsuits against Saudi Arabia, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congress rejects Obama veto",
+     "start": 0,
+     "end": 27
+    }
+   ],
+   "explanation": "A attributes the action to Congress, while B attributes it to the Senate.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Senate Set to Override Veto",
+     "start": 0,
+     "end": 27
+    }
+   ],
+   "explanation": "B highlights the Senate as the actor, whereas A uses the broader term Congress.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override of presidency",
+     "start": 45,
+     "end": 73
+    }
+   ],
+   "explanation": "A stresses the political milestone of the first presidential veto override, which B does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Allowing 9/11 Suits Against Saudi Arabia",
+     "start": 36,
+     "end": 76
+    }
+   ],
+   "explanation": "B emphasizes the legal consequence of enabling lawsuits against Saudi Arabia, absent in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Senate",
+     "start": 0,
+     "end": 6
+    }
+   ],
+   "explanation": "Headline B attributes the action to the Senate, while A attributes it to Congress as a whole.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override of presidency",
+     "start": 45,
+     "end": 73
+    }
+   ],
+   "explanation": "A highlights that this is the first veto override of Obama’s presidency, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Victims",
+     "start": 38,
+     "end": 45
+    }
+   ],
+   "explanation": "B specifies the bill as the \"9/11 Victims Bill,\" a detail not mentioned in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Overrides Obama's Veto",
+     "start": 7,
+     "end": 29
+    }
+   ],
+   "explanation": "B states the override has already occurred, whereas A says the Senate is \"Set to\" override.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Obama's Veto",
+     "start": 17,
+     "end": 29
+    }
+   ],
+   "explanation": "B names President Obama as the actor of the veto; A omits any reference to who issued the veto.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Allowing 9/11 Suits Against Saudi Arabia",
+     "start": 36,
+     "end": 76
+    }
+   ],
+   "explanation": "A highlights the legal consequence of permitting lawsuits against Saudi Arabia, while B only mentions the \"9/11 Victims Bill\" without that detail.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "d4a4bc34-e48b-4485-86b2-f1daf4d464dd": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Felipe Calderón",
+     "start": 16,
+     "end": 31
+    }
+   ],
+   "explanation": "Headline B adds the second ex-president that A omits",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Fox to Trump",
+     "start": 25,
+     "end": 37
+    }
+   ],
+   "explanation": "A frames Fox as directly addressing Trump, while B frames both ex-presidents speaking collectively",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "f***ing wall",
+     "start": 62,
+     "end": 74
+    }
+   ],
+   "explanation": "A uses profanity to convey a negative judgment, which B does not",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Country Is Paying",
+     "start": 71,
+     "end": 88
+    }
+   ],
+   "explanation": "B emphasizes the national financial consequence, whereas A focuses on Fox's personal refusal",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "to Trump",
+     "start": 29,
+     "end": 37
+    }
+   ],
+   "explanation": "Headline A specifies the addressee (Trump) while B omits the actor being addressed.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Mexican President",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "B attributes the quote to a single former president, whereas A names two ex-presidents.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "F**king",
+     "start": 57,
+     "end": 64
+    }
+   ],
+   "explanation": "B includes the profanity that A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico",
+     "start": 0,
+     "end": 58
+    }
+   ],
+   "explanation": "A mentions both former presidents, which B leaves out.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "F**king",
+     "start": 57,
+     "end": 64
+    }
+   ],
+   "explanation": "The profanity is a loaded, judgmental term not present in A.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "47a209b0-fc26-4a0a-a1fe-e4310d1d2419": [
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Republicans prepare to go nuclear",
+     "start": 0,
+     "end": 33
+    }
+   ],
+   "explanation": "Attributes the aggressive strategy to Republicans, whereas B attributes action to Democrats.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats Plan to Filibuster",
+     "start": 0,
+     "end": 28
+    }
+   ],
+   "explanation": "Frames the filibuster initiative as a Democratic move, opposite of A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "go nuclear",
+     "start": 23,
+     "end": 33
+    }
+   ],
+   "explanation": "Uses loaded, sensational language not present in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Filibuster",
+     "start": 18,
+     "end": 28
+    }
+   ],
+   "explanation": "Explicitly mentions the filibuster tactic, which A only alludes to with \"nuclear option\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "new delay",
+     "start": 65,
+     "end": 74
+    }
+   ],
+   "explanation": "Highlights a delay outcome, while B stresses \"thwart\" the nomination.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Thwart",
+     "start": 32,
+     "end": 38
+    }
+   ],
+   "explanation": "Emphasizes blocking the nomination, a different consequence than A's delay.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Gorsuch vote",
+     "start": 39,
+     "end": 51
+    }
+   ],
+   "explanation": "Headline A mentions the specific Gorsuch confirmation vote, which B does not.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged For The Rich",
+     "start": 50,
+     "end": 69
+    }
+   ],
+   "explanation": "Headline B introduces the claim that the Court may be rigged for the rich, absent from A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Republicans prepare to go nuclear",
+     "start": 0,
+     "end": 33
+    }
+   ],
+   "explanation": "A attributes the nuclear‑option action to Republicans, while B frames concern as coming from Democrats.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Democrats Concerned",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "B highlights Democrats as the actors expressing worry, whereas A focuses on Republican action.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged For The Rich",
+     "start": 50,
+     "end": 69
+    }
+   ],
+   "explanation": "B uses the loaded phrase \"rigged for the rich\" to judge the Court, a term not used in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "new delay",
+     "start": 65,
+     "end": 74
+    }
+   ],
+   "explanation": "A emphasizes the procedural consequence of a new delay to the vote.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged For The Rich",
+     "start": 50,
+     "end": 69
+    }
+   ],
+   "explanation": "B stresses a socioeconomic consequence—potential bias favoring the rich.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "May Be Rigged For The Rich And Republicans",
+     "start": 43,
+     "end": 85
+    }
+   ],
+   "explanation": "Headline B adds the claim that the Court is rigged, which A does not mention",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats Plan to Filibuster",
+     "start": 0,
+     "end": 28
+    }
+   ],
+   "explanation": "A attributes the active filibuster strategy to Democrats, while B focuses on their concern rather than action",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Rigged",
+     "start": 50,
+     "end": 56
+    }
+   ],
+   "explanation": "The word \"rigged\" is a loaded, judgmental term not used in A",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "For The Rich And Republicans",
+     "start": 57,
+     "end": 85
+    }
+   ],
+   "explanation": "B stresses a consequence that the Court benefits the rich and Republicans, whereas A emphasizes thwarting the nomination",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "d16050b3-979f-4834-90db-b8823691b87e": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "and Democrats",
+     "start": 34,
+     "end": 47
+    }
+   ],
+   "explanation": "Headline B adds the involvement of Democrats, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Kathy Griffin apologizes",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "A attributes the action to Griffin, while B attributes the action to Trump.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes Out",
+     "start": 6,
+     "end": 16
+    }
+   ],
+   "explanation": "The phrase \"Lashes Out\" is a loaded, judgmental description not present in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "'went too far'",
+     "start": 76,
+     "end": 90
+    }
+   ],
+   "explanation": "Headline A includes Griffin's own admission of excess, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Images",
+     "start": 43,
+     "end": 49
+    }
+   ],
+   "explanation": "Headline B describes the content as \"Images\" rather than a \"photo shoot,\" highlighting a different detail.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "'went too far'",
+     "start": 76,
+     "end": 90
+    }
+   ],
+   "explanation": "The phrase conveys a stronger self‑critique than the neutral term \"controversial\" used in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Lashes Out at Kathy Griffin and Democrats",
+     "start": 0,
+     "end": 47
+    }
+   ],
+   "explanation": "The action is attributed to Trump, while B attributes the action to Kathy Griffin.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Kathy Griffin Apologizes For Controversial Images Of Bloodied Trump Head",
+     "start": 0,
+     "end": 72
+    }
+   ],
+   "explanation": "The headline centers Kathy Griffin as the actor, whereas A focuses on Trump.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes Out",
+     "start": 6,
+     "end": 16
+    }
+   ],
+   "explanation": "The phrase \"Lashes Out\" is a loaded, judgmental description not present in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "and Democrats",
+     "start": 34,
+     "end": 47
+    }
+   ],
+   "explanation": "A mentions Democrats, a detail omitted from B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Controversial Images Of Bloodied Trump Head",
+     "start": 29,
+     "end": 72
+    }
+   ],
+   "explanation": "B specifies the controversial images, a detail not included in A.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "1f99798f-2b60-4ecb-b5f4-4aa7991e8ace": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Pipe Bomb",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "Headline B specifies the type of device involved, which A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Southern Florida",
+     "start": 30,
+     "end": 46
+    }
+   ],
+   "explanation": "Headline B locates the arrest more precisely than A's generic \"Florida\".",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Pipe Bomb Suspect",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "B labels the arrested person as the \"Pipe Bomb Suspect,\" attributing the bomb action to the actor, whereas A simply calls them a \"Suspect.\"",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Cesar Sayoc",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "Headline B provides the suspect's name, which Headline A omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Suspect",
+     "start": 0,
+     "end": 7
+    }
+   ],
+   "explanation": "Headline A uses a generic \"Suspect\" while Headline B names the actor.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mail Bomb",
+     "start": 26,
+     "end": 35
+    }
+   ],
+   "explanation": "Headline B emphasizes the bomb nature of the packages, whereas Headline A only mentions \"suspicious packages\" sent to Democrats.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Southern Florida",
+     "start": 30,
+     "end": 46
+    }
+   ],
+   "explanation": "Headline A includes the location of the arrest, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Cesar Sayoc",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "Headline B includes the suspect's name, which A leaves out.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Arrested",
+     "start": 18,
+     "end": 26
+    }
+   ],
+   "explanation": "Headline A attributes the action of arrest to the suspect, while B uses \"identified\" instead.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Identified",
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "explanation": "Headline B attributes the action of identification to the suspect, not arrest.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "c6a0e65c-4f8b-41de-8200-cd700f683c64": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Russian intel officers",
+     "start": 65,
+     "end": 87
+    }
+   ],
+   "explanation": "Headline A specifies the indictments involve Russian intelligence officers, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "summit",
+     "start": 37,
+     "end": 43
+    }
+   ],
+   "explanation": "Headline A uses the term \"summit\" while B uses \"meeting,\" indicating a different framing of the event.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "after indictment of Russian intel officers",
+     "start": 45,
+     "end": 87
+    }
+   ],
+   "explanation": "Headline A adds the indictment detail that B omits",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats",
+     "start": 0,
+     "end": 26
+    }
+   ],
+   "explanation": "Headline B specifies John McCain as an actor, whereas A only mentions \"Democrats\"",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats",
+     "start": 0,
+     "end": 26
+    }
+   ],
+   "explanation": "B names John McCain as a specific actor, while A only mentions Democrats in general.",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "3ae35b16-7f7f-4a5e-9f24-5ce724106a73": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B for wall",
+     "start": 36,
+     "end": 53
+    }
+   ],
+   "explanation": "Headline A mentions the $8 billion amount for the wall, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes a Constitutional Clash",
+     "start": 41,
+     "end": 72
+    }
+   ],
+   "explanation": "Headline B highlights a constitutional clash, a detail absent from A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "The verb \"Provokes\" frames Trump’s action as causing conflict, a loaded term not used in A.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B for wall",
+     "start": 36,
+     "end": 53
+    }
+   ],
+   "explanation": "A emphasizes the financial consequence (billions for the wall).",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "B stresses a legal/political consequence (constitutional clash).",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B for wall",
+     "start": 36,
+     "end": 53
+    }
+   ],
+   "explanation": "Headline A adds the amount $8 billion, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "as he signs spending package",
+     "start": 54,
+     "end": 82
+    }
+   ],
+   "explanation": "Headline A notes that Trump is signing a spending package, which B leaves out.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "To Fund U.S.-Mexico Border Wall",
+     "start": 34,
+     "end": 65
+    }
+   ],
+   "explanation": "Headline B emphasizes the consequence of funding the wall, while A stresses the emergency declaration itself.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes a Constitutional Clash",
+     "start": 41,
+     "end": 72
+    }
+   ],
+   "explanation": "Headline A adds the detail of a constitutional clash that B omits",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "To Fund U.S.-Mexico Border Wall",
+     "start": 34,
+     "end": 65
+    }
+   ],
+   "explanation": "Headline B specifies the purpose of the emergency as funding the wall, which A does not mention",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "The verb \"Provokes\" carries a judgmental tone absent from B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "A emphasizes a legal/political consequence, whereas B stresses the funding/economic aspect",
+   "score": null,
+   "evidence_found": true
+  }
+ ],
+ "aab91277-8d56-4844-a581-45630f873f49": [
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Link Between Trump Campaign and WikiLeaks",
+     "start": 37,
+     "end": 78
+    }
+   ],
+   "explanation": "B mentions a link to WikiLeaks that A does not mention.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "show of force",
+     "start": 6,
+     "end": 19
+    }
+   ],
+   "explanation": "A highlights the FBI's show of force, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "A attributes the action to the FBI, while B attributes it to Mueller.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mueller Shows",
+     "start": 23,
+     "end": 36
+    }
+   ],
+   "explanation": "B credits Mueller with showing the link, whereas A focuses on the FBI.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "show of force",
+     "start": 6,
+     "end": 19
+    }
+   ],
+   "explanation": "The phrase \"show of force\" carries a judgmental tone absent in B.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism of Mueller tactics",
+     "start": 42,
+     "end": 76
+    }
+   ],
+   "explanation": "A emphasizes criticism as the consequence, while B emphasizes the revealed link as the consequence.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "show of force",
+     "start": 6,
+     "end": 19
+    }
+   ],
+   "explanation": "Headline A highlights the FBI's aggressive tactics, which B does not mention",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trump Associate",
+     "start": 0,
+     "end": 15
+    }
+   ],
+   "explanation": "Headline B labels Stone as a Trump associate, a detail omitted in A",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "A attributes the action to the FBI, while B does not name the arresting agency",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism",
+     "start": 42,
+     "end": 57
+    }
+   ],
+   "explanation": "A uses judgmental language implying wrongdoing, absent from B",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism of Mueller tactics",
+     "start": 42,
+     "end": 76
+    }
+   ],
+   "explanation": "A emphasizes political backlash, whereas B focuses on the legal indictment",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Shows Link Between Trump Campaign and WikiLeaks",
+     "start": 31,
+     "end": 78
+    }
+   ],
+   "explanation": "Headline A adds the fact that Mueller’s indictment reveals a link, which B omits.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mueller Shows Link",
+     "start": 23,
+     "end": 41
+    }
+   ],
+   "explanation": "A credits Mueller with revealing the link, while B does not mention Mueller as the actor exposing anything.",
+   "score": null,
+   "evidence_found": true
+  },
+  {
+   "system": "B3",
+   "dimension": "D4_outcome",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Shows Link Between Trump Campaign and WikiLeaks",
+     "start": 31,
+     "end": 78
+    }
+   ],
+   "explanation": "A emphasizes the political consequence of a campaign‑WikiLeaks connection, whereas B focuses only on the indictment itself.",
+   "score": null,
+   "evidence_found": true
+  }
+ ]
+}

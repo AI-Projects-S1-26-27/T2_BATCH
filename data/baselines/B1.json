@@ -1738,5 +1738,3841 @@
    "explanation": "\"Call\" appears in HPO but no matching word appears in NYT (TF-IDF weight 3.82).",
    "score": 3.817
   }
+ ],
+ "6f95dcb9-e960-45ac-8c0e-91b85724c909": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Glenn",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"Glenn\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29
+    }
+   ],
+   "explanation": "\"Rips Progressivism\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29
+    }
+   ],
+   "explanation": "\"Rips Progressivism\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Wows\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Crowd",
+     "start": 19,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Crowd\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Wows\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Crowd",
+     "start": 19,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Crowd\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "2010 Speech VIDEO: Republicans Don't Need",
+     "start": 16,
+     "end": 57
+    }
+   ],
+   "explanation": "\"2010 Speech VIDEO: Republicans Don't Need\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Big Tent",
+     "start": 60,
+     "end": 68
+    }
+   ],
+   "explanation": "\"Big Tent\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Glenn",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"Glenn\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "2010 Speech VIDEO: Republicans Don't Need",
+     "start": 16,
+     "end": 57
+    }
+   ],
+   "explanation": "\"2010 Speech VIDEO: Republicans Don't Need\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Big Tent",
+     "start": 60,
+     "end": 68
+    }
+   ],
+   "explanation": "\"Big Tent\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "576116e5-2b18-4d35-be73-36f5863c9468": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Pushes Back",
+     "start": 5,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Pushes Back\" appears in FOX but no matching word appears in NYT (TF-IDF weight 11.22).",
+   "score": 11.217
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim",
+     "start": 20,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Claim\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Concessions",
+     "start": 48,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Concessions\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Lawmakers Push Reform",
+     "start": 63,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Lawmakers Push Reform\" appears in FOX but no matching word appears in NYT (TF-IDF weight 11.22).",
+   "score": 11.217
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Pushes Back",
+     "start": 5,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Pushes Back\" appears in FOX but no matching word appears in HPO (TF-IDF weight 11.22).",
+   "score": 11.217
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim",
+     "start": 20,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Claim\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Concessions",
+     "start": 48,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Concessions\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Lawmakers Push Reform",
+     "start": 63,
+     "end": 84
+    }
+   ],
+   "explanation": "\"Lawmakers Push Reform\" appears in FOX but no matching word appears in HPO (TF-IDF weight 11.22).",
+   "score": 11.217
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Open",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Open\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Cuts",
+     "start": 29,
+     "end": 33
+    }
+   ],
+   "explanation": "\"Cuts\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.92).",
+   "score": 4.915
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Open",
+     "start": 5,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Open\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Cuts",
+     "start": 29,
+     "end": 33
+    }
+   ],
+   "explanation": "\"Cuts\" appears in NYT but no matching word appears in HPO (TF-IDF weight 4.92).",
+   "score": 4.915
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Willing",
+     "start": 5,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Willing\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate",
+     "start": 16,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Negotiate\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Retirement Age\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Willing",
+     "start": 5,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Willing\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate",
+     "start": 16,
+     "end": 25
+    }
+   ],
+   "explanation": "\"Negotiate\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Retirement Age",
+     "start": 45,
+     "end": 59
+    }
+   ],
+   "explanation": "\"Retirement Age\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "a28a0329-0887-42dc-bd3d-3bb4f8926757": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Purpose Behind Congressional",
+     "start": 0,
+     "end": 28
+    }
+   ],
+   "explanation": "\"Purpose Behind Congressional\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Questioned",
+     "start": 53,
+     "end": 63
+    }
+   ],
+   "explanation": "\"Questioned\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Amendments",
+     "start": 70,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Amendments\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Omitted",
+     "start": 85,
+     "end": 92
+    }
+   ],
+   "explanation": "\"Omitted\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Purpose Behind Congressional",
+     "start": 0,
+     "end": 28
+    }
+   ],
+   "explanation": "\"Purpose Behind Congressional\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Questioned",
+     "start": 53,
+     "end": 63
+    }
+   ],
+   "explanation": "\"Questioned\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Amendments",
+     "start": 70,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Amendments\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Omitted",
+     "start": 85,
+     "end": 92
+    }
+   ],
+   "explanation": "\"Omitted\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"House\" appears in NYT but no matching word appears in FOX (TF-IDF weight 3.21).",
+   "score": 3.211
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Without Issues",
+     "start": 37,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Without Issues\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Without Issues",
+     "start": 37,
+     "end": 51
+    }
+   ],
+   "explanation": "\"Without Issues\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "House Republicans",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"House Republicans\" appears in HPO but no matching word appears in FOX (TF-IDF weight 3.76).",
+   "score": 3.763
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day",
+     "start": 39,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Second Day\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Power",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Power\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Republicans",
+     "start": 6,
+     "end": 17
+    }
+   ],
+   "explanation": "\"Republicans\" appears in HPO but no matching word appears in NYT (TF-IDF weight 3.76).",
+   "score": 3.763
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day",
+     "start": 39,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Second Day\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Power",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Power\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "8dc7ccfe-5cf0-482f-9101-a7c69881da4d": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "belief",
+     "start": 17,
+     "end": 23
+    }
+   ],
+   "explanation": "\"belief\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "man, woman",
+     "start": 47,
+     "end": 57
+    }
+   ],
+   "explanation": "\"man, woman\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "reaffirms belief",
+     "start": 7,
+     "end": 23
+    }
+   ],
+   "explanation": "\"reaffirms belief\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Opposition",
+     "start": 17,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Opposition\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Unions",
+     "start": 44,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Unions\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gay Couples",
+     "start": 56,
+     "end": 67
+    }
+   ],
+   "explanation": "\"Gay Couples\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Reaffirms Opposition",
+     "start": 7,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Reaffirms Opposition\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Unions",
+     "start": 44,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Unions\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gay Couples",
+     "start": 56,
+     "end": 67
+    }
+   ],
+   "explanation": "\"Gay Couples\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Preference",
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Preference\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Preference",
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Preference\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Man",
+     "start": 46,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Man\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Woman",
+     "start": 56,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Woman\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  }
+ ],
+ "b5eefefb-2a33-45de-abe1-f855c94165f4": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Sparks fly\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Ryan face",
+     "start": 21,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Ryan face\" appears in FOX but no matching word appears in NYT (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty vice presidential",
+     "start": 38,
+     "end": 62
+    }
+   ],
+   "explanation": "\"feisty vice presidential\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Sparks fly\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Biden, Ryan face",
+     "start": 14,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Biden, Ryan face\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "feisty vice presidential",
+     "start": 38,
+     "end": 62
+    }
+   ],
+   "explanation": "\"feisty vice presidential\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Takes",
+     "start": 6,
+     "end": 11
+    }
+   ],
+   "explanation": "\"Takes\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gloves",
+     "start": 16,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Gloves\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vice-Presidential",
+     "start": 26,
+     "end": 43
+    }
+   ],
+   "explanation": "\"Vice-Presidential\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Biden Takes",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "\"Biden Takes\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Gloves",
+     "start": 16,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Gloves\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vice-Presidential",
+     "start": 26,
+     "end": 43
+    }
+   ],
+   "explanation": "\"Vice-Presidential\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Biden-Ryan",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Biden-Ryan\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Joe",
+     "start": 29,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Joe\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Biden-Ryan",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Biden-Ryan\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Joe",
+     "start": 29,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Joe\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.76).",
+   "score": 4.761
+  }
+ ],
+ "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Gov. Deval Patrick picks former staffer",
+     "start": 14,
+     "end": 53
+    }
+   ],
+   "explanation": "\"Gov. Deval Patrick picks former staffer\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "fill Kerry's Senate seat",
+     "start": 57,
+     "end": 81
+    }
+   ],
+   "explanation": "\"fill Kerry's Senate seat\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Massachusetts Gov",
+     "start": 0,
+     "end": 17
+    }
+   ],
+   "explanation": "\"Massachusetts Gov\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "picks",
+     "start": 33,
+     "end": 38
+    }
+   ],
+   "explanation": "\"picks\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "staffer",
+     "start": 46,
+     "end": 53
+    }
+   ],
+   "explanation": "\"staffer\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "fill Kerry's",
+     "start": 57,
+     "end": 69
+    }
+   ],
+   "explanation": "\"fill Kerry's\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "seat",
+     "start": 77,
+     "end": 81
+    }
+   ],
+   "explanation": "\"seat\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "William Cowan Named Interim Senator",
+     "start": 0,
+     "end": 35
+    }
+   ],
+   "explanation": "\"William Cowan Named Interim Senator\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "William",
+     "start": 0,
+     "end": 7
+    }
+   ],
+   "explanation": "\"William\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Interim Senator",
+     "start": 20,
+     "end": 35
+    }
+   ],
+   "explanation": "\"Interim Senator\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Massachusetts",
+     "start": 39,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Massachusetts\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mo Cowan",
+     "start": 0,
+     "end": 8
+    }
+   ],
+   "explanation": "\"Mo Cowan\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Names",
+     "start": 31,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Names\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Chief",
+     "start": 44,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Chief\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Staff",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Staff\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Replace John Kerry",
+     "start": 62,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Replace John Kerry\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Mo",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "explanation": "\"Mo\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Senate: Deval Patrick",
+     "start": 9,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Senate: Deval Patrick\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Chief",
+     "start": 37,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Former Chief\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Staff",
+     "start": 53,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Staff\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Replace John Kerry",
+     "start": 62,
+     "end": 80
+    }
+   ],
+   "explanation": "\"Replace John Kerry\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "f506aafc-8b43-427a-936e-bbd1ef33e076": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal",
+     "start": 27,
+     "end": 34
+    }
+   ],
+   "explanation": "\"illegal\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spending spree",
+     "start": 44,
+     "end": 58
+    }
+   ],
+   "explanation": "\"spending spree\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign spending spree",
+     "start": 27,
+     "end": 58
+    }
+   ],
+   "explanation": "\"illegal campaign spending spree\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Jesse",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"Jesse\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Jr",
+     "start": 14,
+     "end": 16
+    }
+   ],
+   "explanation": "\"Jr\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.92).",
+   "score": 4.915
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Money Case",
+     "start": 44,
+     "end": 54
+    }
+   ],
+   "explanation": "\"Money Case\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Jesse",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"Jesse\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign Money Case",
+     "start": 35,
+     "end": 54
+    }
+   ],
+   "explanation": "\"Campaign Money Case\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Jr",
+     "start": 8,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Jr\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.92).",
+   "score": 4.915
+  }
+ ],
+ "33521e65-12da-4521-b132-7b606243b0e4": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Federal prosecutors plan",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Federal prosecutors plan\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "file charges",
+     "start": 28,
+     "end": 40
+    }
+   ],
+   "explanation": "\"file charges\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rep",
+     "start": 49,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Rep\" appears in FOX but no matching word appears in NYT (TF-IDF weight 4.40).",
+   "score": 4.405
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "attorney",
+     "start": 61,
+     "end": 69
+    }
+   ],
+   "explanation": "\"attorney\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Federal prosecutors plan",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Federal prosecutors plan\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "file charges",
+     "start": 28,
+     "end": 40
+    }
+   ],
+   "explanation": "\"file charges\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rep. Grimm, attorney",
+     "start": 49,
+     "end": 69
+    }
+   ],
+   "explanation": "\"Rep. Grimm, attorney\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictment Expected",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "explanation": "\"Indictment Expected\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Staten Island Congressman",
+     "start": 31,
+     "end": 56
+    }
+   ],
+   "explanation": "\"Staten Island Congressman\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictment",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"Indictment\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Grimm, Staten Island",
+     "start": 24,
+     "end": 44
+    }
+   ],
+   "explanation": "\"Grimm, Staten Island\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP Congressman Expected",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"GOP Congressman Expected\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 31,
+     "end": 39
+    }
+   ],
+   "explanation": "\"Indicted\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "GOP",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "explanation": "\"GOP\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.07).",
+   "score": 4.068
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 31,
+     "end": 39
+    }
+   ],
+   "explanation": "\"Indicted\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.76).",
+   "score": 4.761
+  }
+ ],
+ "ccf19ab6-7878-4378-b99c-2b08cc21371f": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking",
+     "start": 0,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Third-Highest Ranking\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "U.S",
+     "start": 36,
+     "end": 39
+    }
+   ],
+   "explanation": "\"U.S\" appears in FOX but no matching word appears in NYT (TF-IDF weight 4.92).",
+   "score": 4.915
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Calls",
+     "start": 47,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Calls\" appears in FOX but no matching word appears in NYT (TF-IDF weight 3.82).",
+   "score": 3.817
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "\"Legalizing Undocumented Immigrants\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Third-Highest Ranking",
+     "start": 0,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Third-Highest Ranking\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "U.S",
+     "start": 36,
+     "end": 39
+    }
+   ],
+   "explanation": "\"U.S\" appears in FOX but no matching word appears in HPO (TF-IDF weight 4.92).",
+   "score": 4.915
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Calls",
+     "start": 47,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Calls\" appears in FOX but no matching word appears in HPO (TF-IDF weight 3.82).",
+   "score": 3.817
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Legalizing Undocumented Immigrants",
+     "start": 57,
+     "end": 91
+    }
+   ],
+   "explanation": "\"Legalizing Undocumented Immigrants\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad Immigration Plan",
+     "start": 21,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Offer Broad Immigration Plan\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad",
+     "start": 21,
+     "end": 32
+    }
+   ],
+   "explanation": "\"Offer Broad\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Plan",
+     "start": 45,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Plan\" appears in NYT but no matching word appears in HPO (TF-IDF weight 4.63).",
+   "score": 4.628
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "explanation": "\"Top\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.51).",
+   "score": 4.51
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hints",
+     "start": 21,
+     "end": 26
+    }
+   ],
+   "explanation": "\"Hints\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Immigration Principles",
+     "start": 30,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Immigration Principles\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Top",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "explanation": "\"Top\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.51).",
+   "score": 4.51
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hints",
+     "start": 21,
+     "end": 26
+    }
+   ],
+   "explanation": "\"Hints\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Principles",
+     "start": 42,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Principles\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "8dac6c12-b5ca-468c-a249-7e0ab42f6b52": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers",
+     "start": 9,
+     "end": 17
+    }
+   ],
+   "explanation": "\"advisers\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "lots",
+     "start": 23,
+     "end": 27
+    }
+   ],
+   "explanation": "\"lots\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "key",
+     "start": 38,
+     "end": 41
+    }
+   ],
+   "explanation": "\"key\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "legislation, except",
+     "start": 48,
+     "end": 67
+    }
+   ],
+   "explanation": "\"legislation, except\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "candidate stands",
+     "start": 74,
+     "end": 90
+    }
+   ],
+   "explanation": "\"candidate stands\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "advisers",
+     "start": 9,
+     "end": 17
+    }
+   ],
+   "explanation": "\"advisers\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "lots",
+     "start": 23,
+     "end": 27
+    }
+   ],
+   "explanation": "\"lots\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "key",
+     "start": 38,
+     "end": 41
+    }
+   ],
+   "explanation": "\"key\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "legislation, except",
+     "start": 48,
+     "end": 67
+    }
+   ],
+   "explanation": "\"legislation, except\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "candidate stands",
+     "start": 74,
+     "end": 90
+    }
+   ],
+   "explanation": "\"candidate stands\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Hillary",
+     "start": 0,
+     "end": 7
+    }
+   ],
+   "explanation": "\"Hillary\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.40).",
+   "score": 4.405
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges Obama",
+     "start": 16,
+     "end": 27
+    }
+   ],
+   "explanation": "\"Urges Obama\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Listen",
+     "start": 31,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Listen\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 41,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Democrats\" appears in NYT but no matching word appears in FOX (TF-IDF weight 3.87).",
+   "score": 3.874
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Deal",
+     "start": 60,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Deal\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges",
+     "start": 16,
+     "end": 21
+    }
+   ],
+   "explanation": "\"Urges\" appears in NYT but no matching word appears in HPO (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 41,
+     "end": 50
+    }
+   ],
+   "explanation": "\"Democrats\" appears in NYT but no matching word appears in HPO (TF-IDF weight 3.87).",
+   "score": 3.874
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Deal",
+     "start": 60,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Deal\" appears in NYT but no matching word appears in HPO (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hillary",
+     "start": 0,
+     "end": 7
+    }
+   ],
+   "explanation": "\"Hillary\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.40).",
+   "score": 4.405
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Obama",
+     "start": 17,
+     "end": 22
+    }
+   ],
+   "explanation": "\"Obama\" appears in HPO but no matching word appears in FOX (TF-IDF weight 3.24).",
+   "score": 3.241
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Listen",
+     "start": 30,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Listen\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Nancy Pelosi",
+     "start": 40,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Nancy Pelosi\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Nancy Pelosi",
+     "start": 40,
+     "end": 52
+    }
+   ],
+   "explanation": "\"Nancy Pelosi\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  }
+ ],
+ "d4a4bc34-e48b-4485-86b2-f1daf4d464dd": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Former Mexican President",
+     "start": 0,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Former Mexican President\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Trump",
+     "start": 32,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Trump\" appears in FOX but no matching word appears in NYT (TF-IDF weight 2.47).",
+   "score": 2.473
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "won't",
+     "start": 42,
+     "end": 47
+    }
+   ],
+   "explanation": "\"won't\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "f***ing",
+     "start": 62,
+     "end": 69
+    }
+   ],
+   "explanation": "\"f***ing\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Fox",
+     "start": 25,
+     "end": 28
+    }
+   ],
+   "explanation": "\"Fox\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Trump",
+     "start": 32,
+     "end": 37
+    }
+   ],
+   "explanation": "\"Trump\" appears in FOX but no matching word appears in HPO (TF-IDF weight 2.47).",
+   "score": 2.473
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "won't",
+     "start": 42,
+     "end": 47
+    }
+   ],
+   "explanation": "\"won't\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "ing",
+     "start": 66,
+     "end": 69
+    }
+   ],
+   "explanation": "\"ing\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente",
+     "start": 0,
+     "end": 7
+    }
+   ],
+   "explanation": "\"Vicente\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Felipe Calderón, 2 Ex-Presidents",
+     "start": 16,
+     "end": 48
+    }
+   ],
+   "explanation": "\"Felipe Calderón, 2 Ex-Presidents\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mexico",
+     "start": 52,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Mexico\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Way Country",
+     "start": 67,
+     "end": 78
+    }
+   ],
+   "explanation": "\"Way Country\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Donald Trump's",
+     "start": 93,
+     "end": 107
+    }
+   ],
+   "explanation": "\"Donald Trump's\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox",
+     "start": 0,
+     "end": 11
+    }
+   ],
+   "explanation": "\"Vicente Fox\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Felipe Calderón, 2 Ex-Presidents",
+     "start": 16,
+     "end": 48
+    }
+   ],
+   "explanation": "\"Felipe Calderón, 2 Ex-Presidents\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Mexico",
+     "start": 52,
+     "end": 58
+    }
+   ],
+   "explanation": "\"Mexico\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Way Country",
+     "start": 67,
+     "end": 78
+    }
+   ],
+   "explanation": "\"Way Country\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Donald Trump's",
+     "start": 93,
+     "end": 107
+    }
+   ],
+   "explanation": "\"Donald Trump's\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "I'm",
+     "start": 27,
+     "end": 30
+    }
+   ],
+   "explanation": "\"I'm\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Going",
+     "start": 35,
+     "end": 40
+    }
+   ],
+   "explanation": "\"Going\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.40).",
+   "score": 4.405
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "king",
+     "start": 60,
+     "end": 64
+    }
+   ],
+   "explanation": "\"king\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm",
+     "start": 0,
+     "end": 30
+    }
+   ],
+   "explanation": "\"Former Mexican President: 'I'm\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Going",
+     "start": 35,
+     "end": 40
+    }
+   ],
+   "explanation": "\"Going\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.40).",
+   "score": 4.405
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "F**king",
+     "start": 57,
+     "end": 64
+    }
+   ],
+   "explanation": "\"F**king\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "d16050b3-979f-4834-90db-b8823691b87e": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "apologizes",
+     "start": 14,
+     "end": 24
+    }
+   ],
+   "explanation": "\"apologizes\" appears in FOX but no matching word appears in NYT (TF-IDF weight 4.63).",
+   "score": 4.628
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot",
+     "start": 29,
+     "end": 40
+    }
+   ],
+   "explanation": "\"photo shoot\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "bloodied",
+     "start": 46,
+     "end": 54
+    }
+   ],
+   "explanation": "\"bloodied\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "mask",
+     "start": 61,
+     "end": 65
+    }
+   ],
+   "explanation": "\"mask\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went",
+     "start": 77,
+     "end": 81
+    }
+   ],
+   "explanation": "\"went\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "far",
+     "start": 86,
+     "end": 89
+    }
+   ],
+   "explanation": "\"far\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot",
+     "start": 29,
+     "end": 40
+    }
+   ],
+   "explanation": "\"photo shoot\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "mask",
+     "start": 61,
+     "end": 65
+    }
+   ],
+   "explanation": "\"mask\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went",
+     "start": 77,
+     "end": 81
+    }
+   ],
+   "explanation": "\"went\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "far",
+     "start": 86,
+     "end": 89
+    }
+   ],
+   "explanation": "\"far\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes",
+     "start": 6,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Lashes\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 38,
+     "end": 47
+    }
+   ],
+   "explanation": "\"Democrats\" appears in NYT but no matching word appears in FOX (TF-IDF weight 3.87).",
+   "score": 3.874
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes",
+     "start": 6,
+     "end": 12
+    }
+   ],
+   "explanation": "\"Lashes\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats",
+     "start": 38,
+     "end": 47
+    }
+   ],
+   "explanation": "\"Democrats\" appears in NYT but no matching word appears in HPO (TF-IDF weight 3.87).",
+   "score": 3.874
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Controversial Images",
+     "start": 29,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Controversial Images\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Head",
+     "start": 68,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Head\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Apologizes",
+     "start": 14,
+     "end": 24
+    }
+   ],
+   "explanation": "\"Apologizes\" appears in HPO but no matching word appears in NYT (TF-IDF weight 4.63).",
+   "score": 4.628
+  },
+  {
+   "system": "B1",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Controversial Images",
+     "start": 29,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Controversial Images\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Bloodied",
+     "start": 53,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Bloodied\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Head",
+     "start": 68,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Head\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  }
+ ],
+ "3ae35b16-7f7f-4a5e-9f24-5ce724106a73": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "border, eyes $8B",
+     "start": 28,
+     "end": 44
+    }
+   ],
+   "explanation": "\"border, eyes $8B\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "wall",
+     "start": 49,
+     "end": 53
+    }
+   ],
+   "explanation": "\"wall\" appears in FOX but no matching word appears in NYT (TF-IDF weight 4.31).",
+   "score": 4.309
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82
+    }
+   ],
+   "explanation": "\"signs spending package\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B",
+     "start": 36,
+     "end": 44
+    }
+   ],
+   "explanation": "\"eyes $8B\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82
+    }
+   ],
+   "explanation": "\"signs spending package\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "National",
+     "start": 17,
+     "end": 25
+    }
+   ],
+   "explanation": "\"National\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Provokes\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Constitutional Clash\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes",
+     "start": 41,
+     "end": 49
+    }
+   ],
+   "explanation": "\"Provokes\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Constitutional Clash",
+     "start": 52,
+     "end": 72
+    }
+   ],
+   "explanation": "\"Constitutional Clash\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "National",
+     "start": 15,
+     "end": 23
+    }
+   ],
+   "explanation": "\"National\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.32).",
+   "score": 5.321
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico",
+     "start": 37,
+     "end": 53
+    }
+   ],
+   "explanation": "\"Fund U.S.-Mexico\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico Border Wall",
+     "start": 37,
+     "end": 65
+    }
+   ],
+   "explanation": "\"Fund U.S.-Mexico Border Wall\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  }
+ ],
+ "aab91277-8d56-4844-a581-45630f873f49": [
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "explanation": "\"FBI's\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "force",
+     "start": 14,
+     "end": 19
+    }
+   ],
+   "explanation": "\"force\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "arrest spurs criticism",
+     "start": 35,
+     "end": 57
+    }
+   ],
+   "explanation": "\"arrest spurs criticism\" appears in FOX but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "tactics",
+     "start": 69,
+     "end": 76
+    }
+   ],
+   "explanation": "\"tactics\" appears in FOX but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "FBI's show",
+     "start": 0,
+     "end": 10
+    }
+   ],
+   "explanation": "\"FBI's show\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "force",
+     "start": 14,
+     "end": 19
+    }
+   ],
+   "explanation": "\"force\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "arrest spurs criticism",
+     "start": 35,
+     "end": 57
+    }
+   ],
+   "explanation": "\"arrest spurs criticism\" appears in FOX but no matching word appears in HPO (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "tactics",
+     "start": 69,
+     "end": 76
+    }
+   ],
+   "explanation": "\"tactics\" appears in FOX but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indicting",
+     "start": 0,
+     "end": 9
+    }
+   ],
+   "explanation": "\"Indicting\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Link",
+     "start": 37,
+     "end": 41
+    }
+   ],
+   "explanation": "\"Link\" appears in NYT but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Campaign",
+     "start": 50,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Trump Campaign\" appears in NYT but no matching word appears in FOX (TF-IDF weight 4.22).",
+   "score": 4.222
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "WikiLeaks",
+     "start": 69,
+     "end": 78
+    }
+   ],
+   "explanation": "\"WikiLeaks\" appears in NYT but no matching word appears in FOX (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Shows Link",
+     "start": 31,
+     "end": 41
+    }
+   ],
+   "explanation": "\"Shows Link\" appears in NYT but no matching word appears in HPO (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign",
+     "start": 56,
+     "end": 64
+    }
+   ],
+   "explanation": "\"Campaign\" appears in NYT but no matching word appears in HPO (TF-IDF weight 4.22).",
+   "score": 4.222
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "WikiLeaks",
+     "start": 69,
+     "end": 78
+    }
+   ],
+   "explanation": "\"WikiLeaks\" appears in NYT but no matching word appears in HPO (TF-IDF weight 5.10).",
+   "score": 5.098
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Trump Associate",
+     "start": 0,
+     "end": 15
+    }
+   ],
+   "explanation": "\"Trump Associate\" appears in HPO but no matching word appears in FOX (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 28,
+     "end": 36
+    }
+   ],
+   "explanation": "\"Indicted\" appears in HPO but no matching word appears in FOX (TF-IDF weight 4.76).",
+   "score": 4.761
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Investigation",
+     "start": 48,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Investigation\" appears in HPO but no matching word appears in FOX (TF-IDF weight 5.61).",
+   "score": 5.608
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Associate",
+     "start": 6,
+     "end": 15
+    }
+   ],
+   "explanation": "\"Associate\" appears in HPO but no matching word appears in NYT (TF-IDF weight 6.01).",
+   "score": 6.014
+  },
+  {
+   "system": "B1",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Investigation",
+     "start": 48,
+     "end": 61
+    }
+   ],
+   "explanation": "\"Investigation\" appears in HPO but no matching word appears in NYT (TF-IDF weight 5.61).",
+   "score": 5.608
+  }
  ]
 }

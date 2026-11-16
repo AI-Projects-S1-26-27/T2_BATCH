@@ -1,0 +1,6893 @@
+{
+ "38f7cbb7-5d6a-4c89-bcbd-8e164144172a": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used Bill Clinton",
+     "start": 12,
+     "end": 29,
+     "label": "used Bill Clinton"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(fox, i2)"
+     ]
+    }
+   ],
+   "item": "used Bill Clinton",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Used Bill Clinton",
+     "start": 12,
+     "end": 29,
+     "label": "used Bill Clinton"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "used Bill Clinton",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(fox, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "White House Asked Bill Clinton",
+     "start": 0,
+     "end": 30,
+     "label": "White House -> ask Bill Clinton to urge Sestak to drop out of Senate race"
+    },
+    {
+     "source": "nyt",
+     "text": "Ask Sestak to Drop Out of Race",
+     "start": 33,
+     "end": 63,
+     "label": "ask Sestak to drop out of race"
+    },
+    {
+     "source": "nyt",
+     "text": "Bill Clinton to Ask Sestak to Drop Out of Race",
+     "start": 17,
+     "end": 63,
+     "label": "Bill Clinton -> ask Sestak to drop out of race"
+    },
+    {
+     "source": "nyt",
+     "text": "Ask Sestak to Drop Out of Race",
+     "start": 33,
+     "end": 63,
+     "label": "ask Sestak to drop out of race"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Agent(fox, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "White House",
+   "action": "ask Bill Clinton to urge Sestak to drop out of Senate race",
+   "other_action": "ask Sestak to drop out of race",
+   "other_actors": [
+    "Bill Clinton"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(hpo, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "White House Asked Bill Clinton To Talk To Joe Sestak About Senate Run",
+     "start": 0,
+     "end": 69,
+     "label": "White House -> ask Bill Clinton to talk to Joe Sestak about Senate run"
+    },
+    {
+     "source": "nyt",
+     "text": "Ask Sestak to Drop Out of Race",
+     "start": 33,
+     "end": 63,
+     "label": "ask Sestak to drop out of race"
+    },
+    {
+     "source": "nyt",
+     "text": "Bill Clinton to Ask Sestak to Drop Out of Race",
+     "start": 17,
+     "end": 63,
+     "label": "Bill Clinton -> ask Sestak to drop out of race"
+    },
+    {
+     "source": "nyt",
+     "text": "Ask Sestak to Drop Out of Race",
+     "start": 33,
+     "end": 63,
+     "label": "ask Sestak to drop out of race"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Agent(hpo, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "White House",
+   "action": "ask Bill Clinton to talk to Joe Sestak about Senate run",
+   "other_action": "ask Sestak to drop out of race",
+   "other_actors": [
+    "Bill Clinton"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "ActorShift(nyt, fox, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Bill Clinton to Ask Sestak to Drop Out of Race",
+     "start": 17,
+     "end": 63,
+     "label": "Bill Clinton -> ask Sestak to drop out of race"
+    },
+    {
+     "source": "fox",
+     "text": "Asked Bill Clinton to Urge Sestak to Drop Out of Senate Race",
+     "start": 12,
+     "end": 72,
+     "label": "ask Bill Clinton to urge Sestak to drop out of Senate race"
+    },
+    {
+     "source": "fox",
+     "text": "White House Asked Bill Clinton",
+     "start": 0,
+     "end": 30,
+     "label": "White House -> ask Bill Clinton to urge Sestak to drop out of Senate race"
+    },
+    {
+     "source": "fox",
+     "text": "Asked Bill Clinton to Urge Sestak to Drop Out of Senate Race",
+     "start": 12,
+     "end": 72,
+     "label": "ask Bill Clinton to urge Sestak to drop out of Senate race"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Agent(nyt, a2, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "Bill Clinton",
+   "action": "ask Sestak to drop out of race",
+   "other_action": "ask Bill Clinton to urge Sestak to drop out of Senate race",
+   "other_actors": [
+    "White House"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(nyt, hpo, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Bill Clinton to Ask Sestak to Drop Out of Race",
+     "start": 17,
+     "end": 63,
+     "label": "Bill Clinton -> ask Sestak to drop out of race"
+    },
+    {
+     "source": "hpo",
+     "text": "Asked Bill Clinton To Talk To Joe Sestak About Senate Run",
+     "start": 12,
+     "end": 69,
+     "label": "ask Bill Clinton to talk to Joe Sestak about Senate run"
+    },
+    {
+     "source": "hpo",
+     "text": "White House Asked Bill Clinton To Talk To Joe Sestak About Senate Run",
+     "start": 0,
+     "end": 69,
+     "label": "White House -> ask Bill Clinton to talk to Joe Sestak about Senate run"
+    },
+    {
+     "source": "hpo",
+     "text": "Asked Bill Clinton To Talk To Joe Sestak About Senate Run",
+     "start": 12,
+     "end": 69,
+     "label": "ask Bill Clinton to talk to Joe Sestak about Senate run"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Agent(nyt, a2, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "Bill Clinton",
+   "action": "ask Sestak to drop out of race",
+   "other_action": "ask Bill Clinton to talk to Joe Sestak about Senate run",
+   "other_actors": [
+    "White House"
+   ]
+  }
+ ],
+ "6f95dcb9-e960-45ac-8c0e-91b85724c909": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29,
+     "label": "rips progressivism"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "rips progressivism",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Rips Progressivism",
+     "start": 11,
+     "end": 29,
+     "label": "rips progressivism"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "rips progressivism",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Progressivism, he told the Conservative Political Action Conference, is a cancer that must be cut out of the system.",
+    "sentence_index": 2,
+    "score": 0.567,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Speech VIDEO",
+     "start": 21,
+     "end": 33,
+     "label": "speech video"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "speech video",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Don't Need A Big Tent",
+     "start": 47,
+     "end": 68,
+     "label": "don't need a big tent"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "don't need a big tent",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Speech VIDEO",
+     "start": 21,
+     "end": 33,
+     "label": "speech video"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "speech video",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Don't Need A Big Tent",
+     "start": 47,
+     "end": 68,
+     "label": "don't need a big tent"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(nyt, i4)"
+     ]
+    }
+   ],
+   "item": "don't need a big tent",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9,
+     "label": "wows"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(fox, i2)"
+     ]
+    }
+   ],
+   "item": "wows",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Wows",
+     "start": 5,
+     "end": 9,
+     "label": "wows"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "wows",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "576116e5-2b18-4d35-be73-36f5863c9468": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Pushes Back on Claim",
+     "start": 5,
+     "end": 25,
+     "label": "push back on claim"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "push back on claim",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim About Social Security Concessions",
+     "start": 20,
+     "end": 59,
+     "label": "claim about social security concessions"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "claim about social security concessions",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Push Reform",
+     "start": 73,
+     "end": 84,
+     "label": "push reform"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "push reform",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Pushes Back on Claim",
+     "start": 5,
+     "end": 25,
+     "label": "push back on claim"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "push back on claim",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Claim About Social Security Concessions",
+     "start": 20,
+     "end": 59,
+     "label": "claim about social security concessions"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "claim about social security concessions",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Push Reform",
+     "start": 73,
+     "end": 84,
+     "label": "push reform"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "push reform",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate On Social Security Retirement Age",
+     "start": 16,
+     "end": 59,
+     "label": "negotiate on social security retirement age"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "negotiate on social security retirement age",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Negotiate On Social Security Retirement Age",
+     "start": 16,
+     "end": 59,
+     "label": "negotiate on social security retirement age"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(nyt, i5)"
+     ]
+    }
+   ],
+   "item": "negotiate on social security retirement age",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Open to Social Security Cuts",
+     "start": 5,
+     "end": 33,
+     "label": "open to social security cuts"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "open to social security cuts",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "A coalition of groups called Strengthen Social Security has railed against cuts to cost-of-living adjustments, recently releasing a report claiming \"even the modest COLA on which Social Security benefits are adjusted isn't safe.\"",
+    "sentence_index": 24,
+    "score": 0.686,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Open to Social Security Cuts",
+     "start": 5,
+     "end": 33,
+     "label": "open to social security cuts"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "open to social security cuts",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "WASHINGTON -- The nation's leading advocate for senior citizens says that it hasn't wavered in its opposition to cutting Social Security benefits, though a top official with the group said it is open to a discussion about raising the retirement age and other changes.",
+    "sentence_index": 0,
+    "score": 0.654,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "EvalShift(hpo, fox, a1, positive, Willing)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Willing",
+     "start": 5,
+     "end": 12,
+     "label": "Willing"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Eval(hpo, a1, positive, Willing)",
+      "Mentions(fox, a1)"
+     ],
+     "absent": [
+      "HasEval(fox, a1, positive)"
+     ]
+    }
+   ],
+   "actor": "AARP",
+   "polarity": "positive",
+   "word": "Willing",
+   "other_words": []
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "EvalShift(hpo, nyt, a1, positive, Willing)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Willing",
+     "start": 5,
+     "end": 12,
+     "label": "Willing"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Eval(hpo, a1, positive, Willing)",
+      "Mentions(nyt, a1)"
+     ],
+     "absent": [
+      "HasEval(nyt, a1, positive)"
+     ]
+    }
+   ],
+   "actor": "AARP",
+   "polarity": "positive",
+   "word": "Willing",
+   "other_words": []
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "OutcomeShift(fox, hpo, Economic, Political)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Social Security Concessions",
+     "start": 32,
+     "end": 59,
+     "label": "social security concessions"
+    },
+    {
+     "source": "hpo",
+     "text": "Social Security Retirement Age",
+     "start": 29,
+     "end": 59,
+     "label": "social security retirement age"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Outcome(fox, o1, Economic)",
+      "Outcome(hpo, o3, Political)",
+      "Specific(Economic)",
+      "Specific(Political)"
+     ],
+     "absent": [
+      "IsA(Economic, Political)",
+      "IsA(Political, Economic)"
+     ]
+    }
+   ],
+   "left_type": "Economic",
+   "right_type": "Political",
+   "left_outcome": "social security concessions",
+   "right_outcome": "social security retirement age"
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(hpo, nyt, Political, Economic)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Social Security Retirement Age",
+     "start": 29,
+     "end": 59,
+     "label": "social security retirement age"
+    },
+    {
+     "source": "nyt",
+     "text": "Social Security Cuts",
+     "start": 13,
+     "end": 33,
+     "label": "social security cuts"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Outcome(hpo, o3, Political)",
+      "Outcome(nyt, o2, Economic)",
+      "Specific(Political)",
+      "Specific(Economic)"
+     ],
+     "absent": [
+      "IsA(Political, Economic)",
+      "IsA(Economic, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Economic",
+   "left_outcome": "social security retirement age",
+   "right_outcome": "social security cuts"
+  }
+ ],
+ "a28a0329-0887-42dc-bd3d-3bb4f8926757": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Amendments Are Omitted",
+     "start": 70,
+     "end": 92,
+     "label": "amendments are omitted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "amendments are omitted",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Amendments Are Omitted",
+     "start": 70,
+     "end": 92,
+     "label": "amendments are omitted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "amendments are omitted",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "It was decided in advance that any portion of the Constitution that was superseded by amendments — including the amendments themselves — would not be read, preventing lawmakers from having to make references to slaves, referred to in Article 1, Section 2 as “three fifths of all other persons,” or to things like prohibition.",
+    "sentence_index": 3,
+    "score": 0.598,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day In Power",
+     "start": 39,
+     "end": 58,
+     "label": "second day in power"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "second day in power",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Second Day In Power",
+     "start": 39,
+     "end": 58,
+     "label": "second day in power"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "second day in power",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "ActorShift(hpo, fox, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "House Republicans Read Constitution",
+     "start": 0,
+     "end": 35,
+     "label": "House Republicans -> read Constitution"
+    },
+    {
+     "source": "fox",
+     "text": "Reading of Constitution Questioned",
+     "start": 29,
+     "end": 63,
+     "label": "reading of Constitution questioned"
+    },
+    {
+     "source": "fox",
+     "text": "Reading of Constitution Questioned",
+     "start": 29,
+     "end": 63,
+     "label": "reading of Constitution questioned"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Agent(hpo, a2, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "House Republicans",
+   "action": "read Constitution",
+   "other_action": "reading of Constitution questioned",
+   "other_actors": []
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "ActorShift(nyt, fox, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "House Reading",
+     "start": 0,
+     "end": 13,
+     "label": "House -> reading of constitution not without issues"
+    },
+    {
+     "source": "fox",
+     "text": "Reading of Constitution Questioned",
+     "start": 29,
+     "end": 63,
+     "label": "reading of Constitution questioned"
+    },
+    {
+     "source": "fox",
+     "text": "Reading of Constitution Questioned",
+     "start": 29,
+     "end": 63,
+     "label": "reading of Constitution questioned"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Agent(nyt, a2, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "House",
+   "action": "reading of constitution not without issues",
+   "other_action": "reading of Constitution questioned",
+   "other_actors": []
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "EvalShift(nyt, fox, i1, negative, Issues)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Issues",
+     "start": 45,
+     "end": 51,
+     "label": "Issues"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Eval(nyt, i1, negative, Issues)",
+      "Mentions(fox, i1)"
+     ],
+     "absent": [
+      "HasEval(fox, i1, negative)"
+     ]
+    }
+   ],
+   "actor": "reading of constitution not without issues",
+   "polarity": "negative",
+   "word": "Issues",
+   "other_words": []
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "EvalShift(nyt, hpo, i1, negative, Issues)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Issues",
+     "start": 45,
+     "end": 51,
+     "label": "Issues"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Eval(nyt, i1, negative, Issues)",
+      "Mentions(hpo, i1)"
+     ],
+     "absent": [
+      "HasEval(hpo, i1, negative)"
+     ]
+    }
+   ],
+   "actor": "reading of constitution not without issues",
+   "polarity": "negative",
+   "word": "Issues",
+   "other_words": []
+  }
+ ],
+ "8dc7ccfe-5cf0-482f-9101-a7c69881da4d": [],
+ "b5eefefb-2a33-45de-abe1-f855c94165f4": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10,
+     "label": "sparks fly"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "sparks fly",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "face off in feisty vice presidential debate",
+     "start": 26,
+     "end": 69,
+     "label": "face off in feisty vice presidential debate"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "face off in feisty vice presidential debate",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "But since vice presidential debates often have a negligible impact on the overall race anyway, Biden's sometimes over-the-top performance probably accomplished what he appeared intent on doing: rallying the Democratic base after Obama's woeful debate performance last week.",
+    "sentence_index": 4,
+    "score": 0.602,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Sparks fly",
+     "start": 0,
+     "end": 10,
+     "label": "sparks fly"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "sparks fly",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "face off in feisty vice presidential debate",
+     "start": 26,
+     "end": 69,
+     "label": "face off in feisty vice presidential debate"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "face off in feisty vice presidential debate",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "The vice presidential debate on Tuesday was supposed to be a reboot for the Obama campaign after the president’s dismal performance at his debate with the Republican nominee for president, Mitt Romney, last week.",
+    "sentence_index": 5,
+    "score": 0.565,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Debate",
+     "start": 11,
+     "end": 17,
+     "label": "debate"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "debate",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "The debate veered across the spectrum of topics from the campaign trail.",
+    "sentence_index": 38,
+    "score": 0.604,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Debate",
+     "start": 11,
+     "end": 17,
+     "label": "debate"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(nyt, i4)"
+     ]
+    }
+   ],
+   "item": "debate",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Takes Off Gloves",
+     "start": 6,
+     "end": 22,
+     "label": "takes off gloves"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "takes off gloves",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Takes Off Gloves",
+     "start": 6,
+     "end": 22,
+     "label": "takes off gloves"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "takes off gloves",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "picks former staffer",
+     "start": 33,
+     "end": 53,
+     "label": "pick former staffer"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "pick former staffer",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "fill Kerry's Senate seat",
+     "start": 57,
+     "end": 81,
+     "label": "fill Kerry's Senate seat"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "fill Kerry's Senate seat",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "picks former staffer",
+     "start": 33,
+     "end": 53,
+     "label": "pick former staffer"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "pick former staffer",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "fill Kerry's Senate seat",
+     "start": 57,
+     "end": 81,
+     "label": "fill Kerry's Senate seat"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "fill Kerry's Senate seat",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Governor Appoints Ex-Aide to Fill Kerry’s Seat",
+    "sentence_index": 1,
+    "score": 0.683,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Names Former Chief Of Staff To Replace John Kerry",
+     "start": 31,
+     "end": 80,
+     "label": "names former chief of staff to replace John Kerry"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "names former chief of staff to replace John Kerry",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Kerry, also a Democrat and the state’s senior U.S. senator, was confirmed Tuesday as the new secretary of state, following his nomination by President Obama to replace the retiring Hillary Clinton.",
+    "sentence_index": 2,
+    "score": 0.598,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Names Former Chief Of Staff To Replace John Kerry",
+     "start": 31,
+     "end": 80,
+     "label": "names former chief of staff to replace John Kerry"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(nyt, i4)"
+     ]
+    }
+   ],
+   "item": "names former chief of staff to replace John Kerry",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Named Interim Senator",
+     "start": 14,
+     "end": 35,
+     "label": "named interim senator"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "named interim senator",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Named Interim Senator",
+     "start": 14,
+     "end": 35,
+     "label": "named interim senator"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "named interim senator",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "f506aafc-8b43-427a-936e-bbd1ef33e076": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal campaign spending spree",
+     "start": 27,
+     "end": 58,
+     "label": "illegal campaign spending spree"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "illegal campaign spending spree",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Campaign Money Case",
+     "start": 35,
+     "end": 54,
+     "label": "campaign money case"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "campaign money case",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "EvalShift(fox, nyt, i2, negative, illegal)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "illegal",
+     "start": 27,
+     "end": 34,
+     "label": "illegal"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Eval(fox, i2, negative, illegal)",
+      "Mentions(nyt, i2)"
+     ],
+     "absent": [
+      "HasEval(nyt, i2, negative)"
+     ]
+    }
+   ],
+   "actor": "illegal campaign spending spree",
+   "polarity": "negative",
+   "word": "illegal",
+   "other_words": []
+  }
+ ],
+ "33521e65-12da-4521-b132-7b606243b0e4": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "plan to file charges",
+     "start": 20,
+     "end": 40,
+     "label": "plan to file charges"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "plan to file charges",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "says",
+     "start": 70,
+     "end": 74,
+     "label": "says"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "says",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "plan to file charges",
+     "start": 20,
+     "end": 40,
+     "label": "plan to file charges"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "plan to file charges",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "says",
+     "start": 70,
+     "end": 74,
+     "label": "says"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "says",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Be Indicted",
+     "start": 28,
+     "end": 39,
+     "label": "be indicted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "be indicted",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictment Expected",
+     "start": 0,
+     "end": 19,
+     "label": "indictment expected"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "indictment expected",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "ccf19ab6-7878-4378-b99c-2b08cc21371f": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Calls For Legalizing Undocumented Immigrants",
+     "start": 47,
+     "end": 91,
+     "label": "call for legalizing undocumented immigrants"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "call for legalizing undocumented immigrants",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Advocates are hoping for a plan that would give undocumented immigrants a chance to both remain in the country and eventually become citizens, but House Republicans have indicated that the latter is something most cannot support.",
+    "sentence_index": 1,
+    "score": 0.579,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Calls For Legalizing Undocumented Immigrants",
+     "start": 47,
+     "end": 91,
+     "label": "call for legalizing undocumented immigrants"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "call for legalizing undocumented immigrants",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "The document is expected to call for border security and enforcement measures, as well as providing a path to legal status — but not citizenship — for many of the 11 million undocumented immigrants in the country, the aides said.",
+    "sentence_index": 2,
+    "score": 0.656,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hints At Immigration Principles",
+     "start": 21,
+     "end": 52,
+     "label": "hint at immigration principles"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "hint at immigration principles",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Hints At Immigration Principles",
+     "start": 21,
+     "end": 52,
+     "label": "hint at immigration principles"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "hint at immigration principles",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad Immigration Plan",
+     "start": 21,
+     "end": 49,
+     "label": "offer broad immigration plan"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(fox, i2)"
+     ]
+    }
+   ],
+   "item": "offer broad immigration plan",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Offer Broad Immigration Plan",
+     "start": 21,
+     "end": 49,
+     "label": "offer broad immigration plan"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "offer broad immigration plan",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "8dac6c12-b5ca-468c-a249-7e0ab42f6b52": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "have lots to say on key trade legislation",
+     "start": 18,
+     "end": 59,
+     "label": "have lots to say on key trade legislation"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "have lots to say on key trade legislation",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "except where candidate stands",
+     "start": 61,
+     "end": 90,
+     "label": "except where candidate stands"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "except where candidate stands",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "have lots to say on key trade legislation",
+     "start": 18,
+     "end": 59,
+     "label": "have lots to say on key trade legislation"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "have lots to say on key trade legislation",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "except where candidate stands",
+     "start": 61,
+     "end": 90,
+     "label": "except where candidate stands"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "except where candidate stands",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Should Listen To Nancy Pelosi On Trade",
+     "start": 23,
+     "end": 61,
+     "label": "listen to Nancy Pelosi on trade"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "listen to Nancy Pelosi on trade",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "\"The president should listen to and work with his allies in Congress, starting with Nancy Pelosi, who had expressed their concerns about the impact that a weak agreement would have on our workers to make sure we get the best strongest deal possible,\" Clinton said.",
+    "sentence_index": 6,
+    "score": 0.652,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Urges Obama to Listen to Democrats on Trade Deal",
+     "start": 16,
+     "end": 64,
+     "label": "urges Obama to listen to Democrats on trade deal"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "urges Obama to listen to Democrats on trade deal",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Hillary Clinton said Sunday the problems that Congress has with President Obama’s trade agenda should be an opportunity for the president to ask fellow Democrats about their concerns with the proposal but still declined to say whether she supports or opposes the legislation.",
+    "sentence_index": 0,
+    "score": 0.654,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(hpo, nyt, a4, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Obama Should Listen To Nancy Pelosi On Trade",
+     "start": 17,
+     "end": 61,
+     "label": "Obama -> listen to Nancy Pelosi on trade"
+    },
+    {
+     "source": "nyt",
+     "text": "Urges Obama to Listen to Democrats on Trade Deal",
+     "start": 16,
+     "end": 64,
+     "label": "urges Obama to listen to Democrats on trade deal"
+    },
+    {
+     "source": "nyt",
+     "text": "Hillary Clinton Urges Obama to Listen to Democrats on Trade Deal",
+     "start": 0,
+     "end": 64,
+     "label": "Hillary Clinton -> urges Obama to listen to Democrats on trade deal"
+    },
+    {
+     "source": "nyt",
+     "text": "Urges Obama to Listen to Democrats on Trade Deal",
+     "start": 16,
+     "end": 64,
+     "label": "urges Obama to listen to Democrats on trade deal"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Agent(hpo, a4, i3)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Agent(nyt, a4, i3)"
+     ]
+    }
+   ],
+   "actor": "Obama",
+   "action": "listen to Nancy Pelosi on trade",
+   "other_action": "urges Obama to listen to Democrats on trade deal",
+   "other_actors": [
+    "Hillary Clinton"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(nyt, hpo, a1, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Hillary Clinton Urges Obama to Listen to Democrats on Trade Deal",
+     "start": 0,
+     "end": 64,
+     "label": "Hillary Clinton -> urges Obama to listen to Democrats on trade deal"
+    },
+    {
+     "source": "hpo",
+     "text": "Should Listen To Nancy Pelosi On Trade",
+     "start": 23,
+     "end": 61,
+     "label": "listen to Nancy Pelosi on trade"
+    },
+    {
+     "source": "hpo",
+     "text": "Obama Should Listen To Nancy Pelosi On Trade",
+     "start": 17,
+     "end": 61,
+     "label": "Obama -> listen to Nancy Pelosi on trade"
+    },
+    {
+     "source": "hpo",
+     "text": "Should Listen To Nancy Pelosi On Trade",
+     "start": 23,
+     "end": 61,
+     "label": "listen to Nancy Pelosi on trade"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Agent(nyt, a1, i3)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Agent(hpo, a1, i3)"
+     ]
+    }
+   ],
+   "actor": "Hillary Clinton",
+   "action": "urges Obama to listen to Democrats on trade deal",
+   "other_action": "listen to Nancy Pelosi on trade",
+   "other_actors": [
+    "Obama"
+   ]
+  }
+ ],
+ "c5534b7e-a373-4962-8345-3847bc41a636": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "seeks 'transcribed' interview",
+     "start": 19,
+     "end": 48,
+     "label": "seeks 'transcribed' interview"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "seeks 'transcribed' interview",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "deleted records",
+     "start": 67,
+     "end": 82,
+     "label": "deleted records"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "deleted records",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "seeks 'transcribed' interview",
+     "start": 19,
+     "end": 48,
+     "label": "seeks 'transcribed' interview"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "seeks 'transcribed' interview",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Mr. Gowdy said the committee believed that “a transcribed interview would best protect Secretary Clinton’s privacy, the security of the information queried and the public’s interest in ensuring this committee has all information needed to accomplish the task set before it.”",
+    "sentence_index": 11,
+    "score": 0.572,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "deleted records",
+     "start": 67,
+     "end": 82,
+     "label": "deleted records"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "deleted records",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Wants To Interview Clinton About Emails",
+     "start": 15,
+     "end": 54,
+     "label": "interview Clinton about emails"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "interview Clinton about emails",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "The congressional committee probing the Benghazi attacks has formally requested that Hillary Clinton appear for an interview on her use of a personal email and server for official business while secretary of state, after learning the server had been wiped \"clean.\"",
+    "sentence_index": 0,
+    "score": 0.726,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Wants To Interview Clinton About Emails",
+     "start": 15,
+     "end": 54,
+     "label": "interview Clinton about emails"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(nyt, i5)"
+     ]
+    }
+   ],
+   "item": "interview Clinton about emails",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "WASHINGTON — The chairman of the House committee investigating the Benghazi attacks asked Hillary Rodham Clinton on Tuesday to appear for a private interview about her exclusive use of a personal email account when she was secretary of state.",
+    "sentence_index": 0,
+    "score": 0.686,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Seeks Private Talk",
+     "start": 12,
+     "end": 30,
+     "label": "seek private talk"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "seek private talk",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "About Email",
+     "start": 52,
+     "end": 63,
+     "label": "about email"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "about email",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Seeks Private Talk",
+     "start": 12,
+     "end": 30,
+     "label": "seek private talk"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "seek private talk",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "About Email",
+     "start": 52,
+     "end": 63,
+     "label": "about email"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "about email",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "1b96a5db-8974-46d3-82d7-5dfef02f650e": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override of presidency",
+     "start": 45,
+     "end": 73,
+     "label": "first override of presidency"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "first override of presidency",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override of presidency",
+     "start": 45,
+     "end": 73,
+     "label": "first override of presidency"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "first override of presidency",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "The override, the first Mr. Obama has faced in his presidency, is expected to begin in the Senate on Wednesday, followed by the House on Thursday.",
+    "sentence_index": 1,
+    "score": 0.638,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Veto Of 9/11 Victims Bill",
+     "start": 25,
+     "end": 50,
+     "label": "veto of 9/11 victims bill"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "veto of 9/11 victims bill",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Congress on Wednesday overwhelmingly rejected President Obama’s veto of a bipartisan bill letting families of Sept. 11 victims sue the Saudi Arabian government, in the first successful veto override of Obama’s presidency.",
+    "sentence_index": 0,
+    "score": 0.629,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Veto Of 9/11 Victims Bill",
+     "start": 25,
+     "end": 50,
+     "label": "veto of 9/11 victims bill"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i4)"
+     ],
+     "absent": [
+      "Reports(nyt, i4)"
+     ]
+    }
+   ],
+   "item": "veto of 9/11 victims bill",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "As part of its final bit of business before the election, Congress is set to vote to override President Obama’s veto of a bill allowing families of those killed in the Sept. 11 attacks to sue Saudi Arabia for any role in the terrorist plot.",
+    "sentence_index": 0,
+    "score": 0.646,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Allowing 9/11 Suits",
+     "start": 36,
+     "end": 55,
+     "label": "allow 9/11 suits"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "allow 9/11 suits",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Allowing 9/11 Suits",
+     "start": 36,
+     "end": 55,
+     "label": "allow 9/11 suits"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "allow 9/11 suits",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(fox, hpo, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congress rejects Obama veto",
+     "start": 0,
+     "end": 27,
+     "label": "Congress -> reject Obama veto"
+    },
+    {
+     "source": "hpo",
+     "text": "Overrides Obama's Veto",
+     "start": 7,
+     "end": 29,
+     "label": "override veto"
+    },
+    {
+     "source": "hpo",
+     "text": "Senate Overrides Obama's Veto",
+     "start": 0,
+     "end": 29,
+     "label": "Senate -> override veto"
+    },
+    {
+     "source": "hpo",
+     "text": "Overrides Obama's Veto",
+     "start": 7,
+     "end": 29,
+     "label": "override veto"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Agent(fox, a1, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Congress",
+   "action": "reject Obama veto",
+   "other_action": "override veto",
+   "other_actors": [
+    "Senate"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(fox, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Congress rejects Obama veto",
+     "start": 0,
+     "end": 27,
+     "label": "Congress -> reject Obama veto"
+    },
+    {
+     "source": "nyt",
+     "text": "Override Veto",
+     "start": 14,
+     "end": 27,
+     "label": "override veto"
+    },
+    {
+     "source": "nyt",
+     "text": "Senate Set to Override Veto",
+     "start": 0,
+     "end": 27,
+     "label": "Senate -> override veto"
+    },
+    {
+     "source": "nyt",
+     "text": "Override Veto",
+     "start": 14,
+     "end": 27,
+     "label": "override veto"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Agent(fox, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Congress",
+   "action": "reject Obama veto",
+   "other_action": "override veto",
+   "other_actors": [
+    "Senate"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "ActorShift(hpo, fox, a3, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Senate Overrides Obama's Veto",
+     "start": 0,
+     "end": 29,
+     "label": "Senate -> override veto"
+    },
+    {
+     "source": "fox",
+     "text": "rejects Obama veto",
+     "start": 9,
+     "end": 27,
+     "label": "reject Obama veto"
+    },
+    {
+     "source": "fox",
+     "text": "Congress rejects Obama veto",
+     "start": 0,
+     "end": 27,
+     "label": "Congress -> reject Obama veto"
+    },
+    {
+     "source": "fox",
+     "text": "rejects Obama veto",
+     "start": 9,
+     "end": 27,
+     "label": "reject Obama veto"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Agent(hpo, a3, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a3, i1)"
+     ]
+    }
+   ],
+   "actor": "Senate",
+   "action": "override veto",
+   "other_action": "reject Obama veto",
+   "other_actors": [
+    "Congress"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "ActorShift(nyt, fox, a3, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Senate Set to Override Veto",
+     "start": 0,
+     "end": 27,
+     "label": "Senate -> override veto"
+    },
+    {
+     "source": "fox",
+     "text": "rejects Obama veto",
+     "start": 9,
+     "end": 27,
+     "label": "reject Obama veto"
+    },
+    {
+     "source": "fox",
+     "text": "Congress rejects Obama veto",
+     "start": 0,
+     "end": 27,
+     "label": "Congress -> reject Obama veto"
+    },
+    {
+     "source": "fox",
+     "text": "rejects Obama veto",
+     "start": 9,
+     "end": 27,
+     "label": "reject Obama veto"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Agent(nyt, a3, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a3, i1)"
+     ]
+    }
+   ],
+   "actor": "Senate",
+   "action": "override veto",
+   "other_action": "reject Obama veto",
+   "other_actors": [
+    "Congress"
+   ]
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(fox, nyt, Political, Legal)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "first override of presidency",
+     "start": 45,
+     "end": 73,
+     "label": "first override of presidency"
+    },
+    {
+     "source": "nyt",
+     "text": "9/11 Suits",
+     "start": 45,
+     "end": 55,
+     "label": "9/11 suits"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Outcome(fox, o1, Political)",
+      "Outcome(nyt, o2, Legal)",
+      "Specific(Political)",
+      "Specific(Legal)"
+     ],
+     "absent": [
+      "IsA(Political, Legal)",
+      "IsA(Legal, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Legal",
+   "left_outcome": "first override of presidency",
+   "right_outcome": "9/11 suits"
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(hpo, nyt, Political, Legal)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Overrides Obama's Veto",
+     "start": 7,
+     "end": 29,
+     "label": "veto overridden"
+    },
+    {
+     "source": "nyt",
+     "text": "9/11 Suits",
+     "start": 45,
+     "end": 55,
+     "label": "9/11 suits"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Outcome(hpo, o3, Political)",
+      "Outcome(nyt, o2, Legal)",
+      "Specific(Political)",
+      "Specific(Legal)"
+     ],
+     "absent": [
+      "IsA(Political, Legal)",
+      "IsA(Legal, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Legal",
+   "left_outcome": "veto overridden",
+   "right_outcome": "9/11 suits"
+  }
+ ],
+ "d4a4bc34-e48b-4485-86b2-f1daf4d464dd": [
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(fox, hpo, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Fox to Trump: We won't pay for 'that f***ing wall!'",
+     "start": 25,
+     "end": 76,
+     "label": "Fox -> won't pay for that f***ing wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm Not Going To Pay For That F**king Wall'",
+     "start": 0,
+     "end": 70,
+     "label": "Former Mexican President -> not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Agent(fox, a1, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Fox",
+   "action": "won't pay for that f***ing wall",
+   "other_action": "not pay for wall",
+   "other_actors": [
+    "Former Mexican President"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "ActorShift(hpo, fox, a5, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm Not Going To Pay For That F**king Wall'",
+     "start": 0,
+     "end": 70,
+     "label": "Former Mexican President -> not pay for wall"
+    },
+    {
+     "source": "fox",
+     "text": "won't pay for 'that f***ing wall!'",
+     "start": 42,
+     "end": 76,
+     "label": "won't pay for that f***ing wall"
+    },
+    {
+     "source": "fox",
+     "text": "Fox to Trump: We won't pay for 'that f***ing wall!'",
+     "start": 25,
+     "end": 76,
+     "label": "Fox -> won't pay for that f***ing wall"
+    },
+    {
+     "source": "fox",
+     "text": "won't pay for 'that f***ing wall!'",
+     "start": 42,
+     "end": 76,
+     "label": "won't pay for that f***ing wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Agent(hpo, a5, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a5, i1)"
+     ]
+    }
+   ],
+   "actor": "Former Mexican President",
+   "action": "not pay for wall",
+   "other_action": "won't pay for that f***ing wall",
+   "other_actors": [
+    "Fox"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(hpo, nyt, a5, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm Not Going To Pay For That F**king Wall'",
+     "start": 0,
+     "end": 70,
+     "label": "Former Mexican President -> not pay for wall"
+    },
+    {
+     "source": "nyt",
+     "text": "Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 60,
+     "end": 112,
+     "label": "say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico, Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 0,
+     "end": 112,
+     "label": "Vicente Fox -> say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico, Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 0,
+     "end": 112,
+     "label": "Felipe Calderón -> say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "nyt",
+     "text": "Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 60,
+     "end": 112,
+     "label": "say no way country is paying for Donald Trump's wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Agent(hpo, a5, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a5, i1)"
+     ]
+    }
+   ],
+   "actor": "Former Mexican President",
+   "action": "not pay for wall",
+   "other_action": "say no way country is paying for Donald Trump's wall",
+   "other_actors": [
+    "Vicente Fox",
+    "Felipe Calderón"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "ActorShift(nyt, fox, a3, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico, Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 0,
+     "end": 112,
+     "label": "Felipe Calderón -> say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "fox",
+     "text": "won't pay for 'that f***ing wall!'",
+     "start": 42,
+     "end": 76,
+     "label": "won't pay for that f***ing wall"
+    },
+    {
+     "source": "fox",
+     "text": "Fox to Trump: We won't pay for 'that f***ing wall!'",
+     "start": 25,
+     "end": 76,
+     "label": "Fox -> won't pay for that f***ing wall"
+    },
+    {
+     "source": "fox",
+     "text": "won't pay for 'that f***ing wall!'",
+     "start": 42,
+     "end": 76,
+     "label": "won't pay for that f***ing wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Agent(nyt, a3, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a3, i1)"
+     ]
+    }
+   ],
+   "actor": "Felipe Calderón",
+   "action": "say no way country is paying for Donald Trump's wall",
+   "other_action": "won't pay for that f***ing wall",
+   "other_actors": [
+    "Fox"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(nyt, hpo, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico, Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 0,
+     "end": 112,
+     "label": "Vicente Fox -> say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm Not Going To Pay For That F**king Wall'",
+     "start": 0,
+     "end": 70,
+     "label": "Former Mexican President -> not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Agent(nyt, a1, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Vicente Fox",
+   "action": "say no way country is paying for Donald Trump's wall",
+   "other_action": "not pay for wall",
+   "other_actors": [
+    "Former Mexican President"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(nyt, hpo, a3, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Vicente Fox and Felipe Calderón, 2 Ex-Presidents of Mexico, Say No Way Country Is Paying for Donald Trump's Wall",
+     "start": 0,
+     "end": 112,
+     "label": "Felipe Calderón -> say no way country is paying for Donald Trump's wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "Former Mexican President: 'I'm Not Going To Pay For That F**king Wall'",
+     "start": 0,
+     "end": 70,
+     "label": "Former Mexican President -> not pay for wall"
+    },
+    {
+     "source": "hpo",
+     "text": "'I'm Not Going To Pay For That F**king Wall'",
+     "start": 26,
+     "end": 70,
+     "label": "not pay for wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Agent(nyt, a3, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a3, i1)"
+     ]
+    }
+   ],
+   "actor": "Felipe Calderón",
+   "action": "say no way country is paying for Donald Trump's wall",
+   "other_action": "not pay for wall",
+   "other_actors": [
+    "Former Mexican President"
+   ]
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(fox, nyt, Political, Economic)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "'that f***ing wall!'",
+     "start": 56,
+     "end": 76,
+     "label": "that f***ing wall"
+    },
+    {
+     "source": "nyt",
+     "text": "Paying for Donald Trump's Wall",
+     "start": 82,
+     "end": 112,
+     "label": "paying for Donald Trump's wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Outcome(fox, o1, Political)",
+      "Outcome(nyt, o2, Economic)",
+      "Specific(Political)",
+      "Specific(Economic)"
+     ],
+     "absent": [
+      "IsA(Political, Economic)",
+      "IsA(Economic, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Economic",
+   "left_outcome": "that f***ing wall",
+   "right_outcome": "paying for Donald Trump's wall"
+  }
+ ],
+ "47a209b0-fc26-4a0a-a1fe-e4310d1d2419": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "prepare to go nuclear",
+     "start": 12,
+     "end": 33,
+     "label": "prepare to go nuclear"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "prepare to go nuclear",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Gorsuch vote",
+     "start": 39,
+     "end": 51,
+     "label": "Gorsuch vote"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "Gorsuch vote",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Gorsuch, who worked on former President George W. Bush’s 2004 reelection campaign and as a lawyer in his Justice Department, provided the expected performance past court nominees had given during his appearance; he stated that he would be shocked by politics coming into a courtroom.",
+    "sentence_index": 17,
+    "score": 0.616,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "seek new delay",
+     "start": 60,
+     "end": 74,
+     "label": "seek new delay"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "seek new delay",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "prepare to go nuclear",
+     "start": 12,
+     "end": 33,
+     "label": "prepare to go nuclear"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "prepare to go nuclear",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "seek new delay",
+     "start": 60,
+     "end": 74,
+     "label": "seek new delay"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "seek new delay",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Democrats Concerned",
+     "start": 0,
+     "end": 19,
+     "label": "be concerned"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "be concerned",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i6)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "May Be Rigged For The Rich",
+     "start": 43,
+     "end": 69,
+     "label": "be rigged for the rich"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i6)"
+     ],
+     "absent": [
+      "Reports(fox, i6)"
+     ]
+    }
+   ],
+   "item": "be rigged for the rich",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Democrats Concerned",
+     "start": 0,
+     "end": 19,
+     "label": "be concerned"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(nyt, i5)"
+     ]
+    }
+   ],
+   "item": "be concerned",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i6)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "May Be Rigged For The Rich",
+     "start": 43,
+     "end": 69,
+     "label": "be rigged for the rich"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i6)"
+     ],
+     "absent": [
+      "Reports(nyt, i6)"
+     ]
+    }
+   ],
+   "item": "be rigged for the rich",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Plan to Filibuster",
+     "start": 10,
+     "end": 28,
+     "label": "plan to filibuster"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "plan to filibuster",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "But Democrats could still try and filibuster, requiring Gorsuch to garner 60 “yea” votes in the Senate.",
+    "sentence_index": 10,
+    "score": 0.578,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Thwart Gorsuch Nomination",
+     "start": 32,
+     "end": 57,
+     "label": "thwart Gorsuch nomination"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "thwart Gorsuch nomination",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Gorsuch’s nomination represents the fruit of the Republicans’ decision to block Garland.",
+    "sentence_index": 22,
+    "score": 0.709,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Plan to Filibuster",
+     "start": 10,
+     "end": 28,
+     "label": "plan to filibuster"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "plan to filibuster",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R3_EvalShift",
+   "dimension": "D3_eval",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "EvalShift(fox, hpo, a1, negative, nuclear)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "nuclear",
+     "start": 26,
+     "end": 33,
+     "label": "nuclear"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R3_EvalShift",
+     "rule_text": "Eval(A,x,p,w) AND Mentions(B,x) AND NOT Eval(B,x,p,_) => EvalShift(A,B,x,w)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Eval(fox, a1, negative, nuclear)",
+      "Mentions(hpo, a1)"
+     ],
+     "absent": [
+      "HasEval(hpo, a1, negative)"
+     ]
+    }
+   ],
+   "actor": "Republicans",
+   "polarity": "negative",
+   "word": "nuclear",
+   "other_words": []
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "OutcomeShift(fox, hpo, Political, Economic)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "new delay",
+     "start": 65,
+     "end": 74,
+     "label": "new delay"
+    },
+    {
+     "source": "hpo",
+     "text": "For The Rich",
+     "start": 57,
+     "end": 69,
+     "label": "for the rich"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Outcome(fox, o1, Political)",
+      "Outcome(hpo, o3, Economic)",
+      "Specific(Political)",
+      "Specific(Economic)"
+     ],
+     "absent": [
+      "IsA(Political, Economic)",
+      "IsA(Economic, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Economic",
+   "left_outcome": "new delay",
+   "right_outcome": "for the rich"
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(hpo, nyt, Economic, Political)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "For The Rich",
+     "start": 57,
+     "end": 69,
+     "label": "for the rich"
+    },
+    {
+     "source": "nyt",
+     "text": "Thwart Gorsuch Nomination",
+     "start": 32,
+     "end": 57,
+     "label": "thwart Gorsuch nomination"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Outcome(hpo, o3, Economic)",
+      "Outcome(nyt, o2, Political)",
+      "Specific(Economic)",
+      "Specific(Political)"
+     ],
+     "absent": [
+      "IsA(Economic, Political)",
+      "IsA(Political, Economic)"
+     ]
+    }
+   ],
+   "left_type": "Economic",
+   "right_type": "Political",
+   "left_outcome": "for the rich",
+   "right_outcome": "thwart Gorsuch nomination"
+  }
+ ],
+ "d16050b3-979f-4834-90db-b8823691b87e": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "apologizes",
+     "start": 14,
+     "end": 24,
+     "label": "apologize"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "apologize",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot with bloodied Trump mask",
+     "start": 29,
+     "end": 65,
+     "label": "photo shoot with bloodied Trump mask"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "photo shoot with bloodied Trump mask",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Shot by celebrity photographer and director Tyler Shields, the comedian stares the camera down in one photo, as she holds what resembles the bloody head of President Donald Trump.",
+    "sentence_index": 3,
+    "score": 0.596,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went too far",
+     "start": 77,
+     "end": 89,
+     "label": "go too far"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "go too far",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "“I went way too far,” she said in a video on the social media site.",
+    "sentence_index": 11,
+    "score": 0.573,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "apologizes",
+     "start": 14,
+     "end": 24,
+     "label": "apologize"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "apologize",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "photo shoot with bloodied Trump mask",
+     "start": 29,
+     "end": 65,
+     "label": "photo shoot with bloodied Trump mask"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "photo shoot with bloodied Trump mask",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "went too far",
+     "start": 77,
+     "end": 89,
+     "label": "go too far"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "go too far",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "“I went too far.",
+    "sentence_index": 18,
+    "score": 0.724,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Apologizes For Controversial Images Of Bloodied Trump Head",
+     "start": 14,
+     "end": 72,
+     "label": "apologize for controversial images of bloodied Trump head"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "apologize for controversial images of bloodied Trump head",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Apologizes For Controversial Images Of Bloodied Trump Head",
+     "start": 14,
+     "end": 72,
+     "label": "apologize for controversial images of bloodied Trump head"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(nyt, i5)"
+     ]
+    }
+   ],
+   "item": "apologize for controversial images of bloodied Trump head",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes Out at",
+     "start": 6,
+     "end": 19,
+     "label": "lash out at"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "lash out at",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Lashes Out at",
+     "start": 6,
+     "end": 19,
+     "label": "lash out at"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "lash out at",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "1f99798f-2b60-4ecb-b5f4-4aa7991e8ace": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "arrested",
+     "start": 8,
+     "end": 16,
+     "label": "arrested"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "arrested",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "sent to Democrats",
+     "start": 67,
+     "end": 84,
+     "label": "sent suspicious packages"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "sent suspicious packages",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "A suspicious package was also found Friday in Burlingame, California, addressed to Democratic donor Tom Steyer, CNN and NBC reported.",
+    "sentence_index": 12,
+    "score": 0.55,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "sent to Democrats",
+     "start": 67,
+     "end": 84,
+     "label": "sent suspicious packages"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "sent suspicious packages",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Identified As Mail Bomb Suspect",
+     "start": 12,
+     "end": 43,
+     "label": "be identified as mail bomb suspect"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "be identified as mail bomb suspect",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Identified As Mail Bomb Suspect",
+     "start": 12,
+     "end": 43,
+     "label": "be identified as mail bomb suspect"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "be identified as mail bomb suspect",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Arrested",
+     "start": 18,
+     "end": 26,
+     "label": "arrested"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "arrested",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(fox, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Suspect arrested",
+     "start": 0,
+     "end": 16,
+     "label": "Suspect -> arrested"
+    },
+    {
+     "source": "nyt",
+     "text": "Arrested",
+     "start": 18,
+     "end": 26,
+     "label": "arrested"
+    },
+    {
+     "source": "nyt",
+     "text": "Arrested",
+     "start": 18,
+     "end": 26,
+     "label": "arrested"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Agent(fox, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Suspect",
+   "action": "arrested",
+   "other_action": "arrested",
+   "other_actors": []
+  }
+ ],
+ "c6a0e65c-4f8b-41de-8200-cd700f683c64": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "indictment of Russian intel officers",
+     "start": 51,
+     "end": 87,
+     "label": "indictment of Russian intel officers"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "indictment of Russian intel officers",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "He said the indictments are evidence of an “extensive plot” by Putin’s government to “attack the 2016 election, sow chaos and dissension among the American electorate, and undermine faith in our democracy.”",
+    "sentence_index": 3,
+    "score": 0.593,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "indictment of Russian intel officers",
+     "start": 51,
+     "end": 87,
+     "label": "indictment of Russian intel officers"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "indictment of Russian intel officers",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictments",
+     "start": 54,
+     "end": 65,
+     "label": "indictments"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(fox, i3)"
+     ]
+    }
+   ],
+   "item": "indictments",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats Say",
+     "start": 0,
+     "end": 13,
+     "label": "say"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "say",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indictments",
+     "start": 54,
+     "end": 65,
+     "label": "indictments"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "indictments",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "He said the indictments are evidence of an “extensive plot” by Putin’s government to “attack the 2016 election, sow chaos and dissension among the American electorate, and undermine faith in our democracy.”",
+    "sentence_index": 3,
+    "score": 0.571,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Democrats Say",
+     "start": 0,
+     "end": 13,
+     "label": "say"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "say",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(fox, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "Democrats urge Trump to cancel Putin summit",
+     "start": 0,
+     "end": 43,
+     "label": "Democrats -> urge Trump to cancel Putin summit"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Trump Should Cancel Putin Meeting",
+     "start": 14,
+     "end": 47,
+     "label": "Trump -> cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Agent(fox, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Democrats",
+   "action": "urge Trump to cancel Putin summit",
+   "other_action": "cancel Putin meeting",
+   "other_actors": [
+    "Trump"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "ActorShift(hpo, fox, a5, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats Call On Trump To Cancel Putin Meeting",
+     "start": 0,
+     "end": 64,
+     "label": "John McCain -> call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "fox",
+     "text": "urge Trump to cancel Putin summit",
+     "start": 10,
+     "end": 43,
+     "label": "urge Trump to cancel Putin summit"
+    },
+    {
+     "source": "fox",
+     "text": "Democrats urge Trump to cancel Putin summit",
+     "start": 0,
+     "end": 43,
+     "label": "Democrats -> urge Trump to cancel Putin summit"
+    },
+    {
+     "source": "fox",
+     "text": "urge Trump to cancel Putin summit",
+     "start": 10,
+     "end": 43,
+     "label": "urge Trump to cancel Putin summit"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Agent(hpo, a5, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a5, i1)"
+     ]
+    }
+   ],
+   "actor": "John McCain",
+   "action": "call on Trump to cancel Putin meeting",
+   "other_action": "urge Trump to cancel Putin summit",
+   "other_actors": [
+    "Democrats"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(hpo, nyt, a1, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats Call On Trump To Cancel Putin Meeting",
+     "start": 0,
+     "end": 64,
+     "label": "Top Democrats -> call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Trump Should Cancel Putin Meeting",
+     "start": 14,
+     "end": 47,
+     "label": "Trump -> cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Agent(hpo, a1, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a1, i1)"
+     ]
+    }
+   ],
+   "actor": "Top Democrats",
+   "action": "call on Trump to cancel Putin meeting",
+   "other_action": "cancel Putin meeting",
+   "other_actors": [
+    "Trump"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "ActorShift(hpo, nyt, a5, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats Call On Trump To Cancel Putin Meeting",
+     "start": 0,
+     "end": 64,
+     "label": "John McCain -> call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Trump Should Cancel Putin Meeting",
+     "start": 14,
+     "end": 47,
+     "label": "Trump -> cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "Cancel Putin Meeting",
+     "start": 27,
+     "end": 47,
+     "label": "cancel Putin meeting"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Agent(hpo, a5, i1)",
+      "Reports(nyt, i1)"
+     ],
+     "absent": [
+      "Agent(nyt, a5, i1)"
+     ]
+    }
+   ],
+   "actor": "John McCain",
+   "action": "call on Trump to cancel Putin meeting",
+   "other_action": "cancel Putin meeting",
+   "other_actors": [
+    "Trump"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "ActorShift(nyt, fox, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Should Cancel Putin Meeting",
+     "start": 14,
+     "end": 47,
+     "label": "Trump -> cancel Putin meeting"
+    },
+    {
+     "source": "fox",
+     "text": "urge Trump to cancel Putin summit",
+     "start": 10,
+     "end": 43,
+     "label": "urge Trump to cancel Putin summit"
+    },
+    {
+     "source": "fox",
+     "text": "Democrats urge Trump to cancel Putin summit",
+     "start": 0,
+     "end": 43,
+     "label": "Democrats -> urge Trump to cancel Putin summit"
+    },
+    {
+     "source": "fox",
+     "text": "urge Trump to cancel Putin summit",
+     "start": 10,
+     "end": 43,
+     "label": "urge Trump to cancel Putin summit"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Agent(nyt, a2, i1)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Agent(fox, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "Trump",
+   "action": "cancel Putin meeting",
+   "other_action": "urge Trump to cancel Putin summit",
+   "other_actors": [
+    "Democrats"
+   ]
+  },
+  {
+   "rule": "R2_ActorShift",
+   "dimension": "D2_actor",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "ActorShift(nyt, hpo, a2, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Trump Should Cancel Putin Meeting",
+     "start": 14,
+     "end": 47,
+     "label": "Trump -> cancel Putin meeting"
+    },
+    {
+     "source": "hpo",
+     "text": "Call On Trump To Cancel Putin Meeting",
+     "start": 27,
+     "end": 64,
+     "label": "call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats Call On Trump To Cancel Putin Meeting",
+     "start": 0,
+     "end": 64,
+     "label": "Top Democrats -> call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "hpo",
+     "text": "John McCain, Top Democrats Call On Trump To Cancel Putin Meeting",
+     "start": 0,
+     "end": 64,
+     "label": "John McCain -> call on Trump to cancel Putin meeting"
+    },
+    {
+     "source": "hpo",
+     "text": "Call On Trump To Cancel Putin Meeting",
+     "start": 27,
+     "end": 64,
+     "label": "call on Trump to cancel Putin meeting"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R2_ActorShift",
+     "rule_text": "Agent(A,x,i) AND Reports(B,i) AND NOT Agent(B,x,i) => ActorShift(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Agent(nyt, a2, i1)",
+      "Reports(hpo, i1)"
+     ],
+     "absent": [
+      "Agent(hpo, a2, i1)"
+     ]
+    }
+   ],
+   "actor": "Trump",
+   "action": "cancel Putin meeting",
+   "other_action": "call on Trump to cancel Putin meeting",
+   "other_actors": [
+    "Top Democrats",
+    "John McCain"
+   ]
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(hpo, nyt, Political, Legal)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Cancel Putin Meeting",
+     "start": 44,
+     "end": 64,
+     "label": "cancel Putin meeting"
+    },
+    {
+     "source": "nyt",
+     "text": "After Indictments",
+     "start": 48,
+     "end": 65,
+     "label": "indictments"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Outcome(hpo, o2, Political)",
+      "Outcome(nyt, o1, Legal)",
+      "Specific(Political)",
+      "Specific(Legal)"
+     ],
+     "absent": [
+      "IsA(Political, Legal)",
+      "IsA(Legal, Political)"
+     ]
+    }
+   ],
+   "left_type": "Political",
+   "right_type": "Legal",
+   "left_outcome": "cancel Putin meeting",
+   "right_outcome": "indictments"
+  }
+ ],
+ "3ae35b16-7f7f-4a5e-9f24-5ce724106a73": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B for wall",
+     "start": 36,
+     "end": 53,
+     "label": "eyes $8B for wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "eyes $8B for wall",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82,
+     "label": "sign spending package"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "sign spending package",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "eyes $8B for wall",
+     "start": 36,
+     "end": 53,
+     "label": "eyes $8B for wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "eyes $8B for wall",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "signs spending package",
+     "start": 60,
+     "end": 82,
+     "label": "sign spending package"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "sign spending package",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico Border Wall",
+     "start": 37,
+     "end": 65,
+     "label": "fund U.S.-Mexico border wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "fund U.S.-Mexico border wall",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Trump requested $5.7 billion for construction of the wall, while Democrats vowed to block any spending proposal that included such funding.",
+    "sentence_index": 34,
+    "score": 0.593,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Fund U.S.-Mexico Border Wall",
+     "start": 37,
+     "end": 65,
+     "label": "fund U.S.-Mexico border wall"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i5)"
+     ],
+     "absent": [
+      "Reports(nyt, i5)"
+     ]
+    }
+   ],
+   "item": "fund U.S.-Mexico border wall",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "WASHINGTON — President Trump declared a national emergency on the border with Mexico on Friday in order to access billions of dollars that Congress refused to give him to build a wall there, transforming a highly charged policy dispute into a confrontation over the separation of powers outlined in the Constitution.",
+    "sentence_index": 0,
+    "score": 0.563,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes a Constitutional Clash",
+     "start": 41,
+     "end": 72,
+     "label": "provoke a constitutional clash"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(fox, i4)"
+     ]
+    }
+   ],
+   "item": "provoke a constitutional clash",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Provokes a Constitutional Clash",
+     "start": 41,
+     "end": 72,
+     "label": "provoke a constitutional clash"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "provoke a constitutional clash",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  }
+ ],
+ "aab91277-8d56-4844-a581-45630f873f49": [
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "show of force",
+     "start": 6,
+     "end": 19,
+     "label": "show of force"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(hpo, i1)"
+     ]
+    }
+   ],
+   "item": "show of force",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "arrest",
+     "start": 35,
+     "end": 41,
+     "label": "arrest"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(hpo, i2)"
+     ]
+    }
+   ],
+   "item": "arrest",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism",
+     "start": 42,
+     "end": 57,
+     "label": "spurs criticism"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(hpo, i3)"
+     ]
+    }
+   ],
+   "item": "spurs criticism",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(fox, hpo, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "criticism of Mueller tactics",
+     "start": 48,
+     "end": 76,
+     "label": "criticism of Mueller tactics"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Reports(fox, i4)"
+     ],
+     "absent": [
+      "Reports(hpo, i4)"
+     ]
+    }
+   ],
+   "item": "criticism of Mueller tactics",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i1)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "show of force",
+     "start": 6,
+     "end": 19,
+     "label": "show of force"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i1)"
+     ],
+     "absent": [
+      "Reports(nyt, i1)"
+     ]
+    }
+   ],
+   "item": "show of force",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i2)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "arrest",
+     "start": 35,
+     "end": 41,
+     "label": "arrest"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i2)"
+     ],
+     "absent": [
+      "Reports(nyt, i2)"
+     ]
+    }
+   ],
+   "item": "arrest",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i3)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "spurs criticism",
+     "start": 42,
+     "end": 57,
+     "label": "spurs criticism"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i3)"
+     ],
+     "absent": [
+      "Reports(nyt, i3)"
+     ]
+    }
+   ],
+   "item": "spurs criticism",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "fox",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(fox, nyt, i4)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "criticism of Mueller tactics",
+     "start": 48,
+     "end": 76,
+     "label": "criticism of Mueller tactics"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(fox, nyt)",
+      "Reports(fox, i4)"
+     ],
+     "absent": [
+      "Reports(nyt, i4)"
+     ]
+    }
+   ],
+   "item": "criticism of Mueller tactics",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(hpo, fox, i7)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 28,
+     "end": 36,
+     "label": "indicted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, fox)",
+      "Reports(hpo, i7)"
+     ],
+     "absent": [
+      "Reports(fox, i7)"
+     ]
+    }
+   ],
+   "item": "indicted",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "InfoOnlyIn(hpo, nyt, i7)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 28,
+     "end": 36,
+     "label": "indicted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Reports(hpo, i7)"
+     ],
+     "absent": [
+      "Reports(nyt, i7)"
+     ]
+    }
+   ],
+   "item": "indicted",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indicting Roger Stone",
+     "start": 0,
+     "end": 21,
+     "label": "indict Roger Stone"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i5)"
+     ],
+     "absent": [
+      "Reports(fox, i5)"
+     ]
+    }
+   ],
+   "item": "indict Roger Stone",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Not a Roger Stone.”",
+    "sentence_index": 24,
+    "score": 0.665,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "fox",
+   "facts": [
+    "InfoOnlyIn(nyt, fox, i6)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Shows Link Between Trump Campaign and WikiLeaks",
+     "start": 31,
+     "end": 78,
+     "label": "show link between Trump Campaign and WikiLeaks"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, fox)",
+      "Reports(nyt, i6)"
+     ],
+     "absent": [
+      "Reports(fox, i6)"
+     ]
+    }
+   ],
+   "item": "show link between Trump Campaign and WikiLeaks",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i5)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Indicting Roger Stone",
+     "start": 0,
+     "end": 21,
+     "label": "indict Roger Stone"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i5)"
+     ],
+     "absent": [
+      "Reports(hpo, i5)"
+     ]
+    }
+   ],
+   "item": "indict Roger Stone",
+   "status": "not_found_in_article",
+   "article_evidence": null
+  },
+  {
+   "rule": "R1_InfoOnlyIn",
+   "dimension": "D1_info",
+   "from": "nyt",
+   "to": "hpo",
+   "facts": [
+    "InfoOnlyIn(nyt, hpo, i6)"
+   ],
+   "evidence": [
+    {
+     "source": "nyt",
+     "text": "Shows Link Between Trump Campaign and WikiLeaks",
+     "start": 31,
+     "end": 78,
+     "label": "show link between Trump Campaign and WikiLeaks"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R1_InfoOnlyIn",
+     "rule_text": "Reports(A,i) AND NOT Reports(B,i) => InfoOnlyIn(A,B,i)",
+     "matched": [
+      "Pair(nyt, hpo)",
+      "Reports(nyt, i6)"
+     ],
+     "absent": [
+      "Reports(hpo, i6)"
+     ]
+    }
+   ],
+   "item": "show link between Trump Campaign and WikiLeaks",
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "The indictment alleges he spoke “to senior Trump Campaign officials” about WikiLeaks and “information it might have had that would be damaging” to the campaign of Trump’s Democratic rival, Hillary Clinton, in the summer before the election.",
+    "sentence_index": 8,
+    "score": 0.589,
+    "method": "sentence-bert",
+    "found": true
+   }
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "fox",
+   "to": "hpo",
+   "facts": [
+    "OutcomeShift(fox, hpo, Reputational, Legal)"
+   ],
+   "evidence": [
+    {
+     "source": "fox",
+     "text": "criticism of Mueller tactics",
+     "start": 48,
+     "end": 76,
+     "label": "criticism of Mueller tactics"
+    },
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 28,
+     "end": 36,
+     "label": "indicted"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(fox, hpo)",
+      "Outcome(fox, o1, Reputational)",
+      "Outcome(hpo, o3, Legal)",
+      "Specific(Reputational)",
+      "Specific(Legal)"
+     ],
+     "absent": [
+      "IsA(Reputational, Legal)",
+      "IsA(Legal, Reputational)"
+     ]
+    }
+   ],
+   "left_type": "Reputational",
+   "right_type": "Legal",
+   "left_outcome": "criticism of Mueller tactics",
+   "right_outcome": "indicted"
+  },
+  {
+   "rule": "R4_OutcomeShift",
+   "dimension": "D4_outcome",
+   "from": "hpo",
+   "to": "nyt",
+   "facts": [
+    "OutcomeShift(hpo, nyt, Legal, Political)"
+   ],
+   "evidence": [
+    {
+     "source": "hpo",
+     "text": "Indicted",
+     "start": 28,
+     "end": 36,
+     "label": "indicted"
+    },
+    {
+     "source": "nyt",
+     "text": "Link Between Trump Campaign and WikiLeaks",
+     "start": 37,
+     "end": 78,
+     "label": "link between Trump Campaign and WikiLeaks"
+    }
+   ],
+   "trace": [
+    {
+     "rule": "R4_OutcomeShift",
+     "rule_text": "Outcome(A,k,t) AND Outcome(B,k',t') AND t != t' AND NOT IsA(t,t') AND NOT IsA(t',t) => OutcomeShift(A,B,t,t')",
+     "matched": [
+      "Pair(hpo, nyt)",
+      "Outcome(hpo, o3, Legal)",
+      "Outcome(nyt, o2, Political)",
+      "Specific(Legal)",
+      "Specific(Political)"
+     ],
+     "absent": [
+      "IsA(Legal, Political)",
+      "IsA(Political, Legal)"
+     ]
+    }
+   ],
+   "left_type": "Legal",
+   "right_type": "Political",
+   "left_outcome": "indicted",
+   "right_outcome": "link between Trump Campaign and WikiLeaks"
+  }
+ ]
+}
