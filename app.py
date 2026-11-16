@@ -75,8 +75,11 @@ def has_key():
     return bool(os.environ.get("LLM_API_KEY") or os.environ.get("GROQ_API_KEY"))
 
 
+NAMES = {}          # display names typed by the user in tab 3 (source key -> name)
+
+
 def outlet(src):
-    return SOURCE_NAMES.get(src, "Your headline" if src == "you" else src.title())
+    return NAMES.get(src) or SOURCE_NAMES.get(src, "Your headline" if src == "you" else src.title())
 
 
 # ------------------------------------------------------------------ rendering helpers
@@ -159,12 +162,69 @@ def render_facts(result):
         st.caption("No facts (extraction failed).")
         return
     from src.facts import atom_key
-    labels = kb["labels"]
+    own = kb.get("own_labels", {})
     for src in result["headlines"]:
         rows = [a for a in kb["atoms"] if len(a) > 1 and a[1] == src and a[0] not in ("Pair", "Headline")]
         st.markdown(f"**{outlet(src)}**")
-        st.code("\n".join(f"{atom_key(a):45s} " + " ".join(f"[{labels[x]}]" for x in a[2:] if x in labels)
+        st.code("\n".join(f"{atom_key(a):45s} " + " ".join(f"[{own.get(f'{src}:{x}') or kb['labels'][x]}]"
+                                                          for x in a[2:] if x in kb["labels"])
                           for a in rows) or "(none)", language=None)
+
+
+def render_overview(result):
+    from src.summary import SUMMARY_RULES, build_summary
+    summ = build_summary(result, name=outlet)
+
+    def esc(t):
+        return html.escape(t, quote=False)
+    if not summ:
+        return
+    st.header("Overview")
+    st.markdown("#### Key takeaways")
+    st.markdown("\n".join(f"- {esc(t)}" for t in summ["takeaways"]))
+
+    counts = {d: sum(r["dimension"] == d for r in result["differences"]) for d in DIM_LABEL}
+    for col, d in zip(st.columns(4), DIM_LABEL):
+        with col:
+            st.markdown(f'<div style="border-top:6px solid {DIM_COLOR[d]};padding-top:4px">'
+                        f'<small>{DIM_RULE[d]} · {DIM_LABEL[d]}</small><br>'
+                        f'<span style="font-size:1.8rem;font-weight:600">{counts[d]}</span> '
+                        f'<small>difference{"" if counts[d] == 1 else "s"}</small></div>',
+                        unsafe_allow_html=True)
+
+    st.markdown("#### Framing profile of each outlet")
+    heads = list(summ["profiles"])
+    for col, h in zip(st.columns(len(heads)), heads):
+        p = summ["profiles"][h]
+        with col:
+            def items(xs):
+                return ", ".join(f"“{esc(x)}”" for x in xs) or "–"
+            st.markdown(
+                f"**{esc(outlet(h))}**  \n<small><i>{esc(result['headlines'][h])}</i></small>"
+                f"<br><br><b>Only this outlet reports:</b> {items(p['exclusive'])}"
+                f"<br><b>Leaves out:</b> {items(p['omits'])}"
+                f"<br><b>Shown acting:</b> {items(p['acting'])}"
+                f"<br><b>Loaded words:</b> "
+                + (", ".join(f"“{esc(w)}” ({pol})" for w, pol in p['loaded']) or "–")
+                + "<br><b>Consequences stressed:</b> "
+                + (", ".join(f"{t} (“{esc(x)}”)" for t, x in p['outcomes']) or "–"),
+                unsafe_allow_html=True)
+
+    st.markdown("#### Where each outlet's framing stands out")
+    rows = ["| Outlet | " + " | ".join(f"{DIM_RULE[d]} {DIM_LABEL[d]}" for d in DIM_LABEL) + " |",
+            "|---|" + "---|" * len(DIM_LABEL)]
+    for h in heads:
+        rows.append(f"| {outlet(h)} | " + " | ".join(str(summ["matrix"][h][d]) for d in DIM_LABEL) + " |")
+    st.markdown("\n".join(rows))
+    st.caption("Number of differences in which this outlet is the one that includes the information, "
+               "names the actor, uses the loaded word or stresses the consequence.")
+    with st.expander("How the overview is derived"):
+        st.markdown("The overview comes from extra rules run by the same forward-chaining engine, "
+                    "using negation as failure in strata:")
+        st.code("\n".join(r.text for r in SUMMARY_RULES), language=None)
+        st.caption("It only knows what the extraction step marked. Wording the extractor did not flag "
+                   "(e.g. scare quotes, hedging verbs) can be missing; compare with B3 in the "
+                   "baselines tab.")
 
 
 def render_result(result, focus=None):
@@ -175,6 +235,8 @@ def render_result(result, focus=None):
         (st.info if result["ok"] else st.error)(result["message"])
     if not result["headlines"]:
         return
+    render_overview(result)
+    st.header("Pair-by-pair details")
     legend()
     groups = by_pair(result["differences"], result["pairs"])
     for pair in result["pairs"]:
@@ -191,7 +253,8 @@ def render_result(result, focus=None):
                 st.markdown(f"<div style='font-size:1.15rem'>"
                             f"{highlight(result['headlines'][src], spans_for(recs, src))}</div>",
                             unsafe_allow_html=True)
-        t1, t2 = st.tabs([f"Our system ({len(recs)} differences)", "Baselines side by side"])
+        t1, t2 = st.tabs([f"Our system ({len(recs)} difference{'' if len(recs) == 1 else 's'})",
+                          "Baselines side by side"])
         failed = [x for x in pair if not result["extractions"].get(x, {}).get("ok")]
         with t1:
             if failed:
@@ -296,6 +359,7 @@ with tab3:
                 key = clean_name(name or f"outlet{n + 1}", used)
                 used.add(key)
                 heads[key] = text
+                NAMES[key] = name.strip() or f"Outlet {n + 1}"
         if len(heads) < 2:
             st.error("Please enter at least two headlines.")
         elif not has_key():

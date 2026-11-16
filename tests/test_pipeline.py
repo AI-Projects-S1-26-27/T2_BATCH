@@ -111,11 +111,26 @@ def test_cached_extraction_used():
     assert res["ok"] and res["differences"]
 
 
+def test_summary():
+    from src.summary import build_summary
+    res = analyze({"fox": A, "nyt": B}, tools(), run_baselines=False)
+    summ = build_summary(res, name=str.upper)
+    fox, nyt = summ["profiles"]["fox"], summ["profiles"]["nyt"]
+    assert "protest turns violent" in nyt["exclusive"] and "protest turns violent" in fox["omits"]
+    assert ("peaceful", "positive") in fox["loaded"] and fox["acting"] == ["police → fire tear gas"]
+    assert summ["common"] == ["fire tear gas"]                      # reported by both (aligned)
+    text = " ".join(summ["takeaways"])
+    assert "agree on the core event" in text and "FOX: police" in text and "actor not named" in text
+    assert summ["matrix"]["fox"]["D2_actor"] == 1
+    assert build_summary({"kb": None}) is None
+
+
 def test_clean_name():
     used = set()
     k1 = clean_name("The Guardian", used)
     used.add(k1)
     assert k1 == "guardian" and clean_name("Guardian", used) != "guardian"
+    assert clean_name("Korea JoongAng Daily", set()) == "koreajoongangdaily"
     assert clean_name("", set()) == "headline"
 
 

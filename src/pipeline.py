@@ -29,9 +29,9 @@ def clean_name(name, used):
     """Turn a user-typed outlet name into a short source key ('The Guardian' -> 'guardian')."""
     import re
     base = re.sub(r"[^a-z0-9]+", "", (name or "").lower().replace("the ", "")) or "headline"
-    key, n = base[:12], 2
+    key, n = base[:24], 2
     while key in used:
-        key, n = f"{base[:10]}{n}", n + 1
+        key, n = f"{base[:22]}{n}", n + 1
     return key
 
 

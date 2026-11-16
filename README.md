@@ -200,7 +200,11 @@ Three tabs:
    compared with each outlet's. If there is no same-event match, the demo says so and does not compare unrelated headlines.
 3. **Compare your own headlines.** Paste 2–3 headlines about one event (e.g. today's news), which are analysed live.
 
-For every pair, the evidence words are highlighted in their dimension's colour. Each difference shows its explanation,
+Each result starts with an **Overview**: key takeaways, a framing profile per outlet (what only it reports,
+what it leaves out, who it shows acting, loaded words, consequences stressed), and an outlet × dimension table.
+It is derived by extra stratified rules in `src/summary.py`, e.g. `Exclusive(h,i) <= Reports(h,i) AND NOT ReportedByOther(h,i)`
+and `Common(i) <= Reports(h,i) AND NOT Missing(i)`, so every statement traces back to facts.
+Below it, for every pair, the evidence words are highlighted in their dimension's colour. Each difference shows its explanation,
 the rule that fired, the matched facts, the facts checked absent, and any article sentence. A second tab shows B1–B3 side by side,
 and an expander lists the extracted logical facts. Every failure (no key, API error, unusable extraction, no match)
 produces a readable message instead of a crash (`src/pipeline.py`).
