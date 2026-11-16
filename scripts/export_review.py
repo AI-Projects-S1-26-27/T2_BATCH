@@ -1,4 +1,4 @@
-﻿"""Export S4/S5 candidate differences for human review.
+"""Export S4/S5 candidate differences for human review.
 
 Examples:
     python scripts/export_review.py
@@ -19,7 +19,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from src.align import load_alignment
-from src.engine import derive_differences
+from src.engine import derive_differences, explain
 from src.facts import build_facts
 from src.load import load_stories, stories_by_id
 
@@ -43,7 +43,17 @@ def main():
         default=os.path.join(ROOT, "data", "review", "candidate_differences.csv"),
         help="Output CSV path.",
     )
+    parser.add_argument("--no-sbert", action="store_true",
+                        help="use word overlap instead of Sentence-BERT for R1 article checks")
     args = parser.parse_args()
+
+    embedder = None
+    if not args.no_sbert:
+        try:
+            from src.align import SBERTEmbedder
+            embedder = SBERTEmbedder()
+        except Exception as e:
+            print(f"(Sentence-BERT unavailable: {e}; using word overlap)")
 
     data_dir = os.path.join(ROOT, "data")
     with open(os.path.join(data_dir, "extractions", "extractions.json"),
@@ -67,11 +77,11 @@ def main():
             split_ids = set(split_data[args.split])
 
     columns = [
-        "story_id", "year", "rule", "from_outlet", "to_outlet",
+        "story_id", "year", "rule", "dimension", "from_outlet", "to_outlet",
         "from_headline", "to_headline", "item", "actor", "action",
         "other_actors", "word", "polarity",
         "left_outcome", "left_type", "right_outcome", "right_type",
-        "status", "headline_evidence", "article_evidence",
+        "status", "explanation", "headline_evidence", "article_evidence", "rule_trace",
         "review_verdict", "review_note",
     ]
 
@@ -95,15 +105,14 @@ def main():
                 for src in ("fox", "nyt", "hpo")
             }
             article_texts = {
-                src: " ".join(
-                    sentence["text"]
-                    for sentence in articles[src].get("sentences", [])
-                )
+                src: [sentence["text"]
+                      for sentence in articles[src].get("sentences", [])]
                 for src in ("fox", "nyt", "hpo")
             }
 
             facts = build_facts(story_extractions, alignments[story_id])
-            differences = derive_differences(facts, headlines, article_texts)
+            differences = derive_differences(facts, headlines, article_texts,
+                                             embedder=embedder)
 
             for difference in differences:
                 source = difference.get("from", "")
@@ -112,6 +121,7 @@ def main():
                     "story_id": story_id,
                     "year": story.get("year", ""),
                     "rule": difference.get("rule", ""),
+                    "dimension": difference.get("dimension", ""),
                     "from_outlet": source,
                     "to_outlet": target,
                     "from_headline": headlines.get(source, ""),
@@ -127,8 +137,10 @@ def main():
                     "right_outcome": difference.get("right_outcome", ""),
                     "right_type": difference.get("right_type", ""),
                     "status": difference.get("status", ""),
+                    "explanation": explain(difference),
                     "headline_evidence": json_cell(difference.get("evidence")),
                     "article_evidence": json_cell(difference.get("article_evidence")),
+                    "rule_trace": json_cell(difference.get("trace")),
                     "review_verdict": "",
                     "review_note": "",
                 })

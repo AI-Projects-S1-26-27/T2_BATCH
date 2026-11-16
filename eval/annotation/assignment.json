@@ -1,0 +1,72 @@
+{
+ "Sameeksha": {
+  "code": "M3",
+  "split": "dev",
+  "primary": [
+   "c5534b7e-a373-4962-8345-3847bc41a636",
+   "1f99798f-2b60-4ecb-b5f4-4aa7991e8ace",
+   "47a209b0-fc26-4a0a-a1fe-e4310d1d2419"
+  ],
+  "second": []
+ },
+ "Zainab": {
+  "code": "M4",
+  "split": "dev",
+  "primary": [
+   "38f7cbb7-5d6a-4c89-bcbd-8e164144172a",
+   "1b96a5db-8974-46d3-82d7-5dfef02f650e",
+   "c6a0e65c-4f8b-41de-8200-cd700f683c64"
+  ],
+  "second": []
+ },
+ "Siddharth": {
+  "code": "M1",
+  "split": "test",
+  "primary": [
+   "3ae35b16-7f7f-4a5e-9f24-5ce724106a73",
+   "576116e5-2b18-4d35-be73-36f5863c9468",
+   "d16050b3-979f-4834-90db-b8823691b87e"
+  ],
+  "second": [
+   "6f95dcb9-e960-45ac-8c0e-91b85724c909",
+   "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519"
+  ]
+ },
+ "Sachin": {
+  "code": "M6",
+  "split": "test",
+  "primary": [
+   "f506aafc-8b43-427a-936e-bbd1ef33e076",
+   "8dac6c12-b5ca-468c-a249-7e0ab42f6b52",
+   "6f95dcb9-e960-45ac-8c0e-91b85724c909"
+  ],
+  "second": [
+   "d4a4bc34-e48b-4485-86b2-f1daf4d464dd",
+   "b5eefefb-2a33-45de-abe1-f855c94165f4"
+  ]
+ },
+ "Nitya": {
+  "code": "M7",
+  "split": "test",
+  "primary": [
+   "33521e65-12da-4521-b132-7b606243b0e4",
+   "a28a0329-0887-42dc-bd3d-3bb4f8926757",
+   "d4a4bc34-e48b-4485-86b2-f1daf4d464dd",
+   "b5eefefb-2a33-45de-abe1-f855c94165f4"
+  ],
+  "second": []
+ },
+ "Megha": {
+  "code": "M8",
+  "split": "test",
+  "primary": [
+   "aab91277-8d56-4844-a581-45630f873f49",
+   "d3a1ce0a-fc48-4827-a278-8f0ce8c7a519",
+   "ccf19ab6-7878-4378-b99c-2b08cc21371f",
+   "8dc7ccfe-5cf0-482f-9101-a7c69881da4d"
+  ],
+  "second": [
+   "8dac6c12-b5ca-468c-a249-7e0ab42f6b52"
+  ]
+ }
+}

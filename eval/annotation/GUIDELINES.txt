@@ -1,0 +1,43 @@
+GOLD ANNOTATION GUIDELINES: Same-event headline framing (CS F407, Team BATCH)
+
+Each row compares two headlines (A and B) about the SAME event. For each of the four
+dimensions, answer y (difference present) or n (absent), and copy the exact words from the
+headline(s) that show it. Copy words exactly as written (copy-paste is best). Work alone:
+do not discuss rows with other annotators and do not look at any system output.
+
+Judge the HEADLINES. Use the "Article leads" sheet only to understand what the event is.
+
+D1 INFORMATION SELECTION: one headline includes a piece of information that the other
+   leaves out entirely (a fact, event, detail, number, person, quote or reason).
+   - Same fact in different words is NOT a difference ("fire tear gas" vs "use tear gas" -> n).
+   - Words: the included information, in the headline that has it (A or B column).
+   e.g. A "Police fire tear gas as city faces curfew" / B "Police fire tear gas" -> y,
+        D1_words_A = "city faces curfew".
+
+D2 ACTOR / ACTION FRAMING: both headlines describe the same action, but they name a
+   different actor as the one acting, or one hides the actor (passive voice, "X dies", "used").
+   - Words: the actor + action in each headline.
+   e.g. A "Police shoot man" / B "Man dies in shooting" -> y,
+        D2_words_A = "Police shoot", D2_words_B = "Man dies in shooting".
+
+D3 EVALUATIVE WORDING: one headline uses loaded / judgmental words about an actor or event
+   that the other does not (or the other uses the opposite tone). Includes loaded verbs
+   ("slams", "blasts", "caves"), adjectives ("radical", "peaceful", "furious") and word
+   choices that change the impression ("asked" vs "used").
+   - Neutral reporting verbs ("says", "announces") are not evaluative.
+   - Words: the loaded word(s). D3_polarity: pos, neg or mixed (tone of the loaded word(s)).
+   e.g. A "Obama slams GOP plan" / B "Obama criticizes GOP plan" -> y, D3_words_A = "slams", neg.
+
+D4 CONSEQUENCE EMPHASIS: BOTH headlines mention consequences / stakes, but of different
+   types. Types: Economic, Safety, Legal, Political, Health, Social, Reputational, Other.
+   - If only ONE headline mentions a consequence, that is D1 (information), not D4.
+   - Fill D4_type_A / D4_type_B (dropdowns) and the words.
+   e.g. A "Shutdown to cost economy $6bn" / B "Shutdown puts air safety at risk" -> y,
+        Economic vs Safety.
+
+GENERAL
+- A row can have several y's, or none.
+- If unsure, choose your best reading and write why in "notes".
+- Leave the grey columns unchanged. Do not add or delete rows.
+- Save as .xlsx with the same file name and send it to Megha (M8), or push it to
+  eval/annotation/ in the repo. Expected time: about 3-4 minutes per row.

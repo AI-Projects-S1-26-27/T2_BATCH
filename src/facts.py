@@ -1,121 +1,162 @@
-"""Stage S4: turn S2 extractions and S3 alignment into grounded facts.
+"""Stage S4: ontology + logical facts (atoms) for one story.
 
-Usage:
-    facts = build_facts(extractions_for_one_story, alignment_for_one_story)
+Input:  S2 extractions {source: result} and the S3 alignment of the same story.
+Output: a knowledge base (KB) dict:
+    atoms     list of ground atoms, each a tuple: (predicate, arg1, arg2, ...)
+    evidence  {atom_key: {"source", "text", "start", "end", "label"}}  where the atom came from
+    labels    {id: readable label}   e.g. "i1" -> "fire tear gas", "a2" -> "police"
+    own_labels {"fox:i1": "fire tear gas", "nyt:i1": "use tear gas"}  each headline's own wording
 
-The returned dictionaries are JSON serializable. IDs are local to one story;
-always call this once per story, not across the whole corpus.
+Predicates (proposal, Section 5.3):
+    Headline(h)            a usable headline (h = fox | nyt | hpo)
+    Pair(a, b)             two different usable headlines of the story (both orders)
+    Actor(h, x)            headline h mentions actor x
+    InstanceOf(x, c)       actor x belongs to ontology category c (from the S2 actor type)
+    Reports(h, i)          headline h reports information item i
+    Agent(h, x, i)         headline h shows actor x performing item i
+    Eval(h, x, p, w)       headline h uses word w with polarity p about actor/item x
+    Outcome(h, k, t)       headline h stresses consequence k of type t
+    IsA(c, d)              ontology: category c is a sub-type of category d
+    Specific(t)            outcome type t is informative (every type except "Other")
+
+IDs (i1, a1, o1 ...) come from S3 alignment, so equivalent mentions in different
+headlines share one ID. IDs are local to one story.
 """
 
-from __future__ import annotations
+from src.load import SOURCES
 
-import re
+# ------------------------------------------------------------------ ontology
+# Small, hand-written category hierarchy. Each pair (child, parent) becomes IsA(child, parent);
+# the engine derives the transitive closure (e.g. Company -> Organization -> Institution -> Agent).
+ACTOR_ONTOLOGY = [
+    ("Politician", "PoliticalActor"), ("GovernmentOfficial", "PoliticalActor"),
+    ("PoliticalParty", "PoliticalActor"), ("PoliticalActor", "Agent"),
+    ("GovernmentBody", "Government"), ("Court", "Government"),
+    ("LawEnforcement", "Government"), ("Military", "Government"),
+    ("Government", "Institution"), ("Country", "Institution"),
+    ("Company", "Organization"), ("Media", "Organization"),
+    ("Organization", "Institution"), ("Institution", "Agent"),
+    ("Activist", "CivilSociety"), ("Citizen", "CivilSociety"), ("CivilSociety", "Agent"),
+    ("Person", "Agent"), ("Other", "Agent"),
+]
+# Outcome types (same names as src/extract.py OUTCOME_TYPES). R4 does not fire when one type
+# is a sub-type of the other, e.g. a Health outcome vs a Safety outcome.
+OUTCOME_ONTOLOGY = [
+    ("Health", "Safety"), ("Safety", "Harm"),
+    ("Reputational", "Political"), ("Political", "PublicAffairs"),
+    ("Legal", "PublicAffairs"),
+    ("Economic", "Material"), ("Social", "PublicAffairs"),
+]
+OUTCOME_TYPES = ["Economic", "Safety", "Legal", "Political", "Health", "Social", "Reputational", "Other"]
 
 
-SOURCES = ("fox", "nyt", "hpo")
+def ontology_atoms():
+    atoms = [("IsA", c, d) for c, d in ACTOR_ONTOLOGY + OUTCOME_ONTOLOGY]
+    atoms += [("Specific", t) for t in OUTCOME_TYPES if t != "Other"]
+    return atoms
 
 
-def _norm(value):
-    return re.sub(r"\s+", " ", str(value or "")).strip().casefold()
+# ------------------------------------------------------------------ facts
+
+def atom_key(atom):
+    """Readable, hashable form of an atom, e.g. 'Reports(fox, i1)'."""
+    return f"{atom[0]}({', '.join(str(a) for a in atom[1:])})"
 
 
-def _mentions_by_index(alignment, kind, source):
-    """Map the extraction list index to the S3 shared ID."""
-    return {
-        int(m["index"]): m["id"]
-        for m in alignment.get("mentions", {}).get(kind, [])
-        if m.get("src") == source and "index" in m and "id" in m
-    }
+def _ids(alignment, kind, src):
+    """extraction-list index -> shared ID, for one headline and one kind."""
+    return {m["index"]: m["id"] for m in alignment.get("mentions", {}).get(kind, [])
+            if m.get("src") == src}
 
 
-def _id_for_label(fields, index_map, field, label):
-    wanted = _norm(label)
-    for i, entry in enumerate(fields):
-        if _norm(entry.get(field)) == wanted and i in index_map:
-            return index_map[i]
-    return None
+def _norm(s):
+    return " ".join(str(s or "").lower().split())
 
 
 def build_facts(extractions, alignment):
-    """Build per-headline facts from {source: extraction_result} plus S3 output.
+    """Build the KB of one story from its S2 extractions and S3 alignment."""
+    atoms, evidence, labels, own = [], {}, {}, {}      # own[(h, id)] = that headline's wording
 
-    Each evidence object preserves the exact quoted headline span and offsets
-    emitted by S2. Entries without usable extraction/alignment are skipped.
-    """
-    facts = {"actors": [], "reports": [], "agents": [], "evals": [], "outcomes": []}
-    for src in SOURCES:
-        result = extractions.get(src) or {}
-        if not result.get("ok") or not isinstance(result.get("fields"), dict):
-            continue
-        fields = result["fields"]
-        actor_ids = _mentions_by_index(alignment, "actors", src)
-        item_ids = _mentions_by_index(alignment, "items", src)
-        outcome_ids = _mentions_by_index(alignment, "outcomes", src)
+    def add(atom, src=None, entry=None, label=None):
+        if atom in seen:
+            return
+        seen.add(atom)
+        atoms.append(atom)
+        if src and entry is not None:
+            evidence[atom_key(atom)] = {
+                "source": src, "text": entry.get("span") or entry.get("word"),
+                "start": entry.get("start"), "end": entry.get("end"), "label": label}
 
-        for i, actor in enumerate(fields.get("actors", [])):
-            if i in actor_ids:
-                facts["actors"].append({"h": src, "x": actor_ids[i],
-                    "name": actor.get("name"), "type": actor.get("type"),
-                    "evidence": _evidence(src, actor)})
+    seen = set()
+    usable = [s for s in SOURCES if (extractions.get(s) or {}).get("ok")]
+    for h in usable:
+        add(("Headline", h))
+    for a in usable:
+        for b in usable:
+            if a != b:
+                add(("Pair", a, b))
 
-        for i, item in enumerate(fields.get("items", [])):
-            if i in item_ids:
-                facts["reports"].append({"h": src, "i": item_ids[i],
-                    "text": item.get("text"), "evidence": _evidence(src, item)})
+    for h in usable:
+        f = extractions[h]["fields"]
+        actor_id, item_id, outcome_id = (_ids(alignment, k, h) for k in ("actors", "items", "outcomes"))
+        name_to_actor = {_norm(a["name"]): actor_id[n] for n, a in enumerate(f["actors"]) if n in actor_id}
+        text_to_item = {_norm(t["text"]): item_id[n] for n, t in enumerate(f["items"]) if n in item_id}
 
-        for agent in fields.get("agents", []):
-            actor_id = _id_for_label(fields.get("actors", []), actor_ids, "name", agent.get("actor"))
-            item_id = _id_for_label(fields.get("items", []), item_ids, "text", agent.get("action"))
-            if actor_id and item_id:
-                facts["agents"].append({"h": src, "x": actor_id, "i": item_id,
-                    "actor": agent.get("actor"), "action": agent.get("action"),
-                    "evidence": _evidence(src, agent)})
+        for n, a in enumerate(f["actors"]):
+            if n in actor_id:
+                x = actor_id[n]
+                labels.setdefault(x, a["name"])
+                own[(h, x)] = a["name"]
+                add(("Actor", h, x), h, a, a["name"])
+                add(("InstanceOf", x, a.get("type") or "Other"))
+        for n, it in enumerate(f["items"]):
+            if n in item_id:
+                labels.setdefault(item_id[n], it["text"])
+                own[(h, item_id[n])] = it["text"]
+                add(("Reports", h, item_id[n]), h, it, it["text"])
+        for ag in f["agents"]:
+            x, i = name_to_actor.get(_norm(ag["actor"])), text_to_item.get(_norm(ag["action"]))
+            if x and i:
+                add(("Agent", h, x, i), h, ag, f"{ag['actor']} -> {ag['action']}")
+        for ev in f["evals"]:
+            x = name_to_actor.get(_norm(ev["target"])) or text_to_item.get(_norm(ev["target"]))
+            if x:                                  # evals about something not extracted are skipped
+                add(("Eval", h, x, ev["polarity"], ev["word"]), h, ev, ev["word"])
+        for n, oc in enumerate(f["outcomes"]):
+            if n in outcome_id:
+                labels.setdefault(outcome_id[n], oc["text"])
+                own[(h, outcome_id[n])] = oc["text"]
+                add(("Outcome", h, outcome_id[n], oc.get("type") or "Other"), h, oc, oc["text"])
 
-        for ev in fields.get("evals", []):
-            target_id = (_id_for_label(fields.get("actors", []), actor_ids, "name", ev.get("target"))
-                         or _id_for_label(fields.get("items", []), item_ids, "text", ev.get("target")))
-            facts["evals"].append({"h": src, "x": target_id,
-                "target": ev.get("target"), "polarity": ev.get("polarity"),
-                "word": ev.get("word"), "evidence": _evidence(src, ev)})
-
-        for i, outcome in enumerate(fields.get("outcomes", [])):
-            if i in outcome_ids:
-                facts["outcomes"].append({"h": src, "k": outcome_ids[i],
-                    "text": outcome.get("text"), "type": outcome.get("type"),
-                    "evidence": _evidence(src, outcome)})
-
-    return facts
-
-
-def _evidence(source, entry):
-    return {"source": source, "text": entry.get("span") or entry.get("word"),
-            "start": entry.get("start"), "end": entry.get("end")}
+    for atom in ontology_atoms():
+        add(atom)
+    return {"atoms": atoms, "evidence": evidence, "labels": labels, "headlines": usable,
+            "own_labels": {f"{h}:{x}": t for (h, x), t in own.items()}}
 
 
 def main():
-    """Run S4 over the saved extraction and alignment outputs."""
+    import argparse
     import json
-    import os
-    import sys
-
-    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    if root not in sys.path:
-        sys.path.insert(0, root)
     from src.align import load_alignment
-    from src.load import load_stories
 
-    extraction_path = os.path.join(root, "data", "extractions", "extractions.json")
-    with open(extraction_path, encoding="utf-8") as f:
-        extractions = json.load(f)
-    alignments = load_alignment(os.path.join(root, "data", "alignment", "alignment.json"))
-    print("S4: building grounded facts")
-    for story_id, story_extractions in extractions.items():
-        alignment = alignments.get(story_id)
-        if not alignment:
-            continue
-        facts = build_facts(story_extractions, alignment)
-        counts = ", ".join(f"{name}={len(rows)}" for name, rows in facts.items())
-        print(f"{story_id}: {counts}")
+    ap = argparse.ArgumentParser(description="Stage S4: print the logical facts of a story")
+    ap.add_argument("--story-id", help="print all atoms of one story; default: counts for all")
+    args = ap.parse_args()
+    with open("data/extractions/extractions.json", encoding="utf-8") as f:
+        ext = json.load(f)
+    al = load_alignment()
+    for sid in ([args.story_id] if args.story_id else ext):
+        kb = build_facts(ext[sid], al[sid])
+        story_atoms = [a for a in kb["atoms"] if a[0] not in ("IsA", "Specific")]
+        if args.story_id:
+            for a in story_atoms:
+                lab = " ".join(f"[{kb['labels'][x]}]" for x in a[1:] if x in kb["labels"])
+                print(f"  {atom_key(a)}  {lab}")
+        else:
+            counts = {}
+            for a in story_atoms:
+                counts[a[0]] = counts.get(a[0], 0) + 1
+            print(sid[:8], counts)
 
 
 if __name__ == "__main__":

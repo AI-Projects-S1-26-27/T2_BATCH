@@ -1,5 +1,6 @@
 # Stages S1-S2 (load, split, extract) need only the Python standard library.
 numpy                 # S3 alignment maths
 sentence-transformers # S3 alignment, baseline B2 (installs PyTorch)
-scikit-learn          # TF-IDF retrieval, baseline B1, Cohen's kappa
+scikit-learn          # TF-IDF retrieval, baseline B1
+openpyxl              # annotation workbooks (eval/)
 streamlit             # web demo (S6)
