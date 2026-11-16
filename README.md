@@ -166,6 +166,27 @@ python -m baselines.run --show <story_id>  # print one story's outputs from all 
 python -m tests.test_baselines             # offline tests
 ```
 
+## Evaluation
+
+`eval/evaluate.py` scores every system against the gold labels. The unit is one headline pair ×
+one dimension: a system detects dimension *d* for pair {A, B} if it outputs at least one record of
+that dimension between them, in either direction. Output is precision / recall / F1 per dimension, plus micro and macro F1.
+
+- **Systems:** OURS (`data/differences/differences.json`), B1–B3 (`data/baselines/`), and
+  **ABLATION**: S2 + S3 with no rules, where a dimension is flagged whenever the two headlines' extracted fields differ (proposal claim C3).
+- **Evidence overlap:** for true positives, whether the cited words share a content word with the annotator's words.
+- **Evidence-support rate:** a blind, shuffled rating sheet (up to 40 outputs per system) rated yes/partial/no.
+
+```bash
+python -m src.engine                       # our system's outputs
+python -m baselines.run                    # B1-B3 outputs
+python -m eval.evaluate                    # test split -> eval/results/results_test.md/.json, pairs_test.csv
+python -m eval.evaluate --split dev
+python -m eval.evaluate --make-rating-sheet    # eval/results/evidence_rating_test.csv (+ _KEY.csv, do not open)
+python -m eval.evaluate --score-ratings        # after the sheet is filled
+python -m tests.test_evaluate
+```
+
 ## Gold annotation (evaluation data)
 
 20 stories (60 headline pairs) are annotated by hand, as set out in proposal Section 5.1.

@@ -1,0 +1,228 @@
+{
+ "OURS": {
+  "D1_info": {
+   "tp": 33,
+   "fp": 0,
+   "fn": 6,
+   "precision": 1.0,
+   "recall": 0.846,
+   "f1": 0.917
+  },
+  "D2_actor": {
+   "tp": 3,
+   "fp": 3,
+   "fn": 8,
+   "precision": 0.5,
+   "recall": 0.273,
+   "f1": 0.353
+  },
+  "D3_eval": {
+   "tp": 4,
+   "fp": 1,
+   "fn": 24,
+   "precision": 0.8,
+   "recall": 0.143,
+   "f1": 0.242
+  },
+  "D4_outcome": {
+   "tp": 0,
+   "fp": 5,
+   "fn": 3,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "micro": {
+   "tp": 40,
+   "fp": 9,
+   "fn": 41,
+   "precision": 0.816,
+   "recall": 0.494,
+   "f1": 0.615
+  },
+  "macro_f1": 0.378,
+  "evidence_overlap": 0.975,
+  "n_records": 110
+ },
+ "B1": {
+  "D1_info": {
+   "tp": 39,
+   "fp": 3,
+   "fn": 0,
+   "precision": 0.929,
+   "recall": 1.0,
+   "f1": 0.963
+  },
+  "D2_actor": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 11,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "D3_eval": {
+   "tp": 5,
+   "fp": 0,
+   "fn": 23,
+   "precision": 1.0,
+   "recall": 0.179,
+   "f1": 0.303
+  },
+  "D4_outcome": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 3,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "micro": {
+   "tp": 44,
+   "fp": 3,
+   "fn": 37,
+   "precision": 0.936,
+   "recall": 0.543,
+   "f1": 0.688
+  },
+  "macro_f1": 0.317,
+  "evidence_overlap": 1.0,
+  "n_records": 238
+ },
+ "B2": {
+  "D1_info": {
+   "tp": 39,
+   "fp": 3,
+   "fn": 0,
+   "precision": 0.929,
+   "recall": 1.0,
+   "f1": 0.963
+  },
+  "D2_actor": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 11,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "D3_eval": {
+   "tp": 5,
+   "fp": 0,
+   "fn": 23,
+   "precision": 1.0,
+   "recall": 0.179,
+   "f1": 0.303
+  },
+  "D4_outcome": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 3,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "micro": {
+   "tp": 44,
+   "fp": 3,
+   "fn": 37,
+   "precision": 0.936,
+   "recall": 0.543,
+   "f1": 0.688
+  },
+  "macro_f1": 0.317,
+  "evidence_overlap": 0.955,
+  "n_records": 192
+ },
+ "B3": {
+  "D1_info": {
+   "tp": 39,
+   "fp": 2,
+   "fn": 0,
+   "precision": 0.951,
+   "recall": 1.0,
+   "f1": 0.975
+  },
+  "D2_actor": {
+   "tp": 11,
+   "fp": 17,
+   "fn": 0,
+   "precision": 0.393,
+   "recall": 1.0,
+   "f1": 0.564
+  },
+  "D3_eval": {
+   "tp": 27,
+   "fp": 2,
+   "fn": 1,
+   "precision": 0.931,
+   "recall": 0.964,
+   "f1": 0.947
+  },
+  "D4_outcome": {
+   "tp": 3,
+   "fp": 12,
+   "fn": 0,
+   "precision": 0.2,
+   "recall": 1.0,
+   "f1": 0.333
+  },
+  "micro": {
+   "tp": 80,
+   "fp": 33,
+   "fn": 1,
+   "precision": 0.708,
+   "recall": 0.988,
+   "f1": 0.825
+  },
+  "macro_f1": 0.705,
+  "evidence_overlap": 0.887,
+  "n_records": 136,
+  "b3_citations_found": 0.956
+ },
+ "ABLATION": {
+  "D1_info": {
+   "tp": 33,
+   "fp": 0,
+   "fn": 6,
+   "precision": 1.0,
+   "recall": 0.846,
+   "f1": 0.917
+  },
+  "D2_actor": {
+   "tp": 10,
+   "fp": 21,
+   "fn": 1,
+   "precision": 0.323,
+   "recall": 0.909,
+   "f1": 0.476
+  },
+  "D3_eval": {
+   "tp": 7,
+   "fp": 1,
+   "fn": 21,
+   "precision": 0.875,
+   "recall": 0.25,
+   "f1": 0.389
+  },
+  "D4_outcome": {
+   "tp": 1,
+   "fp": 15,
+   "fn": 2,
+   "precision": 0.062,
+   "recall": 0.333,
+   "f1": 0.105
+  },
+  "micro": {
+   "tp": 51,
+   "fp": 37,
+   "fn": 30,
+   "precision": 0.58,
+   "recall": 0.63,
+   "f1": 0.604
+  },
+  "macro_f1": 0.472,
+  "evidence_overlap": 0.961,
+  "n_records": 143
+ }
+}

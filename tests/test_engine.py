@@ -144,7 +144,8 @@ def test_article_support_fallback():
 def test_export_review_runs_on_repo_data():
     with tempfile.TemporaryDirectory() as d:
         out = os.path.join(d, "review.csv")
-        subprocess.run([sys.executable, "scripts/export_review.py", "--split", "dev","--no-sbert", "--output", out],
+        subprocess.run([sys.executable, "scripts/export_review.py", "--split", "dev", "--no-sbert",
+                        "--output", out],
                        cwd=ROOT, check=True, capture_output=True, text=True)
         with open(out, encoding="utf-8-sig") as f:
             rows = list(csv.DictReader(f))
