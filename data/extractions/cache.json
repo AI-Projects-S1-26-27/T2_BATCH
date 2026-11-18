@@ -3437,5 +3437,372 @@
   "warnings": [],
   "error": null,
   "raw": "{\"actors\":[{\"name\":\"Roger Stone\",\"type\":\"Person\",\"span\":\"Roger Stone\"},{\"name\":\"Trump\",\"type\":\"Politician\",\"span\":\"Trump\"}],\"items\":[{\"text\":\"indicted\",\"span\":\"Indicted\"}],\"agents\":[],\"evals\":[],\"outcomes\":[{\"text\":\"indicted\",\"type\":\"Legal\",\"span\":\"Indicted\"}]}"
+ },
+ "0b34482318d1c17ac994dd1674c636723a3df9f3": {
+  "ok": true,
+  "headline": "Trump Sends Investigators to Hawaii, Gains in GOP Presidential Primary Poll",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Trump",
+     "type": "Politician",
+     "span": "Trump",
+     "start": 0,
+     "end": 5
+    },
+    {
+     "name": "GOP",
+     "type": "PoliticalParty",
+     "span": "GOP",
+     "start": 46,
+     "end": 49
+    }
+   ],
+   "items": [
+    {
+     "text": "send investigators to Hawaii",
+     "span": "Sends Investigators to Hawaii",
+     "start": 6,
+     "end": 35
+    },
+    {
+     "text": "gain in GOP Presidential Primary poll",
+     "span": "Gains in GOP Presidential Primary Poll",
+     "start": 37,
+     "end": 75
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Trump",
+     "action": "send investigators to Hawaii",
+     "span": "Trump Sends Investigators to Hawaii",
+     "start": 0,
+     "end": 35
+    }
+   ],
+   "evals": [],
+   "outcomes": []
+  },
+  "warnings": [
+   "dropped agent: 'Trump Gains in GOP Presidential Primary Poll' not found in headline"
+  ],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Trump\",\"type\":\"Politician\",\"span\":\"Trump\"},{\"name\":\"GOP\",\"type\":\"PoliticalParty\",\"span\":\"GOP\"}],\"items\":[{\"text\":\"send investigators to Hawaii\",\"span\":\"Sends Investigators to Hawaii\"},{\"text\":\"gain in GOP Presidential Primary poll\",\"span\":\"Gains in GOP Presidential Primary Poll\"}],\"agents\":[{\"actor\":\"Trump\",\"action\":\"send investigators to Hawaii\",\"span\":\"Trump Sends Investigators to Hawaii\"},{\"actor\":\"Trump\",\"action\":\"gain in GOP Presidential Primary poll\",\"span\":\"Trump Gains in GOP Presidential Primary Poll\"}],\"evals\":[],\"outcomes\":[]}"
+ },
+ "1a4063c2da3b27c48d5edd501a07159102311e0b": {
+  "ok": true,
+  "headline": "Trump Plans Meeting on Arizona Birth Bill",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Trump",
+     "type": "Politician",
+     "span": "Trump",
+     "start": 0,
+     "end": 5
+    }
+   ],
+   "items": [
+    {
+     "text": "plan meeting",
+     "span": "Plans Meeting",
+     "start": 6,
+     "end": 19
+    },
+    {
+     "text": "Arizona birth bill",
+     "span": "Arizona Birth Bill",
+     "start": 23,
+     "end": 41
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Trump",
+     "action": "plan meeting",
+     "span": "Trump Plans Meeting",
+     "start": 0,
+     "end": 19
+    }
+   ],
+   "evals": [],
+   "outcomes": []
+  },
+  "warnings": [],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Trump\",\"type\":\"Politician\",\"span\":\"Trump\"}],\"items\":[{\"text\":\"plan meeting\",\"span\":\"Plans Meeting\"},{\"text\":\"Arizona birth bill\",\"span\":\"Arizona Birth Bill\"}],\"agents\":[{\"actor\":\"Trump\",\"action\":\"plan meeting\",\"span\":\"Trump Plans Meeting\"}],\"evals\":[],\"outcomes\":[]}"
+ },
+ "8bf193aaa4b312aaa12d17313d3f9b8768b6075d": {
+  "ok": true,
+  "headline": "Donald Trump Signals He Has Investigators Looking Into Obama Citizenship Issue In Hawaii",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Donald Trump",
+     "type": "Politician",
+     "span": "Donald Trump",
+     "start": 0,
+     "end": 12
+    },
+    {
+     "name": "Obama",
+     "type": "Politician",
+     "span": "Obama",
+     "start": 55,
+     "end": 60
+    }
+   ],
+   "items": [
+    {
+     "text": "signal he has investigators looking into Obama citizenship issue in Hawaii",
+     "span": "Signals He Has Investigators Looking Into Obama Citizenship Issue In Hawaii",
+     "start": 13,
+     "end": 88
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Donald Trump",
+     "action": "signal he has investigators looking into Obama citizenship issue in Hawaii",
+     "span": "Donald Trump Signals He Has Investigators Looking Into Obama Citizenship Issue In Hawaii",
+     "start": 0,
+     "end": 88
+    }
+   ],
+   "evals": [],
+   "outcomes": [
+    {
+     "text": "Obama citizenship issue",
+     "type": "Political",
+     "span": "Obama Citizenship Issue",
+     "start": 55,
+     "end": 78
+    }
+   ]
+  },
+  "warnings": [],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Donald Trump\",\"type\":\"Politician\",\"span\":\"Donald Trump\"},{\"name\":\"Obama\",\"type\":\"Politician\",\"span\":\"Obama\"}],\"items\":[{\"text\":\"signal he has investigators looking into Obama citizenship issue in Hawaii\",\"span\":\"Signals He Has Investigators Looking Into Obama Citizenship Issue In Hawaii\"}],\"agents\":[{\"actor\":\"Donald Trump\",\"action\":\"signal he has investigators looking into Obama citizenship issue in Hawaii\",\"span\":\"Donald Trump Signals He Has Investigators Looking Into Obama Citizenship Issue In Hawaii\"}],\"evals\":[],\"outcomes\":[{\"text\":\"Obama citizenship issue\",\"type\":\"Political\",\"span\":\"Obama Citizenship Issue\"}]}"
+ },
+ "9cba2496e6ff8d56adb0f1581cc323b4be1e0f7d": {
+  "ok": true,
+  "headline": "Senate overrides Obama veto of 9/11 victims bill",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Senate",
+     "type": "GovernmentBody",
+     "span": "Senate",
+     "start": 0,
+     "end": 6
+    },
+    {
+     "name": "Obama",
+     "type": "Politician",
+     "span": "Obama",
+     "start": 17,
+     "end": 22
+    }
+   ],
+   "items": [
+    {
+     "text": "overrides Obama veto of 9/11 victims bill",
+     "span": "overrides Obama veto of 9/11 victims bill",
+     "start": 7,
+     "end": 48
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Senate",
+     "action": "overrides Obama veto of 9/11 victims bill",
+     "span": "Senate overrides",
+     "start": 0,
+     "end": 16
+    }
+   ],
+   "evals": [],
+   "outcomes": []
+  },
+  "warnings": [],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Senate\",\"type\":\"GovernmentBody\",\"span\":\"Senate\"},{\"name\":\"Obama\",\"type\":\"Politician\",\"span\":\"Obama\"}],\"items\":[{\"text\":\"overrides Obama veto of 9/11 victims bill\",\"span\":\"overrides Obama veto of 9/11 victims bill\"}],\"agents\":[{\"actor\":\"Senate\",\"action\":\"overrides Obama veto of 9/11 victims bill\",\"span\":\"Senate overrides\"}],\"evals\":[],\"outcomes\":[]}"
+ },
+ "5da9a7a95318b9316e3ca31d93777d641cbc8bbb": {
+  "ok": true,
+  "headline": "Jensen Huang seeks return as Nvidia CEO four days after resignation",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Jensen Huang",
+     "type": "Person",
+     "span": "Jensen Huang",
+     "start": 0,
+     "end": 12
+    },
+    {
+     "name": "Nvidia",
+     "type": "Company",
+     "span": "Nvidia",
+     "start": 29,
+     "end": 35
+    }
+   ],
+   "items": [
+    {
+     "text": "seeks return as Nvidia CEO",
+     "span": "seeks return as Nvidia CEO",
+     "start": 13,
+     "end": 39
+    },
+    {
+     "text": "resignation",
+     "span": "resignation",
+     "start": 56,
+     "end": 67
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Jensen Huang",
+     "action": "seeks return as Nvidia CEO",
+     "span": "Jensen Huang seeks return",
+     "start": 0,
+     "end": 25
+    }
+   ],
+   "evals": [],
+   "outcomes": [
+    {
+     "text": "return as Nvidia CEO",
+     "type": "Political",
+     "span": "return as Nvidia CEO",
+     "start": 19,
+     "end": 39
+    },
+    {
+     "text": "resignation",
+     "type": "Political",
+     "span": "resignation",
+     "start": 56,
+     "end": 67
+    }
+   ]
+  },
+  "warnings": [],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Jensen Huang\",\"type\":\"Person\",\"span\":\"Jensen Huang\"},{\"name\":\"Nvidia\",\"type\":\"Company\",\"span\":\"Nvidia\"}],\"items\":[{\"text\":\"seeks return as Nvidia CEO\",\"span\":\"seeks return as Nvidia CEO\"},{\"text\":\"resignation\",\"span\":\"resignation\"}],\"agents\":[{\"actor\":\"Jensen Huang\",\"action\":\"seeks return as Nvidia CEO\",\"span\":\"Jensen Huang seeks return\"}],\"evals\":[],\"outcomes\":[{\"text\":\"return as Nvidia CEO\",\"type\":\"Political\",\"span\":\"return as Nvidia CEO\"},{\"text\":\"resignation\",\"type\":\"Political\",\"span\":\"resignation\"}]}"
+ },
+ "baf0d940cca87a9362946882df43d1477a57e39f": {
+  "ok": true,
+  "headline": "Jensen Huang mulls return as Nvidia CEO",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Jensen Huang",
+     "type": "Person",
+     "span": "Jensen Huang",
+     "start": 0,
+     "end": 12
+    }
+   ],
+   "items": [
+    {
+     "text": "mulls return as Nvidia CEO",
+     "span": "mulls return as Nvidia CEO",
+     "start": 13,
+     "end": 39
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Jensen Huang",
+     "action": "mulls return as Nvidia CEO",
+     "span": "Jensen Huang mulls return as Nvidia CEO",
+     "start": 0,
+     "end": 39
+    }
+   ],
+   "evals": [],
+   "outcomes": []
+  },
+  "warnings": [],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Jensen Huang\",\"type\":\"Person\",\"span\":\"Jensen Huang\"}],\"items\":[{\"text\":\"mulls return as Nvidia CEO\",\"span\":\"mulls return as Nvidia CEO\"}],\"agents\":[{\"actor\":\"Jensen Huang\",\"action\":\"mulls return as Nvidia CEO\",\"span\":\"Jensen Huang mulls return as Nvidia CEO\"}],\"evals\":[],\"outcomes\":[]}"
+ },
+ "7599247469c75f948c05ec8bf60b3145f441d724": {
+  "ok": true,
+  "headline": "Days after resigning over affair, Jensen Huang ‘talks’ return as Nvidia CEO",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "v1",
+  "fields": {
+   "actors": [
+    {
+     "name": "Jensen Huang",
+     "type": "Person",
+     "span": "Jensen Huang",
+     "start": 34,
+     "end": 46
+    },
+    {
+     "name": "Nvidia",
+     "type": "Company",
+     "span": "Nvidia",
+     "start": 65,
+     "end": 71
+    }
+   ],
+   "items": [
+    {
+     "text": "resign over affair",
+     "span": "resigning over affair",
+     "start": 11,
+     "end": 32
+    },
+    {
+     "text": "talk return as Nvidia CEO",
+     "span": "‘talks’ return as Nvidia CEO",
+     "start": 47,
+     "end": 75
+    }
+   ],
+   "agents": [
+    {
+     "actor": "Jensen Huang",
+     "action": "talk return as Nvidia CEO",
+     "span": "Jensen Huang ‘talks’ return as Nvidia CEO",
+     "start": 34,
+     "end": 75
+    }
+   ],
+   "evals": [],
+   "outcomes": [
+    {
+     "text": "return as CEO",
+     "type": "Political",
+     "span": "return as Nvidia CEO",
+     "start": 55,
+     "end": 75
+    }
+   ]
+  },
+  "warnings": [
+   "dropped agent: 'Jensen Huang resigning over affair' not found in headline"
+  ],
+  "error": null,
+  "raw": "{\"actors\":[{\"name\":\"Jensen Huang\",\"type\":\"Person\",\"span\":\"Jensen Huang\"},{\"name\":\"Nvidia\",\"type\":\"Company\",\"span\":\"Nvidia\"}],\"items\":[{\"text\":\"resign over affair\",\"span\":\"resigning over affair\"},{\"text\":\"talk return as Nvidia CEO\",\"span\":\"‘talks’ return as Nvidia CEO\"}],\"agents\":[{\"actor\":\"Jensen Huang\",\"action\":\"resign over affair\",\"span\":\"Jensen Huang resigning over affair\"},{\"actor\":\"Jensen Huang\",\"action\":\"talk return as Nvidia CEO\",\"span\":\"Jensen Huang ‘talks’ return as Nvidia CEO\"}],\"evals\":[],\"outcomes\":[{\"text\":\"return as CEO\",\"type\":\"Political\",\"span\":\"return as Nvidia CEO\"}]}"
  }
 }

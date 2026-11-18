@@ -1606,5 +1606,235 @@
    ]
   },
   "error": null
+ },
+ "fc1e4e8994b5a08fec2fe59f46c9828a685def4b": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "Gains in GOP Presidential Primary Poll",
+     "explanation": "Headline A adds poll‑gain information not present in B."
+    },
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "Plans Meeting on Arizona Birth Bill",
+     "explanation": "Headline B adds the planned meeting about a specific bill not mentioned in A."
+    },
+    {
+     "dimension": "actor",
+     "headline": "B",
+     "words": "Tea Party leaders and a legislator from Arizona",
+     "explanation": "B highlights additional actors (Tea Party leaders, Arizona legislator) absent from A."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "A",
+     "words": "Gains in GOP Presidential Primary Poll",
+     "explanation": "A stresses electoral consequence (poll rise)."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "B",
+     "words": "Arizona Birth Bill",
+     "explanation": "B stresses a legislative/legal consequence (bill requirement)."
+    }
+   ]
+  },
+  "error": null
+ },
+ "003d2567f6955a0c5a756a09e7ffca053d8303d4": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "Gains in GOP Presidential Primary Poll",
+     "explanation": "Headline A mentions poll gains that B omits."
+    },
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "Obama Citizenship Issue",
+     "explanation": "Headline B specifies the citizenship issue that A leaves out."
+    },
+    {
+     "dimension": "evaluative",
+     "headline": "A",
+     "words": "Gains",
+     "explanation": "The word \"Gains\" frames Trump positively, which B does not use."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "A",
+     "words": "Gains in GOP Presidential Primary Poll",
+     "explanation": "A emphasizes a political/electoral consequence, while B emphasizes a legal/identity consequence."
+    }
+   ]
+  },
+  "error": null
+ },
+ "4718bdfa1fb6762099fe5c955913297b32f60e52": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "Arizona Birth Bill",
+     "explanation": "Headline A mentions the Arizona birth‑bill, which B does not mention."
+    },
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "Investigators Looking Into Obama Citizenship Issue In Hawaii",
+     "explanation": "Headline B adds the existence of investigators and the Hawaii citizenship issue, absent from A."
+    },
+    {
+     "dimension": "actor",
+     "headline": "B",
+     "words": "Investigators",
+     "explanation": "B attributes the investigative action to a separate actor (investigators) rather than Trump himself."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "A",
+     "words": "Meeting on Arizona Birth Bill",
+     "explanation": "A emphasizes a legislative consequence (a meeting about a bill)."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "B",
+     "words": "Signals He Has Investigators",
+     "explanation": "B stresses a political/legal consequence (investigations into Obama’s citizenship)."
+    }
+   ]
+  },
+  "error": null
+ },
+ "72ec8ded0a7b297a7fab4ab540439f7fa74b62ef": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "actor",
+     "headline": "B",
+     "words": "Senate",
+     "explanation": "Headline B attributes the action to the Senate, while A uses the broader term Congress."
+    },
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "first override of presidency",
+     "explanation": "Headline A adds the detail that this is the first veto override of Obama’s presidency, which B omits."
+    }
+   ]
+  },
+  "error": null
+ },
+ "c5dce193520813d6b1b952fd3cd0f5ec0e652426": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "allowing 9/11 suits against Saudi Arabia",
+     "explanation": "A specifies the target of the lawsuits, which B omits."
+    },
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "9/11 victims bill",
+     "explanation": "B emphasizes the bill’s purpose for victims, which A does not mention."
+    },
+    {
+     "dimension": "actor",
+     "headline": "A",
+     "words": "Senate Set to Override Veto",
+     "explanation": "A foregrounds the Senate as the active actor, while B presents the action as already done."
+    },
+    {
+     "dimension": "evaluative",
+     "headline": "B",
+     "words": "overrides Obama veto",
+     "explanation": "B uses the decisive verb \"overrides\" implying completion, whereas A uses the tentative \"Set to Override\"."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "A",
+     "words": "allowing 9/11 suits against Saudi Arabia",
+     "explanation": "A highlights the legal consequence of permitting lawsuits, while B stresses the bill’s benefit to victims."
+    }
+   ]
+  },
+  "error": null
+ },
+ "c627cedb5c7edac0fd0a8365d74591b56ee74c15": {
+  "data": {
+   "differences": []
+  },
+  "error": null
+ },
+ "fa74870acc315e69e20072645e3ae36aca73b861": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "A",
+     "words": "four days after resignation",
+     "explanation": "Headline A adds the timing and context of his resignation, which B omits."
+    }
+   ]
+  },
+  "error": null
+ },
+ "ced941ae98ce93eb9b43dd9ffa445b8470959ed6": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "over affair",
+     "explanation": "Headline B adds the reason for resignation, which Headline A omits."
+    },
+    {
+     "dimension": "evaluative",
+     "headline": "B",
+     "words": "‘talks’",
+     "explanation": "Headline B places ‘talks’ in quotes, implying doubt about the seriousness of the return."
+    }
+   ]
+  },
+  "error": null
+ },
+ "ee9b6e281175c548f4fa1a863ddf7fbdf2330b06": {
+  "data": {
+   "differences": [
+    {
+     "dimension": "information",
+     "headline": "B",
+     "words": "Days after resigning over affair",
+     "explanation": "B adds the reason and timing of Huang's resignation, which A omits."
+    },
+    {
+     "dimension": "evaluative",
+     "headline": "B",
+     "words": "'talks'",
+     "explanation": "B places talks in quotes, casting doubt on the seriousness of the return."
+    },
+    {
+     "dimension": "evaluative",
+     "headline": "B",
+     "words": "affair",
+     "explanation": "The word \"affair\" introduces a scandalous tone absent in A."
+    },
+    {
+     "dimension": "consequence",
+     "headline": "B",
+     "words": "resigning over affair",
+     "explanation": "B highlights the consequence of resignation, a detail not mentioned in A."
+    }
+   ]
+  },
+  "error": null
  }
 }
