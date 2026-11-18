@@ -261,6 +261,6 @@ Gold labels come from the first annotator, with M8's adjudicated decisions repla
 | `src/align.py` | S3 Sentence-BERT alignment | M3 |
 | `src/facts.py` | S4 ontology and logical facts | M4 |
 | `src/engine.py` | S5 forward chaining and rules R1–R4 | M5 |
-| `src/explain.py`, `app.py` | S6 explanations and web demo | M6 |
+| `src/engine.py` (`explain()`), `src/summary.py`, `src/pipeline.py`, `app.py` | S6 explanations and web demo | M6 |
 | `baselines/` | B1 TF-IDF, B2 Sentence-BERT, B3 direct LLM | M7 |
 | `eval/` | annotation, metrics, ablation | M8 |

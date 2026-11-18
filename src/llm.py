@@ -55,6 +55,22 @@ def parse_json(text):
         raise
 
 
+def _retry_after(headers, default, cap=60.0):
+    """Seconds to wait from a Retry-After header. The header may be a number or an HTTP date;
+    anything unreadable falls back to `default`. Capped so the demo never hangs for minutes."""
+    value = (headers.get("retry-after") if headers else None) or ""
+    try:
+        wait = float(value)
+    except ValueError:
+        from email.utils import parsedate_to_datetime
+        try:
+            from datetime import datetime, timezone
+            wait = (parsedate_to_datetime(value) - datetime.now(timezone.utc)).total_seconds()
+        except (TypeError, ValueError):
+            wait = default
+    return max(0.0, min(wait, cap))
+
+
 class LLMClient:
     def __init__(self, api_key=None, base_url=None, model=None, timeout=60, max_retries=5):
         load_dotenv()
@@ -100,7 +116,7 @@ class LLMClient:
             except urllib.error.HTTPError as e:
                 body = e.read().decode("utf-8", "replace")[:500]
                 if e.code == 429 or e.code >= 500:
-                    wait = float(e.headers.get("retry-after") or delay)
+                    wait = _retry_after(e.headers, delay)
                     print(f"  [llm] HTTP {e.code}, waiting {wait:.0f}s (attempt {attempt + 1})")
                     time.sleep(wait)
                     delay = min(delay * 2, 60)
