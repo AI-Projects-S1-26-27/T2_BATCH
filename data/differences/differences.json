@@ -31,8 +31,15 @@
     }
    ],
    "item": "used Bill Clinton",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "The White House asked former President Bill Clinton to talk to Rep. Joe Sestak about the possibility of obtaining a senior position in the Obama administration if he would drop out of the Democratic primary race against establishment-backed Sen. Arlen Specter, the Obama administration said in a report released Friday morning.",
+    "sentence_index": 0,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -65,8 +72,15 @@
     }
    ],
    "item": "used Bill Clinton",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "The offer was made by White House Chief of Staff Rahm Emanuel through a prominent intermediary -- former President Bill Clinton -- during the months of June and July of 2009.",
+    "sentence_index": 1,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R2_ActorShift",
@@ -371,15 +385,8 @@
     }
    ],
    "item": "rips progressivism",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "Progressivism, he told the Conservative Political Action Conference, is a cancer that must be cut out of the system.",
-    "sentence_index": 2,
-    "score": 0.567,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -618,8 +625,15 @@
     }
    ],
    "item": "push back on claim",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "AARP initially pushed back against the newspaper's story.",
+    "sentence_index": 2,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -652,8 +666,15 @@
     }
    ],
    "item": "claim about social security concessions",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "WASHINGTON -- The nation's leading advocate for senior citizens says that it hasn't wavered in its opposition to cutting Social Security benefits, though a top official with the group said it is open to a discussion about raising the retirement age and other changes.",
+    "sentence_index": 0,
+    "score": 0.6,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -754,8 +775,15 @@
     }
    ],
    "item": "claim about social security concessions",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Max Richtman, executive vice president of the National Committee to Preserve Social Security and Medicare, an advocacy group in Washington, said the timing of AARP’s statements was particularly bad because it came in the midst of deliberations between the Obama administration and Congressional Republicans about the debt ceiling and overall deficit reduction.",
+    "sentence_index": 10,
+    "score": 0.6,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -822,8 +850,15 @@
     }
    ],
    "item": "negotiate on social security retirement age",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Her office claims the bill would cut deficits by $416 billion over the next decade and keep Social Security solvent by instead raising the retirement age to 69 over 16 years and cutting yearly cost-of-living adjustments by 1 percent.",
+    "sentence_index": 12,
+    "score": 0.8,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -893,10 +928,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "fox",
-    "sentence": "A coalition of groups called Strengthen Social Security has railed against cuts to cost-of-living adjustments, recently releasing a report claiming \"even the modest COLA on which Social Security benefits are adjusted isn't safe.\"",
-    "sentence_index": 24,
-    "score": 0.686,
-    "method": "sentence-bert",
+    "sentence": "The flurry of reports and statements left unclear whether AARP was opening up to new concessions in the debate over Social Security, as several lawmakers place reform proposals on the table.",
+    "sentence_index": 1,
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -936,8 +971,8 @@
     "source": "hpo",
     "sentence": "WASHINGTON -- The nation's leading advocate for senior citizens says that it hasn't wavered in its opposition to cutting Social Security benefits, though a top official with the group said it is open to a discussion about raising the retirement age and other changes.",
     "sentence_index": 0,
-    "score": 0.654,
-    "method": "sentence-bert",
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -1172,15 +1207,8 @@
     }
    ],
    "item": "amendments are omitted",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "It was decided in advance that any portion of the Constitution that was superseded by amendments — including the amendments themselves — would not be read, preventing lawmakers from having to make references to slaves, referred to in Article 1, Section 2 as “three fifths of all other persons,” or to things like prohibition.",
-    "sentence_index": 3,
-    "score": 0.598,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1490,15 +1518,8 @@
     }
    ],
    "item": "face off in feisty vice presidential debate",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "hpo",
-    "sentence": "But since vice presidential debates often have a negligible impact on the overall race anyway, Biden's sometimes over-the-top performance probably accomplished what he appeared intent on doing: rallying the Democratic base after Obama's woeful debate performance last week.",
-    "sentence_index": 4,
-    "score": 0.602,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1565,15 +1586,8 @@
     }
    ],
    "item": "face off in feisty vice presidential debate",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "The vice presidential debate on Tuesday was supposed to be a reboot for the Obama campaign after the president’s dismal performance at his debate with the Republican nominee for president, Mitt Romney, last week.",
-    "sentence_index": 5,
-    "score": 0.565,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1609,10 +1623,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "fox",
-    "sentence": "The debate veered across the spectrum of topics from the campaign trail.",
-    "sentence_index": 38,
-    "score": 0.604,
-    "method": "sentence-bert",
+    "sentence": "The dueling running mates turned the lone vice presidential debate into an uncharacteristically feisty affair, scrapping over everything from the economy to Libya to taxes.",
+    "sentence_index": 1,
+    "score": 1.0,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -1647,8 +1661,15 @@
     }
    ],
    "item": "debate",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "And the vice president made full use of his old Senate colleague’s 1988 debate playbook, shaking his head and scoffing pityingly at Representative Paul D. Ryan, trying to paint his opponent as a latter-day Dan Quayle.",
+    "sentence_index": 2,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1681,8 +1702,15 @@
     }
    ],
    "item": "takes off gloves",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "The face-off Thursday night was taking on outsized importance for a vice presidential debate.",
+    "sentence_index": 31,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1819,8 +1847,15 @@
     }
    ],
    "item": "pick former staffer",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Mr. Patrick showed similar deftness, skirting a question about why he had not picked former Representative Barney Frank, who had asserted that he would have loved the interim appointment.",
+    "sentence_index": 34,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1853,15 +1888,8 @@
     }
    ],
    "item": "fill Kerry's Senate seat",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "Governor Appoints Ex-Aide to Fill Kerry’s Seat",
-    "sentence_index": 1,
-    "score": 0.683,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -1897,10 +1925,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "fox",
-    "sentence": "Kerry, also a Democrat and the state’s senior U.S. senator, was confirmed Tuesday as the new secretary of state, following his nomination by President Obama to replace the retiring Hillary Clinton.",
-    "sentence_index": 2,
-    "score": 0.598,
-    "method": "sentence-bert",
+    "sentence": "Massachusetts Gov. Deval Patrick on Wednesday picked a former chief of staff to fill Sen. John Kerry’s open seat until a special election in June.",
+    "sentence_index": 0,
+    "score": 0.714,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -2073,8 +2101,15 @@
     }
    ],
    "item": "campaign money case",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "The former representative, who co-wrote a 1999 book with his father, Rev. Jesse Jackson, titled It's About the Money!: How You Can Get Out of Debt, Build Wealth, and Achieve Your Financial Dreams, was accused of spending $750,000 in campaign funds on personal items for himself and for his wife.",
+    "sentence_index": 5,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R3_EvalShift",
@@ -2145,8 +2180,15 @@
     }
    ],
    "item": "plan to file charges",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Grimm's lawyer, William McGinley, said in a statement that the U.S. attorney's office \"has disclosed its intent to file criminal charges.\"",
+    "sentence_index": 2,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -2213,8 +2255,15 @@
     }
    ],
    "item": "plan to file charges",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "A lawyer for Mr. Grimm, William McGinley of Patton Boggs, confirmed in a statement that prosecutors intended to file criminal charges against his client and said that Mr. Grimm “asserts his innocence” and that the investigation was “a politically driven vendetta.”",
+    "sentence_index": 9,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -2354,10 +2403,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "hpo",
-    "sentence": "Advocates are hoping for a plan that would give undocumented immigrants a chance to both remain in the country and eventually become citizens, but House Republicans have indicated that the latter is something most cannot support.",
-    "sentence_index": 1,
-    "score": 0.579,
-    "method": "sentence-bert",
+    "sentence": "House Majority Whip Kevin McCarthy (R-Calif.), a longtime target of immigration activists, said Tuesday that he would support allowing undocumented immigrants to stay in the U.S., but stopped short of calling for a path to citizenship.",
+    "sentence_index": 0,
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -2397,8 +2446,8 @@
     "source": "nyt",
     "sentence": "The document is expected to call for border security and enforcement measures, as well as providing a path to legal status — but not citizenship — for many of the 11 million undocumented immigrants in the country, the aides said.",
     "sentence_index": 2,
-    "score": 0.656,
-    "method": "sentence-bert",
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -2433,8 +2482,15 @@
     }
    ],
    "item": "hint at immigration principles",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Majority Whip Kevin McCarthy, who is the third-ranking Republican in the House, made his comments in an interview with KBFX-TV in Bakersfield, Calif. just as his fellow GOP lawmakers are expected to unveil any day a set of “immigration principles” that reportedly call for a path to legal status for undocumented immigrants.",
+    "sentence_index": 1,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -2467,8 +2523,15 @@
     }
    ],
    "item": "hint at immigration principles",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Speaker John A. Boehner of Ohio and other Republican leaders are expected to release a one-page statement of immigration principles this week at their annual retreat in Cambridge, Md., according to aides with knowledge of the plan.",
+    "sentence_index": 1,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -2710,10 +2773,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "fox",
-    "sentence": "\"The president should listen to and work with his allies in Congress, starting with Nancy Pelosi, who had expressed their concerns about the impact that a weak agreement would have on our workers to make sure we get the best strongest deal possible,\" Clinton said.",
-    "sentence_index": 6,
-    "score": 0.652,
-    "method": "sentence-bert",
+    "sentence": "\"Let's take the lemons and turn it into lemonade,\" Clinton told about 600 supporters at the Iowa State Fairgrounds, addressing the controversial Trans Pacific Partnership trade proposal that has splintered Obama from House Minority Leader Nancy Pelosi, D-Calif., and rank-and-file Democrats.",
+    "sentence_index": 1,
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -2748,15 +2811,8 @@
     }
    ],
    "item": "urges Obama to listen to Democrats on trade deal",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "fox",
-    "sentence": "Hillary Clinton said Sunday the problems that Congress has with President Obama’s trade agenda should be an opportunity for the president to ask fellow Democrats about their concerns with the proposal but still declined to say whether she supports or opposes the legislation.",
-    "sentence_index": 0,
-    "score": 0.654,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R2_ActorShift",
@@ -2977,15 +3033,8 @@
     }
    ],
    "item": "seeks 'transcribed' interview",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "Mr. Gowdy said the committee believed that “a transcribed interview would best protect Secretary Clinton’s privacy, the security of the information queried and the public’s interest in ensuring this committee has all information needed to accomplish the task set before it.”",
-    "sentence_index": 11,
-    "score": 0.572,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -3057,8 +3106,8 @@
     "source": "fox",
     "sentence": "The congressional committee probing the Benghazi attacks has formally requested that Hillary Clinton appear for an interview on her use of a personal email and server for official business while secretary of state, after learning the server had been wiped \"clean.\"",
     "sentence_index": 0,
-    "score": 0.726,
-    "method": "sentence-bert",
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -3098,8 +3147,8 @@
     "source": "nyt",
     "sentence": "WASHINGTON — The chairman of the House committee investigating the Benghazi attacks asked Hillary Rodham Clinton on Tuesday to appear for a private interview about her exclusive use of a personal email account when she was secretary of state.",
     "sentence_index": 0,
-    "score": 0.686,
-    "method": "sentence-bert",
+    "score": 1.0,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -3168,8 +3217,15 @@
     }
    ],
    "item": "about email",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Earlier this month, Clinton acknowledged that she sent or received roughly 60,000 related emails, turning over roughly half to the State Department and deleting about the same number of “personal” ones.",
+    "sentence_index": 6,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -3311,8 +3367,8 @@
     "source": "nyt",
     "sentence": "The override, the first Mr. Obama has faced in his presidency, is expected to begin in the Senate on Wednesday, followed by the House on Thursday.",
     "sentence_index": 1,
-    "score": 0.638,
-    "method": "sentence-bert",
+    "score": 1.0,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -3352,8 +3408,8 @@
     "source": "fox",
     "sentence": "Congress on Wednesday overwhelmingly rejected President Obama’s veto of a bipartisan bill letting families of Sept. 11 victims sue the Saudi Arabian government, in the first successful veto override of Obama’s presidency.",
     "sentence_index": 0,
-    "score": 0.629,
-    "method": "sentence-bert",
+    "score": 0.8,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -3393,8 +3449,8 @@
     "source": "nyt",
     "sentence": "As part of its final bit of business before the election, Congress is set to vote to override President Obama’s veto of a bill allowing families of those killed in the Sept. 11 attacks to sue Saudi Arabia for any role in the terrorist plot.",
     "sentence_index": 0,
-    "score": 0.646,
-    "method": "sentence-bert",
+    "score": 0.6,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -3463,8 +3519,15 @@
     }
    ],
    "item": "allow 9/11 suits",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "“The bill is near and dear to my heart as a New Yorker because it would allow the victims of 9/11 to pursue some small measure of justice,” Schumer said Wednesday.",
+    "sentence_index": 24,
+    "score": 0.75,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R2_ActorShift",
@@ -4271,15 +4334,8 @@
     }
    ],
    "item": "Gorsuch vote",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "hpo",
-    "sentence": "Gorsuch, who worked on former President George W. Bush’s 2004 reelection campaign and as a lawyer in his Justice Department, provided the expected performance past court nominees had given during his appearance; he stated that he would be shocked by politics coming into a courtroom.",
-    "sentence_index": 17,
-    "score": 0.616,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -4482,8 +4538,15 @@
     }
    ],
    "item": "be concerned",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "“After careful deliberation I have concluded that I cannot support Judge Neil Gorsuch’s nomination to the Supreme Court,” Mr. Schumer said, citing concerns over Judge Gorsuch’s record on workers’ rights and his degree of independence, adding, “My vote will be no, and I urge my colleagues to do the same.”",
+    "sentence_index": 4,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -4550,15 +4613,8 @@
     }
    ],
    "item": "plan to filibuster",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "fox",
-    "sentence": "But Democrats could still try and filibuster, requiring Gorsuch to garner 60 “yea” votes in the Senate.",
-    "sentence_index": 10,
-    "score": 0.578,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -4594,10 +4650,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "hpo",
-    "sentence": "Gorsuch’s nomination represents the fruit of the Republicans’ decision to block Garland.",
-    "sentence_index": 22,
-    "score": 0.709,
-    "method": "sentence-bert",
+    "sentence": "The polished Gorsuch certainly did not make any deluded or deranged statements, as many have come to expect from the president, that could lead a Republican to flip on his nomination.",
+    "sentence_index": 8,
+    "score": 0.667,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -4833,10 +4889,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "hpo",
-    "sentence": "Shot by celebrity photographer and director Tyler Shields, the comedian stares the camera down in one photo, as she holds what resembles the bloody head of President Donald Trump.",
-    "sentence_index": 3,
-    "score": 0.596,
-    "method": "sentence-bert",
+    "sentence": "UPDATE - May 30, 5:20 p.m.: Hours after Kathy Griffin’s photo shoot with a fake bloody Donald Trump head made the internet rounds, the official Twitter account for the U.S. Secret Service has issued a statement.",
+    "sentence_index": 12,
+    "score": 0.6,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -4876,8 +4932,8 @@
     "source": "hpo",
     "sentence": "“I went way too far,” she said in a video on the social media site.",
     "sentence_index": 11,
-    "score": 0.573,
-    "method": "sentence-bert",
+    "score": 0.667,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -4912,8 +4968,15 @@
     }
    ],
    "item": "apologize",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "The video touched off a storm of protests from people on all sides of the political spectrum, which forced Ms. Griffin to apologize, and CNN announced that it would fire her from the annual New Year’s Eve program she has co-hosted.",
+    "sentence_index": 3,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -4983,10 +5046,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "nyt",
-    "sentence": "“I went too far.",
-    "sentence_index": 18,
-    "score": 0.724,
-    "method": "sentence-bert",
+    "sentence": "I crossed the line. I move the line, I cross it. I went way too far.",
+    "sentence_index": 12,
+    "score": 0.667,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -5159,8 +5222,15 @@
     }
    ],
    "item": "arrested",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Police have arrested a suspect in connection with at least a dozen packages containing likely pipe bombs mailed in the past week to people critical of President Donald Trump.",
+    "sentence_index": 0,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -5193,15 +5263,8 @@
     }
    ],
    "item": "sent suspicious packages",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "hpo",
-    "sentence": "A suspicious package was also found Friday in Burlingame, California, addressed to Democratic donor Tom Steyer, CNN and NBC reported.",
-    "sentence_index": 12,
-    "score": 0.55,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -5234,8 +5297,15 @@
     }
    ],
    "item": "sent suspicious packages",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "At a news conference on Friday morning, John Miller, the New York Police Department’s deputy commissioner of intelligence and counterterrorism, said a postal worker at the mail facility on 52nd Street recognized the package addressed to Mr. Clapper as similar to other suspicious packages discovered this week and “froze it in the system.”",
+    "sentence_index": 24,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -5336,8 +5406,15 @@
     }
    ],
    "item": "arrested",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Police have arrested a suspect in connection with at least a dozen packages containing likely pipe bombs mailed in the past week to people critical of President Donald Trump.",
+    "sentence_index": 0,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R2_ActorShift",
@@ -5425,10 +5502,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "hpo",
-    "sentence": "He said the indictments are evidence of an “extensive plot” by Putin’s government to “attack the 2016 election, sow chaos and dissension among the American electorate, and undermine faith in our democracy.”",
-    "sentence_index": 3,
-    "score": 0.593,
-    "method": "sentence-bert",
+    "sentence": "Sen. John McCain (R-Ariz.), Senate Minority Leader Chuck Schumer (D-N.Y.) and 18 members of the House Foreign Affairs Committee called on President Donald Trump to cancel his meeting with Russian President Vladimir Putin after indictments were announced Friday accusing a dozen Kremlin intelligence officers of hacking Democratic Party emails during the 2016 presidential campaign.",
+    "sentence_index": 0,
+    "score": 0.75,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -5497,8 +5574,15 @@
     }
    ],
    "item": "indictments",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Democrats urge Trump to cancel Putin summit, after indictment of Russian intel officers",
+    "sentence_index": 0,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -5531,8 +5615,15 @@
     }
    ],
    "item": "say",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "“This is consistent with what we have been saying all along.”",
+    "sentence_index": 14,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -5568,10 +5659,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "hpo",
-    "sentence": "He said the indictments are evidence of an “extensive plot” by Putin’s government to “attack the 2016 election, sow chaos and dissension among the American electorate, and undermine faith in our democracy.”",
-    "sentence_index": 3,
-    "score": 0.571,
-    "method": "sentence-bert",
+    "sentence": "Sen. John McCain (R-Ariz.), Senate Minority Leader Chuck Schumer (D-N.Y.) and 18 members of the House Foreign Affairs Committee called on President Donald Trump to cancel his meeting with Russian President Vladimir Putin after indictments were announced Friday accusing a dozen Kremlin intelligence officers of hacking Democratic Party emails during the 2016 presidential campaign.",
+    "sentence_index": 0,
+    "score": 1.0,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -5606,8 +5697,15 @@
     }
    ],
    "item": "say",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Rep. Ted Lieu (D-Calif.) also called for the cancellation of the meeting, saying that Trump “cannot claim to love the U.S. while meeting with ... a man who is overseeing an all-out attack on America’s democracy.”",
+    "sentence_index": 10,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R2_ActorShift",
@@ -6152,8 +6250,15 @@
     }
    ],
    "item": "sign spending package",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "Combined with $1.375 billion authorized for fencing in the spending package passed on Thursday night, Mr. Trump would have about $8 billion in all for barriers, significantly more than the $5.7 billion he unsuccessfully demanded from Congress.",
+    "sentence_index": 32,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6186,15 +6291,8 @@
     }
    ],
    "item": "fund U.S.-Mexico border wall",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "fox",
-    "sentence": "Trump requested $5.7 billion for construction of the wall, while Democrats vowed to block any spending proposal that included such funding.",
-    "sentence_index": 34,
-    "score": 0.593,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6227,15 +6325,8 @@
     }
    ],
    "item": "fund U.S.-Mexico border wall",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "nyt",
-    "sentence": "WASHINGTON — President Trump declared a national emergency on the border with Mexico on Friday in order to access billions of dollars that Congress refused to give him to build a wall there, transforming a highly charged policy dispute into a confrontation over the separation of powers outlined in the Constitution.",
-    "sentence_index": 0,
-    "score": 0.563,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6372,8 +6463,15 @@
     }
    ],
    "item": "arrest",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Roger Stone, an eccentric longtime Republican strategist with a tattoo of Richard Nixon’s face on his back, was arrested early Friday on criminal charges that include obstruction of an official proceeding, false statements and witness tampering.",
+    "sentence_index": 0,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6508,8 +6606,15 @@
     }
    ],
    "item": "arrest",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "nyt",
+    "sentence": "F.B.I. agents arrested Mr. Stone before dawn, appearing at his Fort Lauderdale, Fla., home with ballistic vests and guns drawn.",
+    "sentence_index": 6,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6610,8 +6715,15 @@
     }
    ],
    "item": "indicted",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "fox",
+    "sentence": "Stone, 66, was taken into custody early Friday after being indicted by a federal grand jury a day earlier as part of Mueller’s investigation into Russian meddling and potential collusion with Trump campaign associates during the 2016 presidential election. ",
+    "sentence_index": 1,
+    "score": 1.0,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6681,10 +6793,10 @@
    "status": "headline_omission",
    "article_evidence": {
     "source": "fox",
-    "sentence": "Not a Roger Stone.”",
-    "sentence_index": 24,
-    "score": 0.665,
-    "method": "sentence-bert",
+    "sentence": "The FBI's pre-dawn arrest of President Trump's ex-adviser Roger Stone at his Florida home prompted critics to once again question the tactics of Special Counsel Robert Mueller, after more than a dozen special agents clad in tactical gear raided Stone's property Friday.",
+    "sentence_index": 0,
+    "score": 0.667,
+    "method": "word-overlap",
     "found": true
    }
   },
@@ -6753,8 +6865,15 @@
     }
    ],
    "item": "indict Roger Stone",
-   "status": "not_found_in_article",
-   "article_evidence": null
+   "status": "headline_omission",
+   "article_evidence": {
+    "source": "hpo",
+    "sentence": "Roger Stone, an eccentric longtime Republican strategist with a tattoo of Richard Nixon’s face on his back, was arrested early Friday on criminal charges that include obstruction of an official proceeding, false statements and witness tampering.",
+    "sentence_index": 0,
+    "score": 0.667,
+    "method": "word-overlap",
+    "found": true
+   }
   },
   {
    "rule": "R1_InfoOnlyIn",
@@ -6787,15 +6906,8 @@
     }
    ],
    "item": "show link between Trump Campaign and WikiLeaks",
-   "status": "headline_omission",
-   "article_evidence": {
-    "source": "hpo",
-    "sentence": "The indictment alleges he spoke “to senior Trump Campaign officials” about WikiLeaks and “information it might have had that would be damaging” to the campaign of Trump’s Democratic rival, Hillary Clinton, in the summer before the election.",
-    "sentence_index": 8,
-    "score": 0.589,
-    "method": "sentence-bert",
-    "found": true
-   }
+   "status": "not_found_in_article",
+   "article_evidence": null
   },
   {
    "rule": "R4_OutcomeShift",
